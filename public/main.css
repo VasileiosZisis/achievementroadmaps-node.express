@@ -1,0 +1,436 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo&family=Montserrat&display=swap");
+
+:root {
+  --darkGrey: #222629;
+  --mediumGrey: #474a4f;
+  --lightGrey: #808488;
+  --myWhite: #f2f2f2;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+  image-rendering: -webkit-optimize-contrast;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Montserrat", sans-serif;
+}
+/* NAVBAR START */
+.navbarSection {
+  background-color: var(--myWhite);
+  min-height: 3rem;
+  font-family: "Archivo", sans-serif;
+  font-weight: 900;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 5rem;
+}
+
+.logo {
+  padding-top: 0.3rem;
+  width: 70px;
+}
+
+.hamMenu {
+  display: none;
+}
+
+.navbarSection li {
+  margin-left: 5rem;
+}
+
+.navbarSection a {
+  font-size: 1.5rem;
+  transition: 0.4s;
+  color: var(--mediumGrey);
+}
+
+.navbarSection a:hover {
+  font-size: 1.8rem;
+  color: var(--darkGrey);
+}
+
+nav ul li a.current {
+  font-size: 1.8rem;
+  color: var(--darkGrey);
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdownContent {
+  z-index: 2;
+  position: absolute;
+  display: none;
+  top: 100%;
+}
+
+.dropdownContent a {
+  background-color: var(--myWhite);
+}
+
+.dropdownContent:hover {
+  font-size: 1.8rem;
+  color: var(--darkGrey);
+}
+
+.dropdown:hover .dropdownContent {
+  display: block;
+}
+/* NAVBAR END */
+/* CAROUSEL START */
+.carouselSection {
+  z-index: -1;
+  width: 100%;
+  height: 70vh;
+  overflow: hidden;
+}
+
+.carouselSection img {
+  object-fit: cover;
+  -o-object-fit: cover;
+  z-index: -2;
+  width: 100%;
+  height: 100%;
+  animation: scale 25s ease-in-out;
+  -webkit-animation: scale 25s ease-in-out;
+}
+
+@keyframes scale {
+  from {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+  }
+  to {
+    transform: scale(2);
+    -webkit-transform: scale(2);
+    -ms-transform: scale(2);
+  }
+}
+@-webkit-keyframes scale {
+  from {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+  }
+  to {
+    transform: scale(2);
+    -webkit-transform: scale(2);
+    -ms-transform: scale(2);
+  }
+}
+/* CAROUSEL END */
+/* MAIN CONTENT START */
+.middleColumnParent {
+  background-color: var(--darkGrey);
+  display: grid;
+  grid-template-columns: 20% auto 20%;
+  min-height: 100vh;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.middleColumn {
+  z-index: 1;
+  background-color: var(--darkGrey);
+  box-shadow: 0px 0px 18px 8px rgba(0, 0, 0, 0.75);
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  justify-items: center;
+  text-align: center;
+  line-height: 4rem;
+}
+
+.middleColumn img {
+  width: 20rem;
+  max-width: 20rem;
+  height: 8rem;
+  max-height: 8rem;
+  display: block;
+}
+
+.latest,
+.upcoming {
+  color: var(--myWhite);
+  font-size: 1.9rem;
+}
+
+.latest img,
+.upcoming img {
+  transform: scale(1);
+  transition: 0.4s;
+}
+
+.latest img:hover,
+.upcoming img:hover {
+  transform: scale(1.1);
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.4rem;
+}
+
+.sidebar li {
+  padding-top: 4rem;
+}
+
+.sidebar .subTitle {
+  font-size: 1.3rem;
+  transition: 0.4s;
+  color: var(--myWhite);
+}
+
+.sidebar a:hover {
+  font-size: 1.7rem;
+}
+
+.sidebar .subMenu {
+  color: var(--lightGrey);
+  font-size: 1rem;
+}
+
+.sidebar .subMenu a {
+  color: var(--lightGrey);
+  font-size: 1rem;
+}
+/* MAIN CONTENT END */
+/* FOOTER START */
+.footerSection {
+  background-color: var(--myWhite);
+  height: 3rem;
+  font-family: "Archivo", sans-serif;
+  font-weight: 900;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.footerSection li {
+  padding: 0rem 1rem 0rem 1rem;
+}
+
+.footerSection a {
+  color: var(--mediumGrey);
+  font-size: 1.2rem;
+  transition: 0.4s;
+}
+
+.footerSection a.current {
+  color: var(--darkGrey);
+  font-size: 1.7rem;
+}
+
+.footerSection li a:hover {
+  color: var(--darkGrey);
+  font-size: 1.7rem;
+}
+/* FOOTER END */
+/* CATEGORIES START */
+.categoryDiv {
+  color: var(--myWhite);
+}
+
+.categoryDiv img {
+  transition: 0.4s;
+}
+
+.categoryDiv img:hover {
+  transform: scale(1.1);
+}
+/* CATEGORIES END */
+/* PAGES START */
+.leftColumn {
+  overflow: hidden;
+}
+
+.leftColumn img {
+  mix-blend-mode: multiply;
+  height: 100%;
+}
+
+.rightColumn {
+  overflow: hidden;
+}
+
+.rightColumn img {
+  mix-blend-mode: multiply;
+  height: 100%;
+}
+
+.header {
+  width: 100%;
+  height: 70vh;
+}
+
+.header img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  -o-object-fit: cover;
+}
+
+.middleColumnPages {
+  z-index: 2;
+  background-color: var(--darkGrey);
+  box-shadow: 0px 0px 18px 8px rgba(0, 0, 0, 0.75);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  word-spacing: 0.3rem;
+}
+
+.achievement {
+  border: 0.1rem solid var(--lightGrey);
+  word-spacing: 0rem;
+}
+
+.entryTitles {
+  line-height: 2rem;
+  color: var(--myWhite);
+  font-weight: 600;
+}
+
+.editableTitles {
+  padding-left: 1rem;
+  color: var(--lightGrey);
+  font-weight: 600;
+}
+
+.aboutGameSection {
+  line-height: 1.5rem;
+  font-size: 1.1rem;
+}
+
+.aboutGameSection h1,
+h2,
+h3 {
+  color: var(--myWhite);
+  font-weight: 900;
+  font-size: 1.6rem;
+  text-align: center;
+  font-family: "Archivo", sans-serif;
+  padding: 2rem 2rem;
+}
+
+.aboutGameSection p {
+  color: var(--lightGrey);
+  font-weight: 600;
+}
+
+.dlc-title {
+  text-decoration: underline;
+}
+
+.aboutGameSection ul {
+  padding-left: 1rem;
+}
+
+.aboutGameSection li {
+  list-style-type: disc;
+  color: var(--lightGrey);
+  font-weight: 600;
+}
+
+.aboutGameSection a {
+  color: var(--lightGrey);
+  text-decoration: underline;
+}
+/* PAGES END */
+/* ABOUT PAGE START */
+.aboutLogo {
+  display: block;
+  object-fit: cover;
+  -o-object-fit: cover;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* ABOUT PAGE END */
+@media only screen and (max-width: 900px) {
+  .sidebar {
+    display: none;
+  }
+  .aboutLogo {
+    max-width: 100%;
+    height: auto;
+  }
+  .middleColumnParent {
+    grid-template-columns: 10% auto 10%;
+  }
+}
+
+@media only screen and (max-width: 1060px) {
+  .navbarSection {
+    padding: 0;
+    margin: 0;
+  }
+  .navbarSection li {
+    display: flex;
+    margin-left: 5%;
+  }
+  .carouselSection {
+    height: 50vh;
+  }
+  .dropdown {
+    padding-left: 5%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .navbarSection {
+    display: block;
+    text-align: center;
+  }
+  .navbarSection .logo {
+    width: 5rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .navbarSection li {
+    display: none;
+    justify-content: center;
+    line-height: 2.5rem;
+  }
+  .dropdownContent {
+    display: none;
+  }
+  .dropdown:hover .dropdownContent {
+    display: none;
+  }
+  .carouselSection {
+    display: none;
+  }
+  .hamMenu {
+    display: inline-block;
+    width: 60px;
+    height: 40px;
+  }
+  .hamMenu:hover {
+    cursor: pointer;
+  }
+  .aboutGameSection {
+    word-break: break-word;
+  }
+  .dropdown {
+    padding-left: 0% !important;
+  }
+  .middleColumnParent {
+    grid-template-columns: 5% auto 5%;
+  }
+}
