@@ -2,30 +2,25 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="description" content="Privacy Policy">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="/main.css">
-    <title>Privacy Policy - AchievementRoadmaps.com</title>
+
+    <%- include('partials/head') %>
+
+        <meta name="description" content="Privacy Policy">
+        <meta property="og:url" content="https://www.achievementroadmaps.com/privacy-policy" />
+        <meta property="og:title" content="Privacy Policy" />
+        <meta property="og:site_name" content="Achievement Roadmaps">
+        <meta property="og:description" content="Privacy Policy" />
+        <meta property="og:type" content="article" />
+
+        <title>Privacy Policy - AchievementRoadmaps.com</title>
 </head>
 
 <body>
+
     <nav>
-        <ul class="navbarSection">
-            <a href="/"><img class="logo" src="/LogoFullGrey.svg" alt="Achievement Roadmaps Logo Icon"></a>
-            <img class="hamMenu" src="/navigation-menu.svg">
-            <li><a href="/">Home</a></li>
-            <li><a href="/roadmaps">Roadmaps</a></li>
-            <li><a href="/site-news">Site News</a></li>
-            <div class="dropdown">
-                <li><a href="/about">About</a></li>
-                <div class="dropdownContent">
-                    <li><a href="/about/contact">Contact</a></li>
-                </div>
-            </div>
-        </ul>
+        <%- include('partials/navbar') %>
     </nav>
+
     <section class="mainSection">
         <div class="middleColumnParent">
             <div class="leftColumn"></div>
@@ -55,10 +50,9 @@
         </div>
     </section>
     <footer>
-        <ul class="footerSection">
-            <li><a href="/privacy-policy">Privacy Policy</a></li>
-            <li><a href="/disclaimer.html">Disclaimer</a></li>
-        </ul>
+
+        <%- include('partials/footer') %>
+
     </footer>
     <script src="/main.js"></script>
 </body>

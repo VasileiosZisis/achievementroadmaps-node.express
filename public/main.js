@@ -46,17 +46,21 @@ handleTabletChange(mediaQuery);
 // ACTIVE CLASS
 (function () {
   const current = location.pathname.split('/')[1];
-  if (current === "") return;
+  const home = document.querySelector('#home');
+  if (current === "") return; 
+      
   const menuItems = document.querySelectorAll('.navbarSection a');
   for (let i = 0, len = menuItems.length; i < len; i++) {
-      if (menuItems[i].getAttribute("href").indexOf(current) !== -1) {
+    if (menuItems[i].getAttribute("href").indexOf(current) !== -1) {
           menuItems[i].className += " current";
+          home.classList.remove('current');
       }
   }
   const footerItems = document.querySelectorAll('.footerSection a');
   for (let i = 0, len = footerItems.length; i < len; i++) {
     if (footerItems[i].getAttribute("href").indexOf(current) !== -1) {
       footerItems[i].className += " current";
+      home.classList.remove('current');
     }
 }
 })();

@@ -237,7 +237,7 @@ body {
   font-size: 1.5rem;
 }
 
-.footerSection li a:hover {
+.footerSection a:hover {
   color: var(--darkGrey);
   font-size: 1.5rem;
 }

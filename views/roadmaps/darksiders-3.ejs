@@ -2,33 +2,19 @@
 <html lang="en">
 
 <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QJNEJZ02FG"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
 
-        gtag('config', 'G-QJNEJZ02FG');
-    </script>
+    <%- include('../partials/head') %>
 
-    <!-- Google Tag Manager -->
-    <script>(function (w, d, s, l, i) {
-            w[l] = w[l] || []; w[l].push({
-                'gtm.start':
-                    new Date().getTime(), event: 'gtm.js'
-            }); var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-WQWHH8Z');</script>
-    <!-- End Google Tag Manager -->
+        <meta name="description"
+            content="Darksiders 3 achievement roadmap. Guide to efficiently achieve 100% completion.">
+        <meta property="og:url" content="https://www.achievementroadmaps.com/roadmaps/darksiders-3" />
+        <meta property="og:title" content="Darksiders 3  Achievement Roadmap" />
+        <meta property="og:site_name" content="Achievement Roadmaps">
+        <meta property="og:description"
+            content="Darksiders 3  achievement roadmap. Guide to efficiently achieve 100% completion." />
+        <meta property="og:type" content="article" />
 
-    <meta charset="UTF-8">
-    <meta name="description" content="Darksiders 3 achievement roadmap. Guide to efficiently achieve 100% completion.">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="/main.css">
-    <title>Darksiders 3 Achievement Roadmap - AchievementRoadmaps.com</title>
+        <title>Darksiders 3 Achievement Roadmap - AchievementRoadmaps.com</title>
 </head>
 
 <body>
@@ -36,21 +22,13 @@
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WQWHH8Z" height="0" width="0"
             style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
+
     <nav>
-        <ul class="navbarSection">
-            <a href="/"><img class="logo" src="/LogoFullGrey.svg" alt="Achievement Roadmaps Logo Icon"></a>
-            <img class="hamMenu" src="/navigation-menu.svg">
-            <li><a href="/">Home</a></li>
-            <li><a href="/roadmaps">Roadmaps</a></li>
-            <li><a href="/site-news">Site News</a></li>
-            <div class="dropdown">
-                <li><a href="/about">About</a></li>
-                <div class="dropdownContent">
-                    <li><a href="/about/contact">Contact</a></li>
-                </div>
-            </div>
-        </ul>
+
+        <%- include('../partials/navbar') %>
+
     </nav>
+
     <section class="header">
         <img src="/DS3HQ2.png" alt="Darksiders 3 Cover">
     </section>
@@ -126,12 +104,13 @@
             </div>
         </div>
     </section>
+
     <footer>
-        <ul class="footerSection">
-            <li><a href="/privacy-policy">Privacy Policy</a></li>
-            <li><a href="/disclaimer.html">Disclaimer</a></li>
-        </ul>
+
+        <%- include('../partials/footer') %>
+
     </footer>
+
     <script src="/main.js"></script>
 </body>
 
