@@ -33,6 +33,9 @@ app.get('/roadmaps/darksiders-3', (req, res) => {
 app.get('/roadmaps/darkwood', (req, res) => {
     res.render('./roadmaps/darkwood')
 })
+app.get('/roadmaps/elderborn', (req, res) => {
+    res.render('./roadmaps/elderborn')
+})
 app.get('/roadmaps/final-exam', (req, res) => {
     res.render('./roadmaps/final-exam')
 })
