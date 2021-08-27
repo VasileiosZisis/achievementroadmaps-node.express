@@ -5,6 +5,7 @@
   --mediumGrey: #474a4f;
   --lightGrey: #808488;
   --myWhite: #f2f2f2;
+  --textWhite: #d3d3d3;
 }
 
 * {
@@ -297,8 +298,11 @@ body {
 }
 
 .achievement {
-  border: 0.1rem solid var(--lightGrey);
+  border: 0.1rem solid var(--mediumGrey);
   word-spacing: 0rem;
+  white-space: nowrap;
+  background-color: var(--mediumGrey);
+  color: var(--textWhite);
 }
 
 .entryTitles {
