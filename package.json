@@ -1,5 +1,5 @@
 {
-  "name": "achievement roadmaps",
+  "name": "achievement-roadmaps",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,12 +8,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@bitbucket.org/GoneAway/achievementroadmapsv2.git"
+    "url": "git+ssh://git@bitbucket.org/GoneAway/achievementroadmaps.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "homepage": "https://bitbucket.org/GoneAway/achievementroadmapsv2#readme",
+  "homepage": "https://bitbucket.org/GoneAway/achievementroadmaps#readme",
   "dependencies": {
     "ejs": "^3.1.6",
     "express": "^4.17.1",
