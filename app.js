@@ -1,3 +1,7 @@
+if (process.env.NODE_ENV !=="production") {
+    require('dotenv').config();
+}
+
 const express = require('express');
 const app = express();
 const path = require('path');
@@ -62,17 +66,18 @@ app.get('/about', (req, res) => {
 app.get('/about/contact', (req, res) => {
     res.render('./about/contact')
 })
-//about end
 app.get('/site-news', (req, res) => {
     res.render('site-news')
 })
+//about end
+//footer start
 app.get('/privacy-policy', (req, res) => {
     res.render('privacy-policy')
 })
 app.get('/disclaimer', (req, res) => {
     res.render('disclaimer')
 })
-
+//footer end
 app.listen(3000, () => {
     console.log('Serving port 3000')
 })
