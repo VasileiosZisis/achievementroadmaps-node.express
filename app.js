@@ -78,6 +78,7 @@ app.get('/disclaimer', (req, res) => {
     res.render('disclaimer')
 })
 //footer end
-app.listen(3000, () => {
-    console.log('Serving port 3000')
+const port = process.env.PORT || 3000;
+app.listen(port, () => {
+    console.log('Serving port ${port}')
 })
