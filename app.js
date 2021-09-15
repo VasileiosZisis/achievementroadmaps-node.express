@@ -59,6 +59,7 @@ app.get('/roadmaps/xcom-chimera-squad', (req, res) => {
     res.render('./roadmaps/xcom-chimera-squad')
 })
 //roadmaps end
+
 //about start
 app.get('/about', (req, res) => {
     res.render('./about/about')
@@ -70,6 +71,7 @@ app.get('/site-news', (req, res) => {
     res.render('site-news')
 })
 //about end
+
 //footer start
 app.get('/privacy-policy', (req, res) => {
     res.render('privacy-policy')
@@ -78,6 +80,13 @@ app.get('/disclaimer', (req, res) => {
     res.render('disclaimer')
 })
 //footer end
+
+//sitemap
+app.get('/sitemap.xml', function( req, res, next ) {
+    res.header('Content-Type', 'application/xml');
+    res.render( 'sitemap' );
+});
+
 const port = process.env.PORT || 3000;
 app.listen(port, () => {
     console.log(`Serving ${port}`)
