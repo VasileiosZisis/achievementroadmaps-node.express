@@ -356,6 +356,10 @@ h3 {
   color: var(--lightGrey);
   text-decoration: underline;
 }
+
+.aboutGameSection a:hover {
+  color: var(--myWhite);
+}
 /* PAGES END */
 /* ABOUT PAGE START */
 .aboutLogo {
