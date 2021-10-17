@@ -1,19 +1,19 @@
 image: node:10.15.0
 clone:
   depth: full
-  
+
 pipelines:
   default:
-      - step:
+    - step:
         name: Build and test
         script:
           - npm install
           - npm test
-          - zip -r achievementroadmaps.zip
-          artifacts: 
-          - achievementroadmaps.zip
-     - step:
-        name: Deploy to production
+          - zip -r build-$BITBUCKET_BUILD_NUMBER.zip .
+        artifacts: 
+          - build-*.zip
+    - step:
+        name: Deploy to Production
         deployment: production
         caches:
           - node
@@ -22,4 +22,4 @@ pipelines:
             variables:
               HEROKU_API_KEY: $HEROKU_API_KEY
               HEROKU_APP_NAME: $HEROKU_APP_NAME
-              ZIP_FILE: achievementroadmaps.zip
+              ZIP_FILE: build-$BITBUCKET_BUILD_NUMBER.zip
