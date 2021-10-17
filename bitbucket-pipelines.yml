@@ -9,8 +9,8 @@ pipelines:
         script:
           - npm install
           - npm test
-          - sudo apt-get update
-          - sudo apt-get install zip
+          - apt-get update
+          - apt-get install zip
           - zip -r build-$BITBUCKET_BUILD_NUMBER.zip .
         artifacts: 
           - build-*.zip
