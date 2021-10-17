@@ -9,6 +9,7 @@ pipelines:
         script:
           - npm install
           - npm test
+          - npm run build
           - zip -r build-$BITBUCKET_BUILD_NUMBER.zip .
         artifacts: 
           - build-*.zip
