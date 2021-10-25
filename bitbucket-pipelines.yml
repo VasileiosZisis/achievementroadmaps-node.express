@@ -7,12 +7,11 @@ pipelines:
     - step:
         name: Build and test
         script:
-          - cd build
           - npm install
           - npm test
           - apt-get update
           - apt-get install tar
-          - tar czfv build-$BITBUCKET_BUILD_NUMBER.tgz build
+          - tar czfv build-$BITBUCKET_BUILD_NUMBER.tgz $BITBUCKET_CLONE_DIR -C / -T
         artifacts: 
           - build-*.tgz
     - step:
