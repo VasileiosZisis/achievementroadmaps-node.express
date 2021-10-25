@@ -11,7 +11,7 @@ pipelines:
           - npm test
           - apt-get update
           - apt-get install tar
-          - tar czfv build-$BITBUCKET_BUILD_NUMBER.tgz $BITBUCKET_CLONE_DIR -C / -T -
+          - tar czfv build-$BITBUCKET_BUILD_NUMBER.tgz -C / $BITBUCKET_CLONE_DIR 
         artifacts: 
           - build-*.tgz
     - step:
