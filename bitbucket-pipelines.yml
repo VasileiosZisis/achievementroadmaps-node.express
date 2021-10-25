@@ -11,7 +11,7 @@ pipelines:
           - npm test
           - apt-get update
           - apt-get install tar
-          - tar czfv build-$BITBUCKET_BUILD_NUMBER.tgz build/
+          - git archive --format=tar.gz master -o build-$BITBUCKET_BUILD_NUMBER.tgz
         artifacts: 
           - build-*.tgz
     - step:
