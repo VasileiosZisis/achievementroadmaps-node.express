@@ -11,9 +11,9 @@ pipelines:
           - npm test
           - apt-get update
           - apt-get install tar
-          - tar -r build-$BITBUCKET_BUILD_NUMBER.tgz
+          - tar -r build-$BITBUCKET_BUILD_NUMBER.tar
         artifacts: 
-          - build-*.tgz
+          - build-*.tar
     - step:
         name: Deploy to Production
         deployment: production
