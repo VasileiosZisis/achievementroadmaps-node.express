@@ -91,6 +91,135 @@ body {
   display: block;
 }
 /* NAVBAR END */
+/* INTRO START */
+.intro {
+  height: auto;
+  margin: 5%;
+}
+
+#svg1 {
+  position: relative;
+  display: block;
+  width: 80%;
+  height: 90%;
+  margin: auto;
+  transform: scale(1.3);
+  -webkit-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+}
+#road-shape {
+  animation: hideShape 1s forwards 2s ease;
+  -webkit-animation: hideShape 1s forwards 2s ease;
+}
+
+#a11 {
+  animation: moveToCenterA 1s forwards 1s;
+  -webkit-animation: moveToCenterA 1s forwards 1s;
+}
+
+#r21 {
+  animation: moveToCenterR 1s forwards 1s;
+  -webkit-animation: moveToCenterR 1s forwards 1s;
+}
+
+.disappear {
+  animation: removeLetter 0.5s forwards 1s;
+  -webkit-animation: removeLetter 0.5s forwards 1s;
+}
+
+#final-shape {
+  fill: transparent;
+  stroke: transparent;
+  animation: appear 1s forwards 2s;
+  -webkit-animation: appear 1s forwards 2s;
+}
+
+@keyframes moveToCenterA {
+  from {
+    transform: translate(-32.71px, -155.16px);
+  }
+  to {
+    transform: translate(-18px, -152.25px);
+  }
+}
+@-webkit-keyframes moveToCenterA {
+  from {
+    transform: translate(-32.71px, -155.16px);
+    -webkit-transform: translate(-32.71px, -155.16px);
+    -ms-transform: translate(-32.71px, -155.16px);
+  }
+  to {
+    transform: translate(-18px, -152.25px);
+    -webkit-transform: translate(-18px, -152.25px);
+    -ms-transform: translate(-18px, -152.25px);
+  }
+}
+
+@keyframes moveToCenterR {
+  from {
+    transform: translate(-32.71px, -155.16px);
+  }
+  to {
+    transform: translate(-19.31px, -157.86px);
+  }
+}
+@-webkit-keyframes moveToCenterR {
+  from {
+    transform: translate(-32.71px, -155.16px);
+    -webkit-transform: translate(-32.71px, -155.16px);
+    -ms-transform: translate(-32.71px, -155.16px);
+  }
+  to {
+    transform: translate(-19.31px, -157.86px);
+    -webkit-transform: translate(-19.31px, -157.86px);
+    -ms-transform: translate(-19.31px, -157.86px);
+  }
+}
+
+@keyframes removeLetter {
+  to {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes removeLetter {
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes hideShape {
+  to {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes hideShape {
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes appear {
+  from {
+    fill: transparent;
+    stroke: transparent;
+  }
+  to {
+    fill: var(--darkGrey);
+    stroke: var(--myWhite);
+  }
+}
+@-webkit-keyframes appear {
+  from {
+    fill: transparent;
+    stroke: transparent;
+  }
+  to {
+    fill: var(--darkGrey);
+    stroke: var(--myWhite);
+  }
+}
+
+/* INTRO END */
 /* CAROUSEL START */
 .carouselSection {
   z-index: -1;
@@ -172,12 +301,16 @@ body {
 .latest img,
 .upcoming img {
   transform: scale(1);
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
   transition: 0.4s;
 }
 
 .latest img:hover,
 .upcoming img:hover {
   transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
 }
 
 .sidebar {
@@ -254,6 +387,8 @@ body {
 
 .categoryDiv img:hover {
   transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
 }
 /* CATEGORIES END */
 /* PAGES START */
