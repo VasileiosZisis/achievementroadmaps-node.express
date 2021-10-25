@@ -11,7 +11,7 @@ pipelines:
           - npm test
           - apt-get update
           - apt-get install tar
-          - tar czfv build-$BITBUCKET_BUILD_NUMBER.tgz
+          - tar czfv build-$BITBUCKET_BUILD_NUMBER.tgz /achievementroadmaps
         artifacts: 
           - build-*.tgz
     - step:
@@ -24,4 +24,4 @@ pipelines:
             variables:
               HEROKU_API_KEY: $HEROKU_API_KEY
               HEROKU_APP_NAME: $HEROKU_APP_NAME
-              ZIP_FILE: build-$BITBUCKET_BUILD_NUMBER.zip
+              ZIP_FILE: build-$BITBUCKET_BUILD_NUMBER.tgz
