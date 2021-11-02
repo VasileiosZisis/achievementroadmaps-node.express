@@ -61,6 +61,9 @@ app.get('/roadmaps/xcom-chimera-squad', (req, res) => {
 app.get('/roadmaps/darksiders-genesis', (req, res) => {
     res.render('./roadmaps/darksiders-genesis')
 })
+app.get('/roadmaps/nowhere-prophet', (req, res) => {
+    res.render('./roadmaps/nowhere-prophet')
+})
 //roadmaps end
 
 //about start
