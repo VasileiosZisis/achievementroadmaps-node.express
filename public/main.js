@@ -13,25 +13,24 @@ hamMenu.addEventListener("click", function onClick() {
   }  
 })
 
+let slides = document.querySelectorAll(".CarouselIMG");
+
 window.addEventListener('load', function (){
   showSlides();
 });
 
 let carouselItem = 0;
-function showSlides() {
-  let slides = document.getElementsByClassName("CarouselIMG");
-  
+function showSlides() {   
     for (let i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
   }
     carouselItem++;
     if (carouselItem > slides.length) {
     carouselItem = 1
-    }
+  }
   slides[carouselItem-1].style.display = "block";
-  setTimeout(showSlides, 3500);  
+  setTimeout(showSlides, 3500);
 }
-// showSlides();
 
 function handleTabletChange(e) {
   if (e.matches) {
