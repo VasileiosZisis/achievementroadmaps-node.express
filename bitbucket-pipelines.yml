@@ -10,8 +10,6 @@ pipelines:
           - node
         script:
           - npm install
-          - apt-get update
-          - apt-get install tar
           - git archive --format=tar.gz master -o build-$BITBUCKET_BUILD_NUMBER.tgz
         artifacts: 
           - build-*.tgz
