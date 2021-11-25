@@ -516,16 +516,9 @@ h3 {
   height: auto;
 }
 /* ABOUT PAGE END */
-@media only screen and (max-width: 900px) {
-  .sidebar {
-    display: none;
-  }
-  .middleColumnParent {
-    grid-template-columns: 10% auto 10%;
-  }
-}
 
-@media only screen and (max-width: 1060px) {
+/* 1060px */
+@media only screen and (max-width: 66.25em) {
   .navbarSection {
     padding: 0;
     margin: 0;
@@ -542,7 +535,18 @@ h3 {
   }
 }
 
-@media only screen and (max-width: 600px) {
+/* 900px */
+@media only screen and (max-width: 56.25em) {
+  .sidebar {
+    display: none;
+  }
+  .middleColumnParent {
+    grid-template-columns: 10% auto 10%;
+  }
+}
+
+/* 600px */
+@media only screen and (max-width: 37.5em) {
   .navbarSection {
     display: block;
     text-align: center;

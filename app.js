@@ -64,6 +64,9 @@ app.get('/roadmaps/darksiders-genesis', (req, res) => {
 app.get('/roadmaps/nowhere-prophet', (req, res) => {
     res.render('./roadmaps/nowhere-prophet')
 })
+app.get('/roadmaps/resident-evil-3', (req, res) => {
+    res.render('./roadmaps/resident-evil-3')
+})
 //roadmaps end
 
 //about start
