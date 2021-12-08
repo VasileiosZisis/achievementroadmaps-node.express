@@ -67,6 +67,9 @@ app.get('/roadmaps/nowhere-prophet', (req, res) => {
 app.get('/roadmaps/resident-evil-3', (req, res) => {
     res.render('./roadmaps/resident-evil-3')
 })
+app.get('/roadmaps/bullets-per-minute', (req, res) => {
+    res.render('./roadmaps/bullets-per-minute')
+})
 //roadmaps end
 
 //about start
