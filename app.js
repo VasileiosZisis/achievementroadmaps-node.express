@@ -70,6 +70,9 @@ app.get('/roadmaps/resident-evil-3', (req, res) => {
 app.get('/roadmaps/bullets-per-minute', (req, res) => {
     res.render('./roadmaps/bullets-per-minute')
 })
+app.get('/roadmaps/metro-exodus', (req, res) => {
+    res.render('./roadmaps/metro-exodus')
+})
 //roadmaps end
 
 //about start
