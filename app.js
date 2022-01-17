@@ -73,6 +73,9 @@ app.get('/roadmaps/bullets-per-minute', (req, res) => {
 app.get('/roadmaps/metro-exodus', (req, res) => {
     res.render('./roadmaps/metro-exodus')
 })
+app.get('/roadmaps/sekiro-shadows-die-twice', (req, res) => {
+    res.render('./roadmaps/sekiro-shadows-die-twice')
+})
 //roadmaps end
 
 //about start

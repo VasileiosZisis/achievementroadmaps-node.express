@@ -53,18 +53,16 @@ body {
 
 .navbarSection a {
   font-size: 1.5rem;
-  transition: 0.4s;
+  transition: 0.2s;
   color: var(--mediumGrey);
 }
 
 .navbarSection a:hover,
 .navbarSection a:focus {
-  font-size: 1.8rem;
   color: var(--darkGrey);
 }
 
 .navbarSection a.current {
-  font-size: 1.8rem;
   color: var(--darkGrey);
 }
 
@@ -85,7 +83,6 @@ body {
 
 .dropdownContent:hover,
 .dropdownContent:focus {
-  font-size: 1.8rem;
   color: var(--darkGrey);
 }
 
@@ -285,6 +282,7 @@ body {
   justify-items: center;
   text-align: center;
   line-height: 4rem;
+  padding-bottom: 5rem;
 }
 
 .middleColumn img {
@@ -303,9 +301,7 @@ body {
 
 .latest img,
 .upcoming img {
-  transform: scale(1);
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
+  border: 1px solid var(--darkGrey);
   transition: 0.4s;
 }
 
@@ -313,9 +309,9 @@ body {
 .latest img:focus,
 .upcoming img:hover,
 .upcoming img:focus {
-  transform: scale(1.1);
-  -webkit-transform: scale(1.1);
-  -ms-transform: scale(1.1);
+  transform: perspective(50px) translateZ(5px);
+  -webkit-transform: perspective(50px) translateZ(5px);
+  -ms-transform: perspective(50px) translateZ(5px);
 }
 
 .sidebar {
@@ -330,23 +326,28 @@ body {
 
 .sidebar .subTitle {
   font-size: 1.3rem;
-  transition: 0.4s;
+  transition: 0.2s;
   color: var(--myWhite);
 }
 
 .sidebar a:hover,
 .sidebar a:focus {
-  font-size: 1.7rem;
+  color: var(--lightGrey);
 }
 
-.sidebar .subMenu {
+.subMenu {
   color: var(--lightGrey);
   font-size: 1rem;
 }
 
-.sidebar .subMenu a {
+.subMenu a {
   color: var(--lightGrey);
   font-size: 1rem;
+}
+
+.subMenu a:hover,
+.subMenu a:focus {
+  color: var(--myWhite);
 }
 /* MAIN CONTENT END */
 /* FOOTER START */
@@ -369,7 +370,7 @@ body {
 .footerSection a {
   color: var(--mediumGrey);
   font-size: 1.2rem;
-  transition: 0.4s;
+  transition: 0.2s;
 }
 
 .footerSection a.current {
@@ -380,7 +381,6 @@ body {
 .footerSection a:hover,
 .footerSection a:focus {
   color: var(--darkGrey);
-  font-size: 1.5rem;
 }
 /* FOOTER END */
 /* CATEGORIES START */
@@ -389,14 +389,15 @@ body {
 }
 
 .categoryDiv img {
+  border: 1px solid var(--darkGrey);
   transition: 0.4s;
 }
 
 .categoryDiv img:hover,
 .categoryDiv img:focus {
-  transform: scale(1.1);
-  -webkit-transform: scale(1.1);
-  -ms-transform: scale(1.1);
+  transform: perspective(50px) translateZ(5px);
+  -webkit-transform: perspective(50px) translateZ(5px);
+  -ms-transform: perspective(50px) translateZ(5px);
 }
 /* CATEGORIES END */
 /* PAGES START */
