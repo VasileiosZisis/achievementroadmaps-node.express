@@ -6,27 +6,48 @@ const steam = new SteamAPI("3C128AC38062B1A86CD2A0E2E14F4D32");
 async function createFile(filename) {
   this.filename = filename;
 
-  // try {
-  //   fs.accessSync(this.filename);
-  // } catch (err) {
-  //   fs.writeFileSync(this.filename, "[]");
-  // }
-
   steam.getGameSchema("814380").then((data) => {
-    // console.log(
-    //   util.inspect(data, { showHidden: true, depth: null, colors: true })
+    // parse json
+    const jsonObj = JSON.parse(data.availableGameStats.achievements);
+    console.log(jsonObj);
+    // data.availableGameStats.achievements.map(
+    //   (x) =>
+    //     fs.promises.writeFile(
+    //       this.filename,
+    //       JSON.stringify(x.displayName, null, 2)
+    //     )
+    //   console.log(
+    //     util.inspect(x.displayName, {
+    //       showHidden: true,
+    //       depth: null,
+    //       colors: true,
+    //     })
+    //   )
     // );
-    fs.promises.writeFile(this.filename, JSON.stringify(data, null, 2));
   });
+
+  // fs.promises.writeFile(this.filename, JSON.stringify(data, null, 2));
 }
 
-createFile("sekiro.json");
+steam.getGameSchema("814380").then((data) => {
+  const firstObject = { ...data.availableGameStats.achievements };
+  for (const prop in firstObject) {
+    const { name, defaultvalue, hidden, icongray, ...secondObject } =
+      firstObject[prop];
+    console.log(secondObject);
+  }
 
-//   async getFile() {
-//     return JSON.parse(
-//       await fs.promises.readFile(this.filename, {
-//         encoding: "utf8",
-//       })
-//     );
-//   }
-// }
+  // stringify JSON Object
+  // const jsonContent = JSON.stringify(picked, null, 2);
+  // console.log(jsonContent);
+  // fs.writeFile("output.json", jsonContent, "utf8", function (err) {
+  //   if (err) {
+  //     console.log("An error occured while writing JSON Object to File.");
+  //     return console.log(err);
+  //   }
+
+  //   console.log("JSON file has been saved.");
+  // });
+});
+
+// createFile("sekiro.json");
