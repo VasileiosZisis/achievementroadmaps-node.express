@@ -8,16 +8,23 @@
   color: var(--textWhite);
 }
 
-.achievement:hover {
+.achievement:hover,
+.achievement:focus,
+.achievement:active {
   border: 0.1rem solid var(--textWhite);
+  cursor: pointer;
 }
 
-.achievement .tooltiptext {
+.achievement .tooltip-content {
+  display: flex;
+  white-space: normal;
   visibility: hidden;
-  width: fit-content;
-  background-color: #555;
-  color: #fff;
+  width: max-content;
+  max-width: 350px;
   text-align: center;
+  background-color: var(--darkGrey);
+  border: 0.1rem solid var(--textWhite);
+  color: var(--textWhite);
   border-radius: 6px;
   padding: 5px;
   position: absolute;
@@ -28,7 +35,9 @@
   transition: opacity 0.3s;
 }
 
-.achievement:hover .tooltiptext {
+.achievement:hover .tooltip-content,
+.achievement:focus .tooltip-content,
+.achievement:active .tooltip-content {
   visibility: visible;
   opacity: 1;
 }
