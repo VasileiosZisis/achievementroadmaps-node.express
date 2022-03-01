@@ -36,4 +36,4 @@ async function createFile(filename) {
   });
 }
 
-// createFile("vampyr.json");
+// createFile("vampyr.js");
