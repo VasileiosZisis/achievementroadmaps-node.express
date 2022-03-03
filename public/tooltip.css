@@ -15,7 +15,7 @@
   cursor: pointer;
 }
 
-.achievement .tooltip-content {
+.tooltip-content {
   display: flex;
   white-space: normal;
   visibility: hidden;
@@ -28,11 +28,16 @@
   border-radius: 6px;
   padding: 5px;
   position: absolute;
-  z-index: 1;
+  z-index: 100;
   bottom: 125%;
-  left: 0;
   opacity: 0;
   transition: opacity 0.3s;
+}
+
+.tooltip-text {
+  text-align: center;
+  margin: auto;
+  padding-inline: 5px;
 }
 
 .achievement:hover .tooltip-content,

@@ -7,21 +7,11 @@ async function createFile(filename) {
   this.filename = filename;
 
   steam.getGameSchema("427290").then((data) => {
-    // console.log(
-    //   util.inspect(data, { showHidden: true, depth: null, colors: true })
-    // );
-
-    const achievements = JSON.parse(
-      JSON.stringify(data.availableGameStats.achievements, [
-        "displayName",
-        "description",
-        "icon",
-      ])
-    );
+    const ach = JSON.parse(JSON.stringify(data.availableGameStats));
 
     fs.writeFile(
       "./public/ach_local/" + this.filename,
-      JSON.stringify(achievements, null, 2),
+      JSON.stringify(ach, null, 2),
       "utf8",
       function (err) {
         if (err) {
@@ -29,11 +19,15 @@ async function createFile(filename) {
           return console.log(err);
         }
         console.log(
-          "--- " + `${achievements.length}` + " achievements saved ---"
+          util.inspect(data.availableGameStats, {
+            showHidden: true,
+            depth: null,
+            colors: true,
+          })
         );
       }
     );
   });
 }
 
-// createFile("vampyr.js");
+// createFile("vampyr.json");
