@@ -69,19 +69,15 @@ const parents = document.querySelectorAll('.achievement');
 
 for (let i = 0; i < parents.length; i++) {
   parents[i].addEventListener('mousemove', (e) => {
+    const rect = parents[i].getBoundingClientRect();
     const tooltip = e.target.querySelector(':scope > .tooltip-content');
+
     if (tooltip) {
-      if (e.pageX + tooltip.getBoundingClientRect().width < document.body.offsetWidth) {
-        // console.log(e.pageX + tooltip.offsetWidth);
-        tooltip.style.left = 0;
-      } else {
-        tooltip.style.right = 0;
+      const rectTo = tooltip.getBoundingClientRect();
+
+      if (rectTo.right > document.body.offsetWidth) {
+        tooltip.style.left = document.body.offsetWidth - rectTo.right - 10 + 'px';
       }
-    } else {
-      return;
     }
   });
 }
-// (e.pageX + tooltip.clientWidth + 10 < document.body.clientWidth)
-//           ? (e.pageX + 10 + "px")
-//           : (document.body.clientWidth + 5 - tooltip.clientWidth + "px");
