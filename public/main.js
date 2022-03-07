@@ -1,6 +1,5 @@
 const hamMenu = document.querySelector('.hamMenu');
 const links = document.querySelectorAll('.navbarSection li');
-const mediaQuery = window.matchMedia('(min-device-width: 600px)');
 
 hamMenu.addEventListener('click', function onClick() {
   for (let i = 0; i < links.length; i++) {
@@ -31,6 +30,8 @@ function showSlides() {
   setTimeout(showSlides, 3500);
 }
 
+const mediaQuery = window.matchMedia('(min-device-width: 600px)');
+
 function handleTabletChange(e) {
   if (e.matches) {
     for (let i = 0; i < links.length; i++) {
@@ -42,6 +43,7 @@ mediaQuery.addListener(handleTabletChange);
 handleTabletChange(mediaQuery);
 
 // ACTIVE CLASS
+
 (function () {
   const current = location.pathname.split('/')[1];
   const home = document.querySelector('#home');
@@ -78,6 +80,22 @@ for (let i = 0; i < parents.length; i++) {
       if (rectTo.right > document.body.offsetWidth) {
         tooltip.style.left = document.body.offsetWidth - rectTo.right - 10 + 'px';
       }
+    }
+  });
+}
+
+// TOGGLEABLE DIV
+
+const buttonAch = document.querySelector('.achievement-button');
+const listAch = document.querySelector('.achievement-ul');
+
+if (buttonAch) {
+  buttonAch.addEventListener('click', function onClick() {
+    const listAchDisplay = getComputedStyle(listAch);
+    if (listAchDisplay.display === 'none') {
+      listAch.style.display = 'block';
+    } else {
+      listAch.style.display = 'none';
     }
   });
 }

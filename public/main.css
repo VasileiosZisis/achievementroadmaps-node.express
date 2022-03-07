@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Archivo&family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo&family=Nunito+Sans&display=swap');
 
 :root {
   --darkGrey: #222629;
@@ -22,7 +22,7 @@
 html,
 body {
   height: 100%;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
   overflow-x: hidden;
 }
 /* NAVBAR START */
@@ -60,11 +60,11 @@ body {
 
 .navbarSection a:hover,
 .navbarSection a:focus {
-  color: var(--darkGrey);
+  color: var(--lightGrey);
 }
 
 .navbarSection a.current {
-  color: var(--darkGrey);
+  color: var(--lightGrey);
 }
 
 .dropdown {
@@ -351,6 +351,55 @@ body {
   color: var(--myWhite);
 }
 /* MAIN CONTENT END */
+/* ACHIEVEMENT LIST START */
+.achievement-list-section {
+  background-color: var(--darkGrey);
+  color: var(--textWhite);
+  display: grid;
+  grid-template-columns: 20% auto 20%;
+  padding-bottom: 2rem;
+  justify-content: center;
+}
+
+.achievement-list-section li {
+  background-color: var(--mediumGrey);
+  display: flex;
+  flex-direction: row;
+  padding: 0.5rem;
+  border: 0.3rem solid var(--darkGrey);
+}
+
+.list-text {
+  padding-left: 0.5rem;
+}
+
+.button-container {
+  background-color: var(--darkGrey);
+  text-align: center;
+  position: relative;
+}
+
+.achievement-button {
+  width: 100%;
+  color: var(--textWhite);
+  cursor: pointer;
+  background-color: var(--darkGrey);
+  border: solid 0.1rem var(--darkGrey);
+  border-radius: 2%;
+  transition: 0.4s;
+}
+
+.achievement-button:hover,
+.achievement-button:focus,
+.achievement-button:active {
+  border: solid 0.1rem var(--myWhite);
+}
+
+.achievement-ul {
+  display: none;
+}
+
+/* ACHIEVEMENT LIST END */
 /* FOOTER START */
 .footerSection {
   background-color: var(--myWhite);
@@ -375,13 +424,13 @@ body {
 }
 
 .footerSection a.current {
-  color: var(--darkGrey);
+  color: var(--lightGrey);
   font-size: 1.5rem;
 }
 
 .footerSection a:hover,
 .footerSection a:focus {
-  color: var(--darkGrey);
+  color: var(--lightGrey);
 }
 /* FOOTER END */
 /* CATEGORIES START */
@@ -461,7 +510,8 @@ body {
 
 .aboutGameSection h1,
 h2,
-h3 {
+h3,
+h4 {
   color: var(--myWhite);
   font-weight: 900;
   font-size: 1.6rem;
@@ -534,7 +584,8 @@ h3 {
   .sidebar {
     display: none;
   }
-  .middleColumnParent {
+  .middleColumnParent,
+  .achievement-list-section {
     grid-template-columns: 10% auto 10%;
   }
 }
@@ -580,7 +631,8 @@ h3 {
   .dropdown {
     padding-left: 0% !important;
   }
-  .middleColumnParent {
+  .middleColumnParent,
+  .achievement-list-section {
     grid-template-columns: 5% auto 5%;
   }
 }

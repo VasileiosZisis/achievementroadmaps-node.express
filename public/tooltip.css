@@ -8,9 +8,7 @@
   color: var(--textWhite);
 }
 
-.achievement:hover,
-.achievement:focus,
-.achievement:active {
+.achievement:hover {
   border: 0.1rem solid var(--textWhite);
   cursor: pointer;
 }
@@ -40,9 +38,7 @@
   padding-inline: 5px;
 }
 
-.achievement:hover .tooltip-content,
-.achievement:focus .tooltip-content,
-.achievement:active .tooltip-content {
+.achievement:hover .tooltip-content {
   visibility: visible;
   opacity: 1;
 }
