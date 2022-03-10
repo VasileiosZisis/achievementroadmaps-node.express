@@ -11,6 +11,8 @@ hamMenu.addEventListener('click', function onClick() {
   }
 });
 
+// CAROUSEL
+
 let slides = document.querySelectorAll('.CarouselIMG');
 
 window.addEventListener('load', function () {

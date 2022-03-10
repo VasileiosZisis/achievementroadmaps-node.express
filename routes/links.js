@@ -1,5 +1,7 @@
 const express = require('express');
+const { append } = require('express/lib/response');
 const util = require('util');
+const ExpressError = require('../ExpressError.js');
 
 const router = express.Router();
 
@@ -87,5 +89,16 @@ router.get('/disclaimer', (req, res) => {
   res.render('disclaimer');
 });
 //footer end
+
+//error
+router.all('*', (req, res, next) => {
+  next(new ExpressError('PAGE NOT FOUND', 404));
+});
+
+router.use((err, req, res, next) => {
+  const { statusCode = 500 } = err;
+  if (!err.message) err.message = 'Somethign went wrong!';
+  res.status(statusCode).render('error', { err });
+});
 
 module.exports = router;

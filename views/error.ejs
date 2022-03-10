@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('partials/head') %>
+
+    <meta name="description" content="error page" />
+    <meta property="og:url" content="https://www.achievementroadmaps.com/error" />
+    <meta property="og:title" content="Error" />
+    <meta property="og:site_name" content="Achievement Roadmaps" />
+    <meta property="og:description" content="About achievementroadmaps.com." />
+    <meta property="og:type" content="article" />
+
+    <title>Error - AchievementRoadmaps.com</title>
+  </head>
+
+  <body>
+    <nav><%- include('partials/navbar') %></nav>
+
+    <section class="mainSection">
+      <div class="middleColumnParent">
+        <div class="leftColumn"></div>
+        <div class="middleColumnPages">
+          <div class="aboutGameSection">
+            <h1><%= err.message %></h1>
+          </div>
+        </div>
+        <div class="rightColumn"></div>
+      </div>
+    </section>
+
+    <footer><%- include('partials/footer') %></footer>
+
+    <script src="/main.js"></script>
+  </body>
+</html>
