@@ -399,6 +399,11 @@ body {
   display: none;
 }
 
+.achievement-ul img {
+  width: 4rem;
+  height: 4rem;
+}
+
 /* ACHIEVEMENT LIST END */
 /* FOOTER START */
 .footerSection {

@@ -46,9 +46,11 @@ router.get('/roadmaps/vampyr', (req, res) => {
   res.render('./roadmaps/vampyr', { ...vampyrAch });
 });
 
+const chimeraAch = require('../public/ach_local/xcom-chimera-squad.json');
 router.get('/roadmaps/xcom-chimera-squad', (req, res) => {
-  res.render('./roadmaps/xcom-chimera-squad');
+  res.render('./roadmaps/xcom-chimera-squad', { ...chimeraAch });
 });
+
 router.get('/roadmaps/darksiders-genesis', (req, res) => {
   res.render('./roadmaps/darksiders-genesis');
 });
@@ -64,9 +66,12 @@ router.get('/roadmaps/bullets-per-minute', (req, res) => {
 router.get('/roadmaps/metro-exodus', (req, res) => {
   res.render('./roadmaps/metro-exodus');
 });
+
+const sekiroAch = require('../public/ach_local/sekiro-shadows-die-twice.json');
 router.get('/roadmaps/sekiro-shadows-die-twice', (req, res) => {
-  res.render('./roadmaps/sekiro-shadows-die-twice');
+  res.render('./roadmaps/sekiro-shadows-die-twice', { ...sekiroAch });
 });
+
 //roadmaps end
 
 //about start

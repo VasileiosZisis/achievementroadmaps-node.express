@@ -32,6 +32,11 @@
   transition: opacity 0.3s;
 }
 
+.tooltip-content img {
+  width: 4rem;
+  height: 4rem;
+}
+
 .tooltip-text {
   text-align: center;
   margin: auto;

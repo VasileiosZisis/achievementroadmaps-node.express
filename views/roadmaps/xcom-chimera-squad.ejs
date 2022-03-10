@@ -63,44 +63,241 @@
                         playthroughs less boring and less stressful. Finally using mods and console commands will still
                         unlock achievements.</p>
                     <h2>First Playthrough</h2>
-                    <p>Start the campaign on normal or expert and choose to play the tutorial for the <span
-                            class="achievement">City on Fire</span>, the rest of the options available
-                        don't matter. Soon you will have to choose your next investigation. You will have to finish
-                        all three of them during the campaign and the order matters for <span class="achievement">Every
-                            Timeline</span>. For this playthrough choose 1rst The Progeny, 2nd Gray Phoenix and 3rd
-                        Sacred Coil. <span class="achievement">Thank You For Your Business</span> is the hardest
-                        achievement. Basically you want to gain as much as intel as possible and delay the story
+                    <p>Start the campaign on normal or expert and choose to play the tutorial for the
+                        <span class="achievement">
+                            <%= achievements[7].displayName %>
+                                <span class="tooltip-content"><img src=<%=achievements[7].icon %> >
+                                    <span class="tooltip-text">
+                                        <%= achievements[7].description %>
+                                    </span>
+                                </span>
+                        </span>, the rest of the options available don't matter. Soon you will have to choose your next
+                        investigation.
+                        You will have to finish all three of them during the campaign and the order matters for
+                        <span class="achievement">
+                            <%= achievements[22].displayName %>
+                                <span class="tooltip-content"><img src=<%=achievements[22].icon %> >
+                                    <span class="tooltip-text">
+                                        <%= achievements[22].description %>
+                                    </span>
+                                </span>
+                        </span>. For this playthrough choose 1rst The Progeny, 2nd Gray Phoenix and 3rd
+                        Sacred Coil.
+                        <span class="achievement">
+                            <%= achievements[19].displayName %>
+                                <span class="tooltip-content"><img src=<%=achievements[19].icon %> >
+                                    <span class="tooltip-text">
+                                        <%= achievements[19].description %>
+                                    </span>
+                                </span>
+                        </span> is the hardest achievement. Basically you want to gain as much as intel as possible and
+                        delay the story
                         missions for as long as possible. There are 11 agent specific achievements, but only 8
                         agents are available per playthrough, so make sure to complete them for the agents you
-                        chose. Capture a Praetorian, a Ronin and a Sorcecer for <span class="achievement">Use the Large
-                            Cuffs</span>, <span class="achievement">Caged Sword</span> and <span
-                            class="achievement">Bottled Lightning</span>. For the mission select screen there is <span
-                            class="achievement">Filed Commander</span> and <span class="achievement">Friendly
-                            Neighborhood XCOM</span>. For the agents <span class="achievement">All Hands On Deck</span>,
-                        <span class="achievement">Overqualified</span> and <span class="achievement">Book Smart</span>.
-                        No Stone Left Unturned</span> for Spec Op and <span class="achievement">Hammer And Tongs</span>
-                        for the research. Finishing the campaign will earn you <span class="achievement">Heroes of City
-                            31</span>.
+                        chose. Capture a Praetorian, a Ronin and a Sorcecer for
+                        <span class="achievement">
+                            <%= achievements[9].displayName %>
+                                <span class="tooltip-content"><img src=<%=achievements[9].icon %> >
+                                    <span class="tooltip-text">
+                                        <%= achievements[9].description %>
+                                    </span>
+                                </span>
+                        </span>,
+                        <span class="achievement">
+                            <%= achievements[10].displayName %>
+                                <span class="tooltip-content"><img src=<%=achievements[10].icon %> >
+                                    <span class="tooltip-text">
+                                        <%= achievements[10].description %>
+                                    </span>
+                                </span>
+                        </span> and
+                        <span class="achievement">
+                            <%= achievements[1].displayName %>
+                                <span class="tooltip-content"><img src=<%=achievements[1].icon %> >
+                                    <span class="tooltip-text">
+                                        <%= achievements[1].description %>
+                                    </span>
+                                </span>
+                        </span>. For the mission select screen there is
+                        <span class="achievement">
+                            <%= achievements[13].displayName %>
+                                <span class="tooltip-content"><img src=<%=achievements[13].icon %> >
+                                    <span class="tooltip-text">
+                                        <%= achievements[13].description %>
+                                    </span>
+                                </span>
+                        </span> and
+                        <span class="achievement">
+                            <%= achievements[17].displayName %>
+                                <span class="tooltip-content"><img src=<%=achievements[17].icon %> >
+                                    <span class="tooltip-text">
+                                        <%= achievements[17].description %>
+                                    </span>
+                                </span>
+                        </span>. For the agents
+                        <span class="achievement">
+                            <%= achievements[18].displayName %>
+                                <span class="tooltip-content"><img src=<%=achievements[18].icon %> >
+                                    <span class="tooltip-text">
+                                        <%= achievements[18].description %>
+                                    </span>
+                                </span>
+                        </span>,
+                        <span class="achievement">
+                            <%= achievements[20].displayName %>
+                                <span class="tooltip-content"><img src=<%=achievements[20].icon %> >
+                                    <span class="tooltip-text">
+                                        <%= achievements[20].description %>
+                                    </span>
+                                </span>
+                        </span> and
+                        <span class="achievement">
+                            <%= achievements[21].displayName %>
+                                <span class="tooltip-content"><img src=<%=achievements[21].icon %> >
+                                    <span class="tooltip-text">
+                                        <%= achievements[21].description %>
+                                    </span>
+                                </span>
+                        </span>.
+                        <span class="achievement">
+                            <%= achievements[23].displayName %>
+                                <span class="tooltip-content"><img src=<%=achievements[23].icon %> >
+                                    <span class="tooltip-text">
+                                        <%= achievements[23].description %>
+                                    </span>
+                                </span>
+                        </span> for Spec Op and
+                        <span class="achievement">
+                            <%= achievements[15].displayName %>
+                                <span class="tooltip-content"><img src=<%=achievements[15].icon %> >
+                                    <span class="tooltip-text">
+                                        <%= achievements[15].description %>
+                                    </span>
+                                </span>
+                        </span>
+                        for the research. Finishing the campaign will earn you
+                        <span class="achievement">
+                            <%= achievements[0].displayName %>
+                                <span class="tooltip-content"><img src=<%=achievements[0].icon %> >
+                                    <span class="tooltip-text">
+                                        <%= achievements[0].description %>
+                                    </span>
+                                </span>
+                        </span>.
                     </p>
                     <h2>Second Playthrough</h2>
                     <p>Start a new game and for the difficulty choose impossible. You can skip the tutorial and choose
                         any other additional option you want. The investigation order should be 1rst Gray Phoenix, 2nd
-                        Sacred Coil and 3rd The Progeny. You want to keep track of the Breach points for <span
-                            class="achievement">I’ll Let Myself In</span>. If you do not choose the same agents you can
-                        complete <span class="achievement">Chimera Unleashed</span>. Finish any achievement you may have
-                        missed from the first playthrough and also do not forget the agent specific achievements.
-                        Finishing the campaign will earn you <span class="achievement">Impossible Dream</span>.
+                        Sacred Coil and 3rd The Progeny. You want to keep track of the Breach points for
+                        <span class="achievement">
+                            <%= achievements[24].displayName %>
+                                <span class="tooltip-content"><img src=<%=achievements[24].icon %> >
+                                    <span class="tooltip-text">
+                                        <%= achievements[24].description %>
+                                    </span>
+                                </span>
+                        </span>. If you do not choose the same agents you can complete
+                        <span class="achievement">
+                            <%= achievements[12].displayName %>
+                                <span class="tooltip-content"><img src=<%=achievements[12].icon %> >
+                                    <span class="tooltip-text">
+                                        <%= achievements[12].description %>
+                                    </span>
+                                </span>
+                        </span>. Finish any achievement you may have missed from the first playthrough and also do not
+                        forget the agent specific achievements. Finishing the campaign will earn you
+                        <span class="achievement">
+                            <%= achievements[1].displayName %>
+                                <span class="tooltip-content"><img src=<%=achievements[1].icon %> >
+                                    <span class="tooltip-text">
+                                        <%= achievements[1].description %>
+                                    </span>
+                                </span>
+                        </span>.
                     </p>
                     <h2>Third Playthrough</h2>
                     <p>Start a new game and choose story difficulty. For the investigation order choose 1rst Sacred
-                        Coil, 2nd The Progeny and 3rd Gray Phoenix. Now is a good time for <span
-                            class="achievement">Pacifist Route</span>, <span class="achievement">Up Close and
-                            Personal</span> and <span class="achievement">…and Clear</span>. If <span
-                            class="achievement">Reinforced Steel</span>, <span class="achievement">A New Look</span>,
-                        <span class="achievement">Superior Firepower</span>, <span class="achievement">Machine
-                            Learning</span> and <span class="achievement">Army of One</span> didn't come naturally, you
-                        can finish them now. Also finish <span class="achievement">Need a Lift</span> if you haven't
-                        yet. Finishing the campaign will earn you <span class="achievement">Every Timeline</span>.
+                        Coil, 2nd The Progeny and 3rd Gray Phoenix. Now is a good time for
+                        <span class="achievement">
+                            <%= achievements[37].displayName %>
+                                <span class="tooltip-content"><img src=<%=achievements[37].icon %> >
+                                    <span class="tooltip-text">
+                                        <%= achievements[37].description %>
+                                    </span>
+                                </span>
+                        </span>,
+                        <span class="achievement">
+                            <%= achievements[38].displayName %>
+                                <span class="tooltip-content"><img src=<%=achievements[38].icon %> >
+                                    <span class="tooltip-text">
+                                        <%= achievements[38].description %>
+                                    </span>
+                                </span>
+                        </span> and
+                        <span class="achievement">
+                            <%= achievements[8].displayName %>
+                                <span class="tooltip-content"><img src=<%=achievements[8].icon %> >
+                                    <span class="tooltip-text">
+                                        <%= achievements[8].description %>
+                                    </span>
+                                </span>
+                        </span>. If
+                        <span class="achievement">
+                            <%= achievements[5].displayName %>
+                                <span class="tooltip-content"><img src=<%=achievements[5].icon %> >
+                                    <span class="tooltip-text">
+                                        <%= achievements[5].description %>
+                                    </span>
+                                </span>
+                        </span>,
+                        <span class="achievement">
+                            <%= achievements[6].displayName %>
+                                <span class="tooltip-content"><img src=<%=achievements[6].icon %> >
+                                    <span class="tooltip-text">
+                                        <%= achievements[6].description %>
+                                    </span>
+                                </span>
+                        </span>,
+                        <span class="achievement">
+                            <%= achievements[14].displayName %>
+                                <span class="tooltip-content"><img src=<%=achievements[14].icon %> >
+                                    <span class="tooltip-text">
+                                        <%= achievements[14].description %>
+                                    </span>
+                                </span>
+                        </span>,
+                        <span class="achievement">
+                            <%= achievements[16].displayName %>
+                                <span class="tooltip-content"><img src=<%=achievements[16].icon %> >
+                                    <span class="tooltip-text">
+                                        <%= achievements[16].description %>
+                                    </span>
+                                </span>
+                        </span> and
+                        <span class="achievement">
+                            <%= achievements[36].displayName %>
+                                <span class="tooltip-content"><img src=<%=achievements[36].icon %> >
+                                    <span class="tooltip-text">
+                                        <%= achievements[36].description %>
+                                    </span>
+                                </span>
+                        </span> didn't come naturally, you can finish them now. Also finish
+                        <span class="achievement">
+                            <%= achievements[39].displayName %>
+                                <span class="tooltip-content"><img src=<%=achievements[39].icon %> >
+                                    <span class="tooltip-text">
+                                        <%= achievements[39].description %>
+                                    </span>
+                                </span>
+                        </span> if you haven't yet. Finishing the campaign will earn you
+                        <span class="achievement">
+                            <%= achievements[2].displayName %>
+                                <span class="tooltip-content"><img src=<%=achievements[2].icon %> >
+                                    <span class="tooltip-text">
+                                        <%= achievements[2].description %>
+                                    </span>
+                                </span>
+                        </span>.
                     </p>
                     <h3>Time Saving Resources</h3>
                     <p><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2072773974" target="_blank">XCOM:
@@ -115,6 +312,32 @@
                 <img src="https://res.cloudinary.com/dmdbza74n/image/upload/v1630951429/achievementroadmaps/ChimeraSquadR_f6vndj.webp"
                     alt="">
             </div>
+        </div>
+        <div class="achievement-list-section">
+            <div class="left"></div>
+            <div class="achievement-list-div">
+                <h4>Achievements List</h4>
+                <div class="button-container"><button type="button" class="achievement-button">Click to Open</button>
+                </div>
+                <ul class="achievement-ul">
+                    <% for(let achievement of achievements) { %>
+                        <li>
+                            <img src=<%=achievement.icon %>>
+                            <span class="list-text">
+                                <b>
+                                    <%= achievement.displayName %>
+                                </b>
+                                <br>
+                                <%= achievement.description %>
+                                    <% if(achievement.hidden===1) { %>
+                                        <p><b>Hidden</b></p>
+                                        <% } %>
+                            </span>
+                        </li>
+                        <% } %>
+                </ul>
+            </div>
+            <div class="right"></div>
         </div>
     </section>
 

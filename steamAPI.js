@@ -1,21 +1,21 @@
-const fs = require("fs");
-const util = require("util");
-const SteamAPI = require("steamapi");
-const steam = new SteamAPI("3C128AC38062B1A86CD2A0E2E14F4D32");
+const fs = require('fs');
+const util = require('util');
+const SteamAPI = require('steamapi');
+const steam = new SteamAPI('3C128AC38062B1A86CD2A0E2E14F4D32');
 
 async function createFile(filename) {
   this.filename = filename;
 
-  steam.getGameSchema("427290").then((data) => {
+  steam.getGameSchema('814380').then((data) => {
     const ach = JSON.parse(JSON.stringify(data.availableGameStats));
 
     fs.writeFile(
-      "./public/ach_local/" + this.filename,
+      './public/ach_local/' + this.filename,
       JSON.stringify(ach, null, 2),
-      "utf8",
+      'utf8',
       function (err) {
         if (err) {
-          console.log("--- ERROR ---");
+          console.log('--- ERROR ---');
           return console.log(err);
         }
         console.log(
@@ -30,4 +30,4 @@ async function createFile(filename) {
   });
 }
 
-// createFile("vampyr.json");
+createFile('sekiro-shadows-die-twice.json');
