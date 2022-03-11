@@ -5,16 +5,15 @@
 
     <%- include('../partials/head') %>
 
-        <meta name="description"
-            content="Darkwood achievement roadmap. Guide to efficiently achieve 100% completion." />
-        <meta property="og:url" content="https://www.achievementroadmaps.com/roadmaps/darkwood" />
-        <meta property="og:title" content="Darkwood Achievement Roadmap" />
-        <meta property="og:site_name" content="Achievement Roadmaps" />
-        <meta property="og:description"
-            content="Darkwood achievement roadmap. Guide to efficiently achieve 100% completion." />
-        <meta property="og:type" content="article" />
+    <meta name="description" content="Darkwood achievement roadmap. Guide to efficiently achieve 100% completion." />
+    <meta property="og:url" content="https://www.achievementroadmaps.com/roadmaps/darkwood" />
+    <meta property="og:title" content="Darkwood Achievement Roadmap" />
+    <meta property="og:site_name" content="Achievement Roadmaps" />
+    <meta property="og:description"
+        content="Darkwood achievement roadmap. Guide to efficiently achieve 100% completion." />
+    <meta property="og:type" content="article" />
 
-        <title>Darkwood Achievement Roadmap - AchievementRoadmaps.com</title>
+    <title>Darkwood Achievement Roadmap - AchievementRoadmaps.com</title>
 </head>
 
 <body>
@@ -66,28 +65,189 @@
                         the mechanics by yourself.</p>
                     <h2>First Playthrough</h2>
                     <p>The game gives you the option to skip the prologue, but for this playthrough do not skip it for
-                        <span class="achievement">Finished prologue</span>. During chapter 1 go for the <span
-                            class="achievement">Wolf's path</span>, the easiest of the two major story choices. Also go
-                        for <span class="achievement">Kill the pig</span>, the only missable achievement for chapter 1.
-                        <span class="achievement">Chapter 2</span> will unlock when chapter 2 starts. At this point as
-                        you level up be aware of <span class="achievement">Sleep in the grave</span> and <span
-                            class="achievement">No sleep for the wicked</span>, both are missable and only one can be
-                        completed per playthrough. <span class="achievement">Trapped villagers</span> is connected with
-                        Kill the pig. There are two ways to end chapter 2. For this playthrough go for <span
-                            class="achievement">Insatiable hunger</span> which allows to do <span
-                            class="achievement">Only ashes remain</span>. Lastly for the epilogue play normally and
-                        unlock <span class="achievement">Bliss</span>, then load your save, replay the epilogue and
-                        unlock <span class="achievement">Burn them all</span>.
+                        <span class="achievement">
+                            <%= achievements[13].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[13].icon %> />
+                                <span class="tooltip-text">
+                                    <%= achievements[13].description %>
+                                </span>
+                            </span>
+                        </span>.
+
+                        During chapter 1 go for the
+
+                        <span class="achievement">
+                            <%= achievements[0].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[0].icon %> />
+                                <span class="tooltip-text">
+                                    <%= achievements[0].description %>
+                                </span>
+                            </span>
+                        </span>,
+
+                        the easiest of the two major story choices. Also go for
+
+                        <span class="achievement">
+                            <%= achievements[2].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[2].icon %> />
+                                <span class="tooltip-text">
+                                    <%= achievements[2].description %>
+                                </span>
+                            </span>
+                        </span>,
+                        the only missable achievement for chapter 1.
+
+                        <span class="achievement">
+                            <%= achievements[12].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[12].icon %> />
+                                <span class="tooltip-text">
+                                    <%= achievements[12].description %>
+                                </span>
+                            </span>
+                        </span>
+
+                        will unlock when chapter 2 starts. At this point as you level up be aware of
+
+                        <span class="achievement">
+                            <%= achievements[4].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[4].icon %> />
+                                <span class="tooltip-text">
+                                    <%= achievements[4].description %>
+                                </span>
+                            </span>
+                        </span>
+
+                        and
+
+                        <span class="achievement">
+                            <%= achievements[3].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[3].icon %> />
+                                <span class="tooltip-text">
+                                    <%= achievements[3].description %>
+                                </span>
+                            </span>
+                        </span>,
+
+                        both are missable and only one can be completed per playthrough.
+
+                        <span class="achievement">
+                            <%= achievements[8].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[8].icon %> />
+                                <span class="tooltip-text">
+                                    <%= achievements[8].description %>
+                                </span>
+                            </span>
+                        </span>
+
+                        is connected with Kill the pig. There are two ways to end chapter 2. For this playthrough go for
+
+                        <span class="achievement">
+                            <%= achievements[5].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[5].icon %> />
+                                <span class="tooltip-text">
+                                    <%= achievements[5].description %>
+                                </span>
+                            </span>
+                        </span>
+
+                        which allows to do
+
+                        <span class="achievement">
+                            <%= achievements[10].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[10].icon %> />
+                                <span class="tooltip-text">
+                                    <%= achievements[10].description %>
+                                </span>
+                            </span>
+                        </span>. Lastly for the epilogue play normally and unlock
+
+                        <span class="achievement">
+                            <%= achievements[6].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[6].icon %> />
+                                <span class="tooltip-text">
+                                    <%= achievements[6].description %>
+                                </span>
+                            </span>
+                        </span>,
+
+                        then load your save, replay the epilogue and unlock
+
+                        <span class="achievement">
+                            <%= achievements[7].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[7].icon %> />
+                                <span class="tooltip-text">
+                                    <%= achievements[7].description %>
+                                </span>
+                            </span>
+                        </span>.
                     </p>
                     <h2>Second Playthrough</h2>
                     <p>On your second playthrough there should be five achievements left. You can safely skip the
-                        prologue and do not forget <span class="achievement">Sleep in the grave</span> or <span
-                            class="achievement">No sleep for the wicked</span>, depending on which
-                        you unlocked on your first playthrough. During chapter 1 choose the <span
-                            class="achievement">Musician's path</span>. There are two achievements available because of
-                        Musician's path: during chapter 1 <span class="achievement">Willpower</span> and during chapter
-                        2 <span class="achievement">Entertainer</span>, both missable. Finally you can finish chapter 2
-                        with <span class="achievement">Merciful</span>.
+                        prologue and do not forget
+
+                        <span class="achievement">
+                            <%= achievements[4].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[4].icon %> />
+                                <span class="tooltip-text">
+                                    <%= achievements[4].description %>
+                                </span>
+                            </span>
+                        </span>
+
+                        or
+
+                        <span class="achievement">
+                            <%= achievements[3].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[3].icon %> />
+                                <span class="tooltip-text">
+                                    <%= achievements[3].description %>
+                                </span>
+                            </span>
+                        </span>,
+
+                        depending on which you unlocked on your first playthrough. During chapter 1 choose the
+
+                        <span class="achievement">
+                            <%= achievements[1].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[1].icon %> />
+                                <span class="tooltip-text">
+                                    <%= achievements[1].description %>
+                                </span>
+                            </span>
+                        </span>.
+
+                        There are two achievements available because of Musician's path: during chapter 1
+
+                        <span class="achievement">
+                            <%= achievements[14].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[14].icon %> />
+                                <span class="tooltip-text">
+                                    <%= achievements[14].description %>
+                                </span>
+                            </span>
+                        </span>
+
+                        and during chapter 2
+
+                        <span class="achievement">
+                            <%= achievements[9].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[9].icon %> />
+                                <span class="tooltip-text">
+                                    <%= achievements[9].description %>
+                                </span>
+                            </span>
+                        </span>,
+
+                        both missable. Finally you can finish chapter 2 with
+
+                        <span class="achievement">
+                            <%= achievements[11].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[11].icon %> />
+                                <span class="tooltip-text">
+                                    <%= achievements[11].description %>
+                                </span>
+                            </span>
+                        </span>.
                     </p>
                     <h3>Time Saving Resources</h3>
                     <p><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1122007626"
@@ -105,6 +265,12 @@
                     alt="">
             </div>
         </div>
+    </section>
+
+    <section>
+
+        <%- include('../partials/ach-list') %>
+
     </section>
 
     <footer>

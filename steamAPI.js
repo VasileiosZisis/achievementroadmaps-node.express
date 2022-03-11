@@ -6,7 +6,7 @@ const steam = new SteamAPI('3C128AC38062B1A86CD2A0E2E14F4D32');
 async function createFile(filename) {
   this.filename = filename;
 
-  steam.getGameSchema('727850').then((data) => {
+  steam.getGameSchema('606280').then((data) => {
     const ach = JSON.parse(JSON.stringify(data.availableGameStats));
 
     fs.writeFile(
@@ -30,4 +30,4 @@ async function createFile(filename) {
   });
 }
 
-createFile('elderborn.json');
+createFile('darksiders-3.json');

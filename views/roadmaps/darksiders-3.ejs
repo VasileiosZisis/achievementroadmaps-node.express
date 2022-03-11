@@ -5,16 +5,16 @@
 
     <%- include('../partials/head') %>
 
-        <meta name="description"
-            content="Darksiders 3 achievement roadmap. Guide to efficiently achieve 100% completion." />
-        <meta property="og:url" content="https://www.achievementroadmaps.com/roadmaps/darksiders-3" />
-        <meta property="og:title" content="Darksiders 3  Achievement Roadmap" />
-        <meta property="og:site_name" content="Achievement Roadmaps" />
-        <meta property="og:description"
-            content="Darksiders 3  achievement roadmap. Guide to efficiently achieve 100% completion." />
-        <meta property="og:type" content="article" />
+    <meta name="description"
+        content="Darksiders 3 achievement roadmap. Guide to efficiently achieve 100% completion." />
+    <meta property="og:url" content="https://www.achievementroadmaps.com/roadmaps/darksiders-3" />
+    <meta property="og:title" content="Darksiders 3  Achievement Roadmap" />
+    <meta property="og:site_name" content="Achievement Roadmaps" />
+    <meta property="og:description"
+        content="Darksiders 3  achievement roadmap. Guide to efficiently achieve 100% completion." />
+    <meta property="og:type" content="article" />
 
-        <title>Darksiders 3 Achievement Roadmap - AchievementRoadmaps.com</title>
+    <title>Darksiders 3 Achievement Roadmap - AchievementRoadmaps.com</title>
 </head>
 
 <body>
@@ -41,23 +41,53 @@
             </div>
             <div class="middleColumnPages">
                 <ul class="entryTitles">
-                    <li>Time to 100%:<span class="editableTitles">40 - 50 hours</li></span>
-                    <li>Minimum Playthroughs:<span class="editableTitles">2</li></span>
+                    <li>Time to 100%:<span class="editableTitles">40 - 50 hours</span></li>
+                    <li>Minimum Playthroughs:<span class="editableTitles">2</span></li>
                     <li>Extra Content required:<span class="editableTitles">2 DLCs: The Crucible, Keepers of the
-                            Void</li></span>
-                    <li>Total Achievements:<span class="editableTitles">64</li></span>
-                    <li>Single Player:<span class="editableTitles">64</li></span>
-                    <li>Multiplayer/CoOp:<span class="editableTitles">None</li></span>
+                            Void</span></li>
+                    <li>Total Achievements:<span class="editableTitles">64</span></li>
+                    <li>Single Player:<span class="editableTitles">64</span></li>
+                    <li>Multiplayer/CoOp:<span class="editableTitles">None</span></li>
                     <li>Does difficulty affect achievements?:<span class="editableTitles">Yes, need to finish on
-                            Apocalyptic and on NG+ called Armageddon</li></span>
-                    <li>Do achievements stack?:<span class="editableTitles">Yes</li></span>
-                    <li>Missable:<span class="editableTitles">3 - <span class="achievement">A Parting Gift</span>,
-                            <span class="achievement">Demon Meddler</span>, <span class="achievement">For Whom the Bell
-                                Tolls</span>
-                    </li></span>
+                            Apocalyptic and on NG+ called Armageddon</span></li>
+                    <li>Do achievements stack?:<span class="editableTitles">Yes</span></li>
+                    <li>Missable:<span class="editableTitles">3 -
+                            <span class="achievement"> <%= achievements[48].displayName %>
+                                <span class="tooltip-content"><img src=<%= achievements[48].icon %> />
+                                    <span class="tooltip-text"> <%= achievements[48].description %>
+                                    </span>
+                                </span>
+                            </span>,
+                            <span class="achievement"> <%= achievements[38].displayName %>
+                                <span class="tooltip-content"><img src=<%= achievements[38].icon %> />
+                                    <span class="tooltip-text"> <%= achievements[38].description %>
+                                    </span>
+                                </span>
+                            </span>,
+                            <span class="achievement"> <%= achievements[46].displayName %>
+                                <span class="tooltip-content"><img src=<%= achievements[46].icon %> />
+                                    <span class="tooltip-text"> <%= achievements[46].description %>
+                                    </span>
+                                </span>
+                            </span>
+                        </span>
+                    </li>
                     <li>Glitched:<span class="editableTitles">None</li></span>
-                    <li>Grind:<span class="editableTitles">At least 2 - <span class="achievement">Beast Mode</span>,
-                            <span class="achievement">Soul Reaper</span></li></span>
+                    <li>Grind:<span class="editableTitles">At least 2 -
+                            <span class="achievement"> <%= achievements[24].displayName %>
+                                <span class="tooltip-content"><img src=<%= achievements[24].icon %> />
+                                    <span class="tooltip-text"> <%= achievements[24].description %>
+                                    </span>
+                                </span>
+                            </span>,
+                            <span class="achievement"> <%= achievements[45].displayName %>
+                                <span class="tooltip-content"><img src=<%= achievements[45].icon %> />
+                                    <span class="tooltip-text"> <%= achievements[45].description %>
+                                    </span>
+                                </span>
+                            </span>
+                        </span>
+                    </li>
                 </ul>
                 <div class="aboutGameSection">
                     <h1>Does it worth your time?</h1>
@@ -73,16 +103,96 @@
                     <h2>First Playthrough</h2>
                     <p>On your first playthrough you can either play on Normal or Apocalyptic and do not change the
                         difficulty middle-game. You will unlock the majority of the achievements naturally and there are
-                        three missable achievements to worry about - <span class="achievement">A Parting Gift</span>,
-                        <span class="achievement">Demon Meddler</span> and <span class="achievement">For Whom the Bell
-                            Tolls</span>. To save yourself some time from grinding, although they are stackable, pay
-                        attention to <span class="achievement">Soul Reaper</span>, <span class="achievement">Keep it
-                            100!</span> and <span class="achievement">Beast Mode</span>. While progressing through the
-                        story you will eventually get a point-of-no-return warning. At that point make sure you have
-                        unlocked <span class="achievement">Balance in all things</span>, <span
-                            class="achievement">Humanitarian</span> and <span class="achievement">Take it to the
-                            Limit</span>. Lastly, if you are playing on Normal, visit The Crucible and unlock <span
-                            class="achievement">"Apocalyptic!"</span> and <span class="achievement">Quite Proper</span>.
+                        three missable achievements to worry about -
+                        <span class="achievement"> <%= achievements[48].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[48].icon %> />
+                                <span class="tooltip-text"> <%= achievements[48].description %>
+                                </span>
+                            </span>
+                        </span>,
+                        <span class="achievement"> <%= achievements[38].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[38].icon %> />
+                                <span class="tooltip-text"> <%= achievements[38].description %>
+                                </span>
+                            </span>
+                        </span>
+
+                        and
+
+                        <span class="achievement"> <%= achievements[46].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[46].icon %> />
+                                <span class="tooltip-text"> <%= achievements[46].description %>
+                                </span>
+                            </span>
+                        </span>.
+
+                        To save yourself some time from grinding, although they are stackable, pay attention to
+
+                        <span class="achievement"> <%= achievements[45].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[45].icon %> />
+                                <span class="tooltip-text"> <%= achievements[45].description %>
+                                </span>
+                            </span>
+                        </span>,
+                        <span class="achievement"> <%= achievements[57].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[57].icon %> />
+                                <span class="tooltip-text"> <%= achievements[57].description %>
+                                </span>
+                            </span>
+                        </span>
+
+                        and
+
+                        <span class="achievement"> <%= achievements[24].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[24].icon %> />
+                                <span class="tooltip-text"> <%= achievements[24].description %>
+                                </span>
+                            </span>
+                        </span>.
+
+                        While progressing through the story you will eventually get a point-of-no-return warning. At
+                        that point make sure you have unlocked
+
+                        <span class="achievement"> <%= achievements[14].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[14].icon %> />
+                                <span class="tooltip-text"> <%= achievements[14].description %>
+                                </span>
+                            </span>
+                        </span>,
+                        <span class="achievement"> <%= achievements[19].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[19].icon %> />
+                                <span class="tooltip-text"> <%= achievements[19].description %>
+                                </span>
+                            </span>
+                        </span>
+
+                        and
+
+                        <span class="achievement"> <%= achievements[21].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[21].icon %> />
+                                <span class="tooltip-text"> <%= achievements[21].description %>
+                                </span>
+                            </span>
+                        </span>.
+
+                        Lastly, if you are playing on Normal, visit The Crucible and unlock
+
+                        <span class="achievement"> <%= achievements[27].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[27].icon %> />
+                                <span class="tooltip-text"> <%= achievements[27].description %>
+                                </span>
+                            </span>
+                        </span>
+
+                        and
+
+                        <span class="achievement"> <%= achievements[54].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[54].icon %> />
+                                <span class="tooltip-text"> <%= achievements[54].description %>
+                                </span>
+                            </span>
+                        </span>.
+
                         I do not recommend playing it on Apocalyptic, since when you die you need to start again from
                         wave 1, and the higher the wave, the higher its difficulty.
                     </p>
@@ -106,6 +216,12 @@
                     alt="">
             </div>
         </div>
+    </section>
+
+    <section>
+
+        <%- include('../partials/ach-list') %>
+
     </section>
 
     <footer>

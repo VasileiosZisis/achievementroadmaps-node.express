@@ -24,11 +24,15 @@ router.get('/roadmaps/children-of-morta', (req, res) => {
 router.get('/roadmaps/control', (req, res) => {
   res.render('./roadmaps/control');
 });
+
+const darksidersThree = require('../public/ach_local/darksiders-3.json');
 router.get('/roadmaps/darksiders-3', (req, res) => {
-  res.render('./roadmaps/darksiders-3');
+  res.render('./roadmaps/darksiders-3', { ...darksidersThree });
 });
+
+const darkwoodAch = require('../public/ach_local/darkwood.json');
 router.get('/roadmaps/darkwood', (req, res) => {
-  res.render('./roadmaps/darkwood');
+  res.render('./roadmaps/darkwood', { ...darkwoodAch });
 });
 
 const elderbornAch = require('../public/ach_local/elderborn.json');
@@ -51,8 +55,9 @@ router.get('/roadmaps/xcom-chimera-squad', (req, res) => {
   res.render('./roadmaps/xcom-chimera-squad', { ...chimeraAch });
 });
 
+const darksidersGen = require('../public/ach_local/darksiders-genesis.json');
 router.get('/roadmaps/darksiders-genesis', (req, res) => {
-  res.render('./roadmaps/darksiders-genesis');
+  res.render('./roadmaps/darksiders-genesis', { ...darksidersGen });
 });
 
 const nowhereAch = require('../public/ach_local/nowhere-prophet.json');
@@ -79,8 +84,8 @@ router.get('/roadmaps/sekiro-shadows-die-twice', (req, res) => {
   res.render('./roadmaps/sekiro-shadows-die-twice', { ...sekiroAch });
 });
 
-// for (let i = 0; i < elderbornAch.achievements.length; i++) {
-//   console.log(i, elderbornAch.achievements[i]);
+// for (let i = 0; i < darksidersThree.achievements.length; i++) {
+//   console.log(i, darksidersThree.achievements[i]);
 // }
 
 //roadmaps end

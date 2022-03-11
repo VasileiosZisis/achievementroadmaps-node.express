@@ -5,16 +5,16 @@
 
     <%- include('../partials/head') %>
 
-        <meta name="description"
-            content="Darksiders Genesis achievement roadmap. Guide to efficiently achieve 100% completion." />
-        <meta property="og:url" content="https://www.achievementroadmaps.com/roadmaps/darksiders-genesis" />
-        <meta property="og:title" content="Darksiders Genesis  Achievement Roadmap" />
-        <meta property="og:site_name" content="Achievement Roadmaps" />
-        <meta property="og:description"
-            content="Darksiders Genesis  achievement roadmap. Guide to efficiently achieve 100% completion." />
-        <meta property="og:type" content="article" />
+    <meta name="description"
+        content="Darksiders Genesis achievement roadmap. Guide to efficiently achieve 100% completion." />
+    <meta property="og:url" content="https://www.achievementroadmaps.com/roadmaps/darksiders-genesis" />
+    <meta property="og:title" content="Darksiders Genesis  Achievement Roadmap" />
+    <meta property="og:site_name" content="Achievement Roadmaps" />
+    <meta property="og:description"
+        content="Darksiders Genesis  achievement roadmap. Guide to efficiently achieve 100% completion." />
+    <meta property="og:type" content="article" />
 
-        <title>Darksiders Genesis Achievement Roadmap - AchievementRoadmaps.com</title>
+    <title>Darksiders Genesis Achievement Roadmap - AchievementRoadmaps.com</title>
 </head>
 
 <body>
@@ -70,42 +70,260 @@
                         recommend to finish all the chapters first, then collect everything during your second
                         playthrough. Also there are secondary quests for every chapter that must be completed in order
                         to gain access to collectibes, so make sure to complete as many as you can. On this playthrough
-                        you will unlock all the story achievements: <span class="achievement">Mammon</span>, <span
-                            class="achievement">Belial</span>, <span class="achievement">Astarte</span>, <span
-                            class="achievement">Dagon</span> and <span class="achievement">Moloch</span>.
+                        you will unlock all the story achievements:
+                        <span class="achievement">
+                            <%= achievements[0].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[0].icon %> />
+                                <span class="tooltip-text">
+                                    <%= achievements[0].description %>
+                                </span>
+                            </span>
+                        </span>,
+                        <span class="achievement">
+                            <%= achievements[1].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[1].icon %> />
+                                <span class="tooltip-text">
+                                    <%= achievements[1].description %>
+                                </span>
+                            </span>
+                        </span>,
+                        <span class="achievement">
+                            <%= achievements[2].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[2].icon %> />
+                                <span class="tooltip-text">
+                                    <%= achievements[2].description %>
+                                </span>
+                            </span>
+                        </span>,
+                        <span class="achievement"> <%= achievements[3].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[3].icon %> />
+                                <span class="tooltip-text"> <%= achievements[3].description %>
+                                </span>
+                            </span>
+                        </span>
+
+                        and
+
+                        <span class="achievement"> <%= achievements[4].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[4].icon %> />
+                                <span class="tooltip-text"> <%= achievements[4].description %>
+                                </span>
+                            </span>
+                        </span>.
                     </p>
                     <h2>Second Playthrough</h2>
                     <p>For your second playthrough replay all chapters again on casual, start collecting
                         everything you missed and complete the rest of the side quests. Also make sure you are buying
-                        everything from Vulgrim's Shop. Learn all of Strife's Wrath abilities for <span
-                            class="achievement">Master of Strife</span> and all of War's Wrath abilities
-                        for <span class="achievement">Master of War</span>. Find all elemental ammo types for <span
-                            class="achievement">A Bullet for All Seasons</span> and all elemental enhancements for <span
-                            class="achievement">Walking Armory</span>. There are total of 11 chapter specific
-                        achievements. Chapter 2: <span class="achievement">Soul Cache</span>, chapter 3: <span
-                            class="achievement">Hell's Forge</span>, Chapter 4: <span class="achievement">Close the
-                            Rift</span>, Chapter 5: <span class="achievement">Respect For Animals</span>, Chapter 7:
-                        <span class="achievement">The Dead Court</span> and <span class="achievement">Why'd It Have to
-                            Be Snakes?</span>, Chapter 11: <span class="achievement">Good Deeds</span>, Chapter 12:
-                        <span class="achievement">Infested</span>, Chapter 15: <span class="achievement">Ready to
-                            Blow</span> and <span class="achievement">Demolition Derby</span> and Chapter 16: <span
-                            class="achievement">Blademaster</span>. After completing all the chapters you should have
-                        unlocked <span class="achievement">Mint III</span> from collecting 350 boatman coins. Now at
-                        Boatman's Labyrinth you need to collect all the boatman coints for <span
-                            class="achievement">Garden of Forking Paths</span>, open the final trickster door in
-                        Boatman's Labyrinth for <span class="achievement">Gatekeeper</span> and
-                        defeat Wicked Killington for <span class="achievement">Wicked Killington</span>. For <span
-                            class="achievement">Collector</span> you have to play in the Arena for any missing creature
-                        cores you didn't happen to unlock from the chapters and do the jumping puzzles in Boatman's
-                        Labyrinth.<br>
-                        Finally play the Endless Mode in the Arena for <span class="achievement">Are You Not
-                            Entertained?</span>.
+                        everything from Vulgrim's Shop. Learn all of Strife's Wrath abilities for
+                        <span class="achievement"> <%= achievements[8].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[8].icon %> />
+                                <span class="tooltip-text"> <%= achievements[8].description %>
+                                </span>
+                            </span>
+                        </span>
+
+                        and all of War's Wrath abilities for
+
+                        <span class="achievement"> <%= achievements[9].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[9].icon %> />
+                                <span class="tooltip-text"> <%= achievements[9].description %>
+                                </span>
+                            </span>
+                        </span>.
+
+                        Find all elemental ammo types for
+
+                        <span class="achievement"> <%= achievements[10].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[10].icon %> />
+                                <span class="tooltip-text"> <%= achievements[10].description %>
+                                </span>
+                            </span>
+                        </span>
+
+                        and all elemental enhancements for
+
+                        <span class="achievement"> <%= achievements[11].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[11].icon %> />
+                                <span class="tooltip-text"> <%= achievements[11].description %>
+                                </span>
+                            </span>
+                        </span>.
+
+                        There are total of 11 chapter specific achievements. Chapter 2:
+
+                        <span class="achievement"> <%= achievements[16].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[16].icon %> />
+                                <span class="tooltip-text"> <%= achievements[16].description %>
+                                </span>
+                            </span>
+                        </span>,
+
+                        chapter 3:
+
+                        <span class="achievement"> <%= achievements[17].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[17].icon %> />
+                                <span class="tooltip-text"> <%= achievements[17].description %>
+                                </span>
+                            </span>
+                        </span>,
+
+                        Chapter 4:
+
+                        <span class="achievement"> <%= achievements[18].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[18].icon %> />
+                                <span class="tooltip-text"> <%= achievements[18].description %>
+                                </span>
+                            </span>
+                        </span>,
+
+                        Chapter 5:
+
+                        <span class="achievement"> <%= achievements[19].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[19].icon %> />
+                                <span class="tooltip-text"> <%= achievements[19].description %>
+                                </span>
+                            </span>
+                        </span>,
+
+                        Chapter 7:
+
+                        <span class="achievement"> <%= achievements[20].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[20].icon %> />
+                                <span class="tooltip-text"> <%= achievements[20].description %>
+                                </span>
+                            </span>
+                        </span>
+
+                        and
+
+                        <span class="achievement"> <%= achievements[21].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[21].icon %> />
+                                <span class="tooltip-text"> <%= achievements[21].description %>
+                                </span>
+                            </span>
+                        </span>,
+
+                        Chapter 11:
+
+                        <span class="achievement"> <%= achievements[22].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[22].icon %> />
+                                <span class="tooltip-text"> <%= achievements[22].description %>
+                                </span>
+                            </span>
+                        </span>,
+
+                        Chapter 12:
+
+                        <span class="achievement"> <%= achievements[23].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[23].icon %> />
+                                <span class="tooltip-text"> <%= achievements[23].description %>
+                                </span>
+                            </span>
+                        </span>,
+
+                        Chapter 15:
+
+                        <span class="achievement"> <%= achievements[24].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[24].icon %> />
+                                <span class="tooltip-text"> <%= achievements[24].description %>
+                                </span>
+                            </span>
+                        </span>
+
+                        and
+
+                        <span class="achievement"> <%= achievements[25].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[25].icon %> />
+                                <span class="tooltip-text"> <%= achievements[25].description %>
+                                </span>
+                            </span>
+                        </span>
+
+                        and Chapter 16:
+
+                        <span class="achievement"> <%= achievements[26].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[26].icon %> />
+                                <span class="tooltip-text"> <%= achievements[26].description %>
+                                </span>
+                            </span>
+                        </span>.
+
+                        After completing all the chapters you should have unlocked
+
+                        <span class="achievement"> <%= achievements[15].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[15].icon %> />
+                                <span class="tooltip-text"> <%= achievements[15].description %>
+                                </span>
+                            </span>
+                        </span>
+
+                        from collecting 350 boatman coins. Now at Boatman's Labyrinth you need to collect all the
+                        boatman coints for
+
+                        <span class="achievement"> <%= achievements[27].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[27].icon %> />
+                                <span class="tooltip-text"> <%= achievements[27].description %>
+                                </span>
+                            </span>
+                        </span>,
+
+                        open the final trickster door in Boatman's Labyrinth for
+
+                        <span class="achievement"> <%= achievements[28].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[28].icon %> />
+                                <span class="tooltip-text"> <%= achievements[28].description %>
+                                </span>
+                            </span>
+                        </span>
+
+                        and defeat Wicked Killington for
+
+                        <span class="achievement"> <%= achievements[29].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[29].icon %> />
+                                <span class="tooltip-text"> <%= achievements[29].description %>
+                                </span>
+                            </span>
+                        </span>.
+                        For
+
+                        <span class="achievement"> <%= achievements[12].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[12].icon %> />
+                                <span class="tooltip-text"> <%= achievements[12].description %>
+                                </span>
+                            </span>
+                        </span>
+
+                        you have to play in the Arena for any missing creature cores you didn't happen to unlock from
+                        the chapters and do the jumping puzzles in Boatman's Labyrinth.<br>
+                        Finally play the Endless Mode in the Arena for
+
+                        <span class="achievement"> <%= achievements[5].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[5].icon %> />
+                                <span class="tooltip-text"> <%= achievements[5].description %>
+                                </span>
+                            </span>
+                        </span>.
                     </p>
                     <h2>Third Playthrough</h2>
                     <p>
                         For the third playthrough what's left is replaying all the chapters on Apocalyptic difficulty.
-                        Completing all chapters on Apocalyptic difficulty will earn you <span class="achievement">Full
-                            of Hell</span> and <span class="achievement">The Promised End</span>.
+                        Completing all chapters on Apocalyptic difficulty will earn you
+
+                        <span class="achievement"> <%= achievements[6].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[6].icon %> />
+                                <span class="tooltip-text"> <%= achievements[6].description %>
+                                </span>
+                            </span>
+                        </span>
+
+                        and
+
+                        <span class="achievement"> <%= achievements[7].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[7].icon %> />
+                                <span class="tooltip-text"> <%= achievements[7].description %>
+                                </span>
+                            </span>
+                        </span>.
                     </p>
                     <h3>Time Saving Resources</h3>
                     <p><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1966533365"
@@ -119,6 +337,12 @@
                     alt="">
             </div>
         </div>
+    </section>
+
+    <section>
+
+        <%- include('../partials/ach-list') %>
+
     </section>
 
     <footer>
