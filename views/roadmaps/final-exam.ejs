@@ -5,16 +5,15 @@
 
     <%- include('../partials/head') %>
 
-        <meta name="description"
-            content="Final Exam achievement roadmap. Guide to efficiently achieve 100% completion." />
-        <meta property="og:url" content="https://www.achievementroadmaps.com/roadmaps/final-exam" />
-        <meta property="og:title" content="Final Exam Achievement Roadmap" />
-        <meta property="og:site_name" content="Achievement Roadmaps" />
-        <meta property="og:description"
-            content="Final Exam achievement roadmap. Guide to efficiently achieve 100% completion." />
-        <meta property="og:type" content="article" />
+    <meta name="description" content="Final Exam achievement roadmap. Guide to efficiently achieve 100% completion." />
+    <meta property="og:url" content="https://www.achievementroadmaps.com/roadmaps/final-exam" />
+    <meta property="og:title" content="Final Exam Achievement Roadmap" />
+    <meta property="og:site_name" content="Achievement Roadmaps" />
+    <meta property="og:description"
+        content="Final Exam achievement roadmap. Guide to efficiently achieve 100% completion." />
+    <meta property="og:type" content="article" />
 
-        <title>Final Exam Achievement Roadmap - AchievementRoadmaps.com</title>
+    <title>Final Exam Achievement Roadmap - AchievementRoadmaps.com</title>
 </head>
 
 <body>
@@ -54,8 +53,24 @@
                     <li>Do achievements stack?:<span class="editableTitles">Yes</li></span>
                     <li>Missable:<span class="editableTitles">None, you can replay missions</span></li>
                     <li>Glitched:<span class="editableTitles">None</li></span>
-                    <li>Grind:<span class="editableTitles"><span class="achievement">Arsonist</span>, <span
-                                class="achievement">Slaughter</span></li></span>
+                    <li>Grind:<span class="editableTitles">
+                            <span class="achievement">
+                                <%= achievements[31].displayName %>
+                                <span class="tooltip-content"><img src=<%= achievements[31].icon %> />
+                                    <span class="tooltip-text">
+                                        <%= achievements[31].description %>
+                                    </span>
+                                </span>
+                            </span>,
+                            <span class="achievement">
+                                <%= achievements[29].displayName %>
+                                <span class="tooltip-content"><img src=<%= achievements[29].icon %> />
+                                    <span class="tooltip-text">
+                                        <%= achievements[29].description %>
+                                    </span>
+                                </span>
+                            </span>
+                    </li></span>
                 </ul>
                 <div class="aboutGameSection">
                     <h1>Does it worth your time?</h1>
@@ -64,16 +79,106 @@
                         controller to unlock at least one CoOp achievement.</p>
                     <h2>First Playthrough</h2>
                     <p>Completing all missions on Rock Hard, finding all the cans and the weapons and earning all the
-                        golden gloves will unlock 10 achievements. For the rest, the hard ones are <span
-                            class="achievement">Mega terminator</span> for doing a 100,000 points combo, <span
-                            class="achievement">Mega disintegration</span> for scoring 400,000 points in a single game
-                        and <span class="achievement">Maniac</span> for completing a mission without taking any damage.
-                        You will have to grind for <span class="achievement">Arsonist</span> and <span
-                            class="achievement">Slaughter</span>. Play at least once online for <span
-                            class="achievement">Fun</span> and for <span class="achievement">Cooperation</span> you will
-                        need an extra controller. For <span class="achievement">Healer</span> you will need at least one
-                        more person. Make sure to do <span class="achievement">Temptation</span> when you are able to
-                        unlock the skills. The rest should unlock naturally.
+                        golden gloves will unlock 10 achievements. For the rest, the hard ones are
+
+                        <span class="achievement">
+                            <%= achievements[21].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[21].icon %> />
+                                <span class="tooltip-text">
+                                    <%= achievements[21].description %>
+                                </span>
+                            </span>
+                        </span>
+
+                        for doing a 100,000 points combo,
+
+                        <span class="achievement">
+                            <%= achievements[24].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[24].icon %> />
+                                <span class="tooltip-text">
+                                    <%= achievements[24].description %>
+                                </span>
+                            </span>
+                        </span>
+
+                        for scoring 400,000 points in a single game and
+
+                        <span class="achievement">
+                            <%= achievements[9].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[9].icon %> />
+                                <span class="tooltip-text">
+                                    <%= achievements[9].description %>
+                                </span>
+                            </span>
+                        </span>
+
+                        for completing a mission without taking any damage. You will have to grind for
+
+                        <span class="achievement">
+                            <%= achievements[30].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[30].icon %> />
+                                <span class="tooltip-text">
+                                    <%= achievements[30].description %>
+                                </span>
+                            </span>
+                        </span>
+
+                        and
+
+                        <span class="achievement">
+                            <%= achievements[29].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[29].icon %> />
+                                <span class="tooltip-text">
+                                    <%= achievements[29].description %>
+                                </span>
+                            </span>
+                        </span>.
+
+                        Play at least once online for
+
+                        <span class="achievement">
+                            <%= achievements[4].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[4].icon %> />
+                                <span class="tooltip-text">
+                                    <%= achievements[4].description %>
+                                </span>
+                            </span>
+                        </span>
+
+                        and for
+
+                        <span class="achievement">
+                            <%= achievements[3].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[3].icon %> />
+                                <span class="tooltip-text">
+                                    <%= achievements[3].description %>
+                                </span>
+                            </span>
+                        </span>
+
+                        you will need an extra controller. For
+
+                        <span class="achievement">
+                            <%= achievements[5].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[5].icon %> />
+                                <span class="tooltip-text">
+                                    <%= achievements[5].description %>
+                                </span>
+                            </span>
+                        </span>
+
+                        you will need at least one more person. Make sure to do
+
+                        <span class="achievement">
+                            <%= achievements[14].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[14].icon %> />
+                                <span class="tooltip-text">
+                                    <%= achievements[14].description %>
+                                </span>
+                            </span>
+                        </span>
+
+                        when you are able to unlock the skills. The rest should unlock naturally.
                     </p>
                     <h3>Time Saving Resources</h3>
                     <p><a href="https://www.trueachievements.com/game/Final-Exam/achievements" target="_blank">Final
@@ -86,6 +191,12 @@
                     alt="">
             </div>
         </div>
+    </section>
+
+    <section>
+
+        <%- include('../partials/ach-list') %>
+
     </section>
 
     <footer>

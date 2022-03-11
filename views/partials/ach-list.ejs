@@ -1,0 +1,26 @@
+<div class="achievement-list-section">
+    <div class="left"></div>
+    <div class="achievement-list-div">
+        <h4>Achievements List</h4>
+        <div class="button-container"><button type="button" class="achievement-button">Click/Tap to Show</button>
+        </div>
+        <ul class="achievement-ul">
+            <% for(let achievement of achievements) { %>
+            <li>
+                <img src=<%=achievement.icon%> alt="">
+                <span class="list-text">
+                    <b>
+                        <%= achievement.displayName%>
+                    </b>
+                    <br>
+                    <%= achievement.description %>
+                    <% if(achievement.hidden===1) { %>
+                    <p><b> - Hidden - </b></p>
+                    <% } %>
+                </span>
+            </li>
+            <% } %>
+        </ul>
+    </div>
+    <div class="right"></div>
+</div>

@@ -5,16 +5,16 @@
 
     <%- include('../partials/head') %>
 
-        <meta name="description"
-            content="Resident Evil 3 achievement roadmap. Guide to efficiently achieve 100% completion." />
-        <meta property="og:url" content="https://www.achievementroadmaps.com/roadmaps/resident-evil-3" />
-        <meta property="og:title" content="Resident Evil 3 Achievement Roadmap" />
-        <meta property="og:site_name" content="Achievement Roadmaps" />
-        <meta property="og:description"
-            content="Resident Evil 3 achievement roadmap. Guide to efficiently achieve 100% completion." />
-        <meta property="og:type" content="article" />
+    <meta name="description"
+        content="Resident Evil 3 achievement roadmap. Guide to efficiently achieve 100% completion." />
+    <meta property="og:url" content="https://www.achievementroadmaps.com/roadmaps/resident-evil-3" />
+    <meta property="og:title" content="Resident Evil 3 Achievement Roadmap" />
+    <meta property="og:site_name" content="Achievement Roadmaps" />
+    <meta property="og:description"
+        content="Resident Evil 3 achievement roadmap. Guide to efficiently achieve 100% completion." />
+    <meta property="og:type" content="article" />
 
-        <title>Resident Evil 3 Achievement Roadmap - AchievementRoadmaps.com</title>
+    <title>Resident Evil 3 Achievement Roadmap - AchievementRoadmaps.com</title>
 </head>
 
 <body>
@@ -73,56 +73,339 @@
                         practice the aim and dodge mechanics and make as many weapon kills as possible for the
                         challenges. If you want to farm for points, this is the playthrough to do it. You need all the
                         boosts, the hip pouches and the infinite rocket launcher for the inferno difficulty. Kill
-                        Nemesis at least once at the first part of the game when he ambushes you for <span
-                            class="achievement">Nemesis Down</span> and kill the zombie at the entrance of the police
-                        station with Carlos for <span class="achievement">An Unfortunate End</span>. A fair number of
-                        achievements will unlock naturally. <span class="achievement">Two For One Deal</span> for
-                        defeating two enemies with one shot, <span class="achievement">Basic Chemistry</span> for
-                        crafting an item, <span class="achievement">Gunsmith</span> for improving a weapon, <span
-                            class="achievement">Get Organized</span> for expanding your inventory and <span
-                            class="achievement">Hello, Charlie!</span> for destroying a Charlie doll. Story related are:
-                        <span class="achievement">First Escape</span>, <span class="achievement">Somebody to Lean
-                            On</span>, <span class="achievement">Escape from the City</span>, <span
-                            class="achievement">I Don’t Feel So Good</span>, <span class="achievement">Nemesis
-                            Down?</span>, <span class="achievement">The Carlos Express</span>, <span
-                            class="achievement">I Need a Hero</span>, <span class="achievement">The Pursuer</span>,
-                        <span class="achievement">Nemesis Down!?</span> and <span class="achievement">Nemesis
-                            Down!!!</span>. For completing this playthrough you will also earn <span
-                            class="achievement">Survivor</span>.
+                        Nemesis at least once at the first part of the game when he ambushes you for
+
+                        <span class="achievement">
+                            <%= achievements[8].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[8].icon %> />
+                                <span class="tooltip-text">
+                                    <%= achievements[8].description %>
+                                </span>
+                            </span>
+                        </span>
+
+                        and kill the zombie at the entrance of the police station with Carlos for
+
+                        <span class="achievement">
+                            <%= achievements[12].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[12].icon %> />
+                                <span class="tooltip-text">
+                                    <%= achievements[12].description %>
+                                </span>
+                            </span>
+                        </span>.
+
+                        A fair number of achievements will unlock naturally.
+
+                        <span class="achievement">
+                            <%= achievements[20].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[20].icon %> />
+                                <span class="tooltip-text">
+                                    <%= achievements[20].description %>
+                                </span>
+                            </span>
+                        </span>
+
+                        for defeating two enemies with one shot,
+
+                        <span class="achievement">
+                            <%= achievements[5].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[5].icon %> />
+                                <span class="tooltip-text">
+                                    <%= achievements[5].description %>
+                                </span>
+                            </span>
+                        </span>
+
+                        for crafting an item,
+
+                        <span class="achievement">
+                            <%= achievements[6].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[6].icon %> />
+                                <span class="tooltip-text">
+                                    <%= achievements[6].description %>
+                                </span>
+                            </span>
+                        </span>
+
+                        for improving a weapon,
+
+                        <span class="achievement">
+                            <%= achievements[7].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[7].icon %> />
+                                <span class="tooltip-text">
+                                    <%= achievements[7].description %>
+                                </span>
+                            </span>
+                        </span>
+                        for expanding your inventory and
+
+                        <span class="achievement">
+                            <%= achievements[19].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[19].icon %> />
+                                <span class="tooltip-text">
+                                    <%= achievements[19].description %>
+                                </span>
+                            </span>
+                        </span>
+
+                        for destroying a Charlie doll. Story related are:
+
+                        <span class="achievement">
+                            <%= achievements[0].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[0].icon %> />
+                                <span class="tooltip-text">
+                                    <%= achievements[0].description %>
+                                </span>
+                            </span>
+                        </span>,
+                        <span class="achievement">
+                            <%= achievements[1].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[1].icon %> />
+                                <span class="tooltip-text">
+                                    <%= achievements[1].description %>
+                                </span>
+                            </span>
+                        </span>,
+                        <span class="achievement">
+                            <%= achievements[2].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[2].icon %> />
+                                <span class="tooltip-text">
+                                    <%= achievements[2].description %>
+                                </span>
+                            </span>
+                        </span>,
+                        <span class="achievement">
+                            <%= achievements[3].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[3].icon %> />
+                                <span class="tooltip-text">
+                                    <%= achievements[3].description %>
+                                </span>
+                            </span>
+                        </span>,
+                        <span class="achievement">
+                            <%= achievements[9].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[9].icon %> />
+                                <span class="tooltip-text">
+                                    <%= achievements[9].description %>
+                                </span>
+                            </span>
+                        </span>,
+                        <span class="achievement">
+                            <%= achievements[11].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[11].icon %> />
+                                <span class="tooltip-text">
+                                    <%= achievements[11].description %>
+                                </span>
+                            </span>
+                        </span>,
+                        <span class="achievement">
+                            <%= achievements[14].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[14].icon %> />
+                                <span class="tooltip-text">
+                                    <%= achievements[14].description %>
+                                </span>
+                            </span>
+                        </span>,
+                        <span class="achievement">
+                            <%= achievements[15].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[15].icon %> />
+                                <span class="tooltip-text">
+                                    <%= achievements[15].description %>
+                                </span>
+                            </span>
+                        </span>,
+                        <span class="achievement">
+                            <%= achievements[17].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[17].icon %> />
+                                <span class="tooltip-text">
+                                    <%= achievements[17].description %>
+                                </span>
+                            </span>
+                        </span>
+
+                        and
+
+                        <span class="achievement">
+                            <%= achievements[18].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[18].icon %> />
+                                <span class="tooltip-text">
+                                    <%= achievements[18].description %>
+                                </span>
+                            </span>
+                        </span>.
+
+                        For completing this playthrough you will also earn
+
+                        <span class="achievement">
+                            <%= achievements[25].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[25].icon %> />
+                                <span class="tooltip-text">
+                                    <%= achievements[25].description %>
+                                </span>
+                            </span>
+                        </span>.
                     </p>
                     <h2>Second Playthrough</h2>
                     <p>
                         For your second playthrough choose hardcore difficulty. Again do not forget the weapon kill
-                        challenges. For this playthrough find all the notes and documents for <span
-                            class="achievement">Bookworm</span>, destroy all the charlie dolls for <span
-                            class="achievement">Goodbye, Charlie!</span>, collect all the weapons for <span
-                            class="achievement">Kendo's Armory</span>, unlock all safes, lockers, strongboxes, and
-                        pickable locks for <span class="achievement">RE: Master of Unlocking</span>, find all the
-                        gems for the clock puzzle at the beginning of the game for <span class="achievement">Power
-                            Stones</span> and gather all the fuses in the warehouse within 5 minutes for <span
-                            class="achievement">Electric Slide</span>. Completing this playthrough will earn you <span
-                            class="achievement">Veteran</span>.
+                        challenges. For this playthrough find all the notes and documents for
+                        <span class="achievement">
+                            <%= achievements[21].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[21].icon %> />
+                                <span class="tooltip-text">
+                                    <%= achievements[21].description %>
+                                </span>
+                            </span>
+                        </span>,
+
+                        destroy all the charlie dolls for
+
+                        <span class="achievement">
+                            <%= achievements[22].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[22].icon %> />
+                                <span class="tooltip-text">
+                                    <%= achievements[22].description %>
+                                </span>
+                            </span>
+                        </span>,
+
+                        collect all the weapons for
+
+                        <span class="achievement">
+                            <%= achievements[23].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[23].icon %> />
+                                <span class="tooltip-text">
+                                    <%= achievements[23].description %>
+                                </span>
+                            </span>
+                        </span>,
+
+                        unlock all safes, lockers, strongboxes, and pickable locks for
+
+                        <span class="achievement">
+                            <%= achievements[24].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[24].icon %> />
+                                <span class="tooltip-text">
+                                    <%= achievements[24].description %>
+                                </span>
+                            </span>
+                        </span>,
+
+                        find all the gems for the clock puzzle at the beginning of the game for
+                        <span class="achievement">
+                            <%= achievements[10].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[10].icon %> />
+                                <span class="tooltip-text">
+                                    <%= achievements[10].description %>
+                                </span>
+                            </span>
+                        </span>
+
+                        and gather all the fuses in the warehouse within 5 minutes for
+
+                        <span class="achievement">
+                            <%= achievements[16].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[16].icon %> />
+                                <span class="tooltip-text">
+                                    <%= achievements[16].description %>
+                                </span>
+                            </span>
+                        </span>.
+
+                        Completing this playthrough will earn you
+
+                        <span class="achievement">
+                            <%= achievements[26].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[26].icon %> />
+                                <span class="tooltip-text">
+                                    <%= achievements[26].description %>
+                                </span>
+                            </span>
+                        </span>.
                     </p>
                     <h2>Third Playthrough</h2>
                     <p>
                         For this playthrough choose nightmare difficulty. Now you want to complete the game using 1 or
-                        fewer recovery items for <span class="achievement">I Might Need These Later!</span>. So it is
-                        time to spend your first points at the shop in case you haven't yet. You will also earn <span
-                            class="achievement">Conqueror</span> for finishing the playthrough.
+                        fewer recovery items for
+
+                        <span class="achievement">
+                            <%= achievements[30].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[30].icon %> />
+                                <span class="tooltip-text">
+                                    <%= achievements[30].description %>
+                                </span>
+                            </span>
+                        </span>.
+
+                        So it is time to spend your first points at the shop in case you haven't yet. You will also earn
+
+                        <span class="achievement">
+                            <%= achievements[27].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[27].icon %> />
+                                <span class="tooltip-text">
+                                    <%= achievements[27].description %>
+                                </span>
+                            </span>
+                        </span>
+
+                        for finishing the playthrough.
                     </p>
                     <h2>Fourth Playthrough</h2>
                     <p>
                         Fourth playthrough should be on inferno and you are going for the S rank, which means finishing
                         the game under 2 hours with 5 saves or less. You want all the boosts from the shop and the
                         infinite rocket launcher. Dodge here is very important, especially during the last boss fight.
-                        In this playthrough you will earn <span class="achievement">Sprinter</span>, <span
-                            class="achievement">Sensational Work!</span>, <span class="achievement">Jill
-                            Valentine</span> and <span class="achievement">Dominator</span>.
+                        In this playthrough you will earn
+                        <span class="achievement">
+                            <%= achievements[31].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[31].icon %> />
+                                <span class="tooltip-text">
+                                    <%= achievements[31].description %>
+                                </span>
+                            </span>
+                        </span>,
+                        <span class="achievement">
+                            <%= achievements[28].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[28].icon %> />
+                                <span class="tooltip-text">
+                                    <%= achievements[28].description %>
+                                </span>
+                            </span>
+                        </span>,
+                        <span class="achievement">
+                            <%= achievements[13].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[13].icon %> />
+                                <span class="tooltip-text">
+                                    <%= achievements[13].description %>
+                                </span>
+                            </span>
+                        </span>
+
+                        and
+
+                        <span class="achievement">
+                            <%= achievements[4].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[4].icon %> />
+                                <span class="tooltip-text">
+                                    <%= achievements[4].description %>
+                                </span>
+                            </span>
+                        </span>
                     </p>
                     <h2>Fifth Playthrough</h2>
                     <p>
                         For your final playthrough choose assisted difficulty. Your goal is to finish the game without
-                        opening the item box for <span class="achievement">Minimalist</span>.
+                        opening the item box for
+
+                        <span class="achievement">
+                            <%= achievements[29].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[29].icon %> />
+                                <span class="tooltip-text">
+                                    <%= achievements[29].description %>
+                                </span>
+                            </span>
+                        </span>.
                     </p>
                     <h3>Time Saving Resources</h3>
                     <p><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2053636311"
@@ -141,6 +424,11 @@
                     alt="">
             </div>
         </div>
+    </section>
+    <section>
+
+        <%- include('../partials/ach-list') %>
+
     </section>
 
     <footer>

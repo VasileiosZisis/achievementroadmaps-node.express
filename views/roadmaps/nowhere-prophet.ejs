@@ -5,16 +5,16 @@
 
     <%- include('../partials/head') %>
 
-        <meta name="description"
-            content="Nowhere Prophet achievement roadmap. Guide to efficiently achieve 100% completion." />
-        <meta property="og:url" content="https://www.achievementroadmaps.com/roadmaps/nowhere-prophet" />
-        <meta property="og:title" content="Nowhere Prophet Achievement Roadmap" />
-        <meta property="og:site_name" content="Achievement Roadmaps" />
-        <meta property="og:description"
-            content="Nowhere Prophet achievement roadmap. Guide to efficiently achieve 100% completion." />
-        <meta property="og:type" content="article" />
+    <meta name="description"
+        content="Nowhere Prophet achievement roadmap. Guide to efficiently achieve 100% completion." />
+    <meta property="og:url" content="https://www.achievementroadmaps.com/roadmaps/nowhere-prophet" />
+    <meta property="og:title" content="Nowhere Prophet Achievement Roadmap" />
+    <meta property="og:site_name" content="Achievement Roadmaps" />
+    <meta property="og:description"
+        content="Nowhere Prophet achievement roadmap. Guide to efficiently achieve 100% completion." />
+    <meta property="og:type" content="article" />
 
-        <title>Nowhere Prophet Achievement Roadmap - AchievementRoadmaps.com</title>
+    <title>Nowhere Prophet Achievement Roadmap - AchievementRoadmaps.com</title>
 </head>
 
 <body>
@@ -78,24 +78,111 @@
                         After having reached the first milestone a couple times I recommend that you start playing on
                         custom game. You can unlock all achievements in this mode with a couple exceptions. Choose the
                         options that will give you the advantages you need to be able to finish the campaign. The
-                        achievements that require your attention are <span class="achievement">Fatality</span> and <span
-                            class="achievement">Flawless Victory</span>. Remove 25 leader cards for <span
-                            class="achievement">Memento</span>, scrap 100 cards for <span class="achievement">Scrap
-                            Metal</span>, destroy 50 obstacles for <span class="achievement">Bedlam</span> and rename a
-                        follower for <span class="achievement">By This Name</span>. Rest should unlock naturally as you
+                        achievements that require your attention are
+                        <span class="achievement">
+                            <%= achievements[23].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[23].icon %> />
+                                <span class="tooltip-text">
+                                    <%= achievements[23].description %>
+                                </span>
+                            </span>
+                        </span>
+
+                        and
+
+                        <span class="achievement">
+                            <%= achievements[22].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[22].icon %> />
+                                <span class="tooltip-text">
+                                    <%= achievements[22].description %>
+                                </span>
+                            </span>
+                        </span>.
+
+                        Remove 25 leader cards for
+
+                        <span class="achievement">
+                            <%= achievements[6].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[6].icon %> />
+                                <span class="tooltip-text">
+                                    <%= achievements[6].description %>
+                                </span>
+                            </span>
+                        </span>,
+
+                        scrap 100 cards for
+
+                        <span class="achievement">
+                            <%= achievements[7].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[7].icon %> />
+                                <span class="tooltip-text">
+                                    <%= achievements[7].description %>
+                                </span>
+                            </span>
+                        </span>,
+
+                        destroy 50 obstacles for
+
+                        <span class="achievement">
+                            <%= achievements[20].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[20].icon %> />
+                                <span class="tooltip-text">
+                                    <%= achievements[20].description %>
+                                </span>
+                            </span>
+                        </span>
+
+                        and rename a follower for
+
+                        <span class="achievement">
+                            <%= achievements[26].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[26].icon %> />
+                                <span class="tooltip-text">
+                                    <%= achievements[26].description %>
+                                </span>
+                            </span>
+                        </span>.
+
+                        Rest should unlock naturally as you
                         try to finish the campaign. Continue until you feel comfortable to return on playing the
                         campaign mode again.
                     </p>
                     <h2>Third Playthrough</h2>
                     <p>
                         Back to the campaign mode, your goal now is to complete the campaign in 250 days or less for
-                        <span class="achievement">Faster Than Light</span>, which will also unlock <span
-                            class="achievement">Decrypted</span>.
+
+                        <span class="achievement">
+                            <%= achievements[24].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[24].icon %> />
+                                <span class="tooltip-text">
+                                    <%= achievements[24].description %>
+                                </span>
+                            </span>
+                        </span>,
+
+                        which will also unlock
+
+                        <span class="achievement">
+                            <%= achievements[0].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[0].icon %> />
+                                <span class="tooltip-text">
+                                    <%= achievements[0].description %>
+                                </span>
+                            </span>
+                        </span>.
                     </p>
                     <h2>Fourth Playthrough</h2>
                     <p>
-                        Finally complete the daily challenge with a score of 25.000 or more for <span
-                            class="achievement">Superior Pilgrim</span>.
+                        Finally complete the daily challenge with a score of 25.000 or more for
+
+                        <span class="achievement">
+                            <%= achievements[25].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[25].icon %> />
+                                <span class="tooltip-text">
+                                    <%= achievements[25].description %>
+                                </span>
+                            </span>
+                        </span>.
                     </p>
                     <h3>Time Saving Resources</h3>
                     <p><a href="https://nowhereprophet.fandom.com/wiki/Nowhere_Prophet_Wiki" target="_blank">Nowhere
@@ -109,6 +196,12 @@
                     alt="">
             </div>
         </div>
+    </section>
+
+    <section>
+
+        <%- include('../partials/ach-list') %>
+
     </section>
 
     <footer>

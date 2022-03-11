@@ -5,16 +5,16 @@
 
     <%- include('../partials/head') %>
 
-        <meta name="description"
-            content="Metro Exodus achievement roadmap. Guide to efficiently achieve 100% completion." />
-        <meta property="og:url" content="https://www.achievementroadmaps.com/roadmaps/Metro-exodus" />
-        <meta property="og:title" content="Metro Exodus Achievement Roadmap" />
-        <meta property="og:site_name" content="Achievement Roadmaps" />
-        <meta property="og:description"
-            content="Metro Exodus achievement roadmap. Guide to efficiently achieve 100% completion." />
-        <meta property="og:type" content="article" />
+    <meta name="description"
+        content="Metro Exodus achievement roadmap. Guide to efficiently achieve 100% completion." />
+    <meta property="og:url" content="https://www.achievementroadmaps.com/roadmaps/Metro-exodus" />
+    <meta property="og:title" content="Metro Exodus Achievement Roadmap" />
+    <meta property="og:site_name" content="Achievement Roadmaps" />
+    <meta property="og:description"
+        content="Metro Exodus achievement roadmap. Guide to efficiently achieve 100% completion." />
+    <meta property="og:type" content="article" />
 
-        <title>Metro Exodus Achievement Roadmap - AchievementRoadmaps.com</title>
+    <title>Metro Exodus Achievement Roadmap - AchievementRoadmaps.com</title>
 </head>
 
 <body>
@@ -50,13 +50,52 @@
                     <li>Single Player:<span class="editableTitles">68</span></li>
                     <li>Multiplayer/CoOp:<span class="editableTitles"></span>0</li>
                     <li>Does difficulty affect achievements?:<span class="editableTitles">Yes</span></li>
-                    <li>Do achievements stack?:<span class="editableTitles">Yes, except from <span
-                                class="achievement">Dressed for Success</span></span></li>
-                    <li>Missable:<span class="editableTitles">3 - <span class="achievement">Full Strength</span>, <span
-                                class="achievement">Eternal Voyage</span>, <span class="achievement">Dressed for
-                                Success</span></span></li>
-                    <li>Glitched:<span class="editableTitles"><span class="achievement">Dressed for
-                                Success</span></span></li>
+                    <li>Do achievements stack?:<span class="editableTitles">Yes, except from
+                            <span class="achievement">
+                                <%= achievements[35].displayName %>
+                                <span class="tooltip-content"><img src=<%= achievements[35].icon %> />
+                                    <span class="tooltip-text">
+                                        <%= achievements[35].description %>
+                                    </span>
+                                </span>
+                            </span>
+                        </span></li>
+                    <li>Missable:<span class="editableTitles">3 -
+                            <span class="achievement">
+                                <%= achievements[27].displayName %>
+                                <span class="tooltip-content"><img src=<%= achievements[27].icon %> />
+                                    <span class="tooltip-text">
+                                        <%= achievements[27].description %>
+                                    </span>
+                                </span>
+                            </span>,
+                            <span class="achievement">
+                                <%= achievements[29].displayName %>
+                                <span class="tooltip-content"><img src=<%= achievements[29].icon %> />
+                                    <span class="tooltip-text">
+                                        <%= achievements[29].description %>
+                                    </span>
+                                </span>
+                            </span>,
+                            <span class="achievement">
+                                <%= achievements[35].displayName %>
+                                <span class="tooltip-content"><img src=<%= achievements[35].icon %> />
+                                    <span class="tooltip-text">
+                                        <%= achievements[35].description %>
+                                    </span>
+                                </span>
+                            </span>
+                        </span></li>
+                    <li>Glitched:<span class="editableTitles">
+                            <span class="achievement">
+                                <%= achievements[35].displayName %>
+                                <span class="tooltip-content"><img src=<%= achievements[35].icon %> />
+                                    <span class="tooltip-text">
+                                        <%= achievements[35].description %>
+                                    </span>
+                                </span>
+                            </span>
+                        </span></li>
 
                     <li>Grind:<span class="editableTitles">0</span></li>
                 </ul>
@@ -82,67 +121,539 @@
                         option that feels comfortable to you. The game overall is not that hard and if you previously
                         played any of the other Metro games, then this will feel very familiar.<br>
                         If you utilize the binoculars mechanic and visit all the places on the map then you will never
-                        run out of crafting materials. You will unlock all the story achievements: <span
-                            class="achievement">Exodus</span>, <span class="achievement">Aurora</span>, <span
-                            class="achievement">Regatta</span>, <span class="achievement">Railwayman</span>, <span
-                            class="achievement">Long distance passenger</span>, <span class="achievement">Lower the
-                            Bridge</span>, <span class="achievement">Spoiled dinner</span>, <span
-                            class="achievement">Complete road map</span>, <span class="achievement">New order</span>,
-                        <span class="achievement">Gor'ko!</span>, <span class="achievement">Sword of Damocles</span> and
-                        <span class="achievement">Putrification</span>. Driving the first car you encounter will earn
-                        you <span class="achievement">Driver</span> and it is missable. There is a side quest you can do
-                        for your crew members for <span class="achievement">Friend of the Crew</span>.<br>
-                        By playing non lethal in this playthrough you will earn <span class="achievement">Duke</span>,
-                        <span class="achievement">Damir</span>, <span class="achievement">Alyosha</span>, <span
-                            class="achievement">Forest Child</span>, <span class="achievement">Guide</span>, <span
-                            class="achievement">Full Strength</span> and <span class="achievement">Your
-                            Destination</span>.
+                        run out of crafting materials. You will unlock all the story achievements:
+                        <span class="achievement">
+                            <%= achievements[1].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[1].icon %> />
+                                <span class="tooltip-text">
+                                    <%= achievements[1].description %>
+                                </span>
+                            </span>
+                        </span>,
+                        <span class="achievement">
+                            <%= achievements[2].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[2].icon %> />
+                                <span class="tooltip-text">
+                                    <%= achievements[2].description %>
+                                </span>
+                            </span>
+                        </span>,
+                        <span class="achievement">
+                            <%= achievements[3].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[3].icon %> />
+                                <span class="tooltip-text">
+                                    <%= achievements[3].description %>
+                                </span>
+                            </span>
+                        </span>,
+                        <span class="achievement">
+                            <%= achievements[4].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[4].icon %> />
+                                <span class="tooltip-text">
+                                    <%= achievements[4].description %>
+                                </span>
+                            </span>
+                        </span>,
+                        <span class="achievement">
+                            <%= achievements[6].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[6].icon %> />
+                                <span class="tooltip-text">
+                                    <%= achievements[6].description %>
+                                </span>
+                            </span>
+                        </span>,
+                        <span class="achievement">
+                            <%= achievements[9].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[9].icon %> />
+                                <span class="tooltip-text">
+                                    <%= achievements[9].description %>
+                                </span>
+                            </span>
+                        </span>,
+                        <span class="achievement">
+                            <%= achievements[11].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[11].icon %> />
+                                <span class="tooltip-text">
+                                    <%= achievements[11].description %>
+                                </span>
+                            </span>
+                        </span>,
+                        <span class="achievement">
+                            <%= achievements[15].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[15].icon %> />
+                                <span class="tooltip-text">
+                                    <%= achievements[15].description %>
+                                </span>
+                            </span>
+                        </span>,
+                        <span class="achievement">
+                            <%= achievements[17].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[17].icon %> />
+                                <span class="tooltip-text">
+                                    <%= achievements[17].description %>
+                                </span>
+                            </span>
+                        </span>,
+                        <span class="achievement">
+                            <%= achievements[18].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[18].icon %> />
+                                <span class="tooltip-text">
+                                    <%= achievements[18].description %>
+                                </span>
+                            </span>
+                        </span>,
+                        <span class="achievement">
+                            <%= achievements[24].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[24].icon %> />
+                                <span class="tooltip-text">
+                                    <%= achievements[24].description %>
+                                </span>
+                            </span>
+                        </span>
+
+                        and
+
+                        <span class="achievement">
+                            <%= achievements[25].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[25].icon %> />
+                                <span class="tooltip-text">
+                                    <%= achievements[25].description %>
+                                </span>
+                            </span>
+                        </span>.
+
+                        Driving the first car you encounter will earn you
+
+                        <span class="achievement">
+                            <%= achievements[12].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[12].icon %> />
+                                <span class="tooltip-text">
+                                    <%= achievements[12].description %>
+                                </span>
+                            </span>
+                        </span>
+
+                        and it is missable. There is a side quest you can do for your crew members for
+
+                        <span class="achievement">
+                            <%= achievements[5].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[5].icon %> />
+                                <span class="tooltip-text">
+                                    <%= achievements[5].description %>
+                                </span>
+                            </span>
+                        </span>.<br>
+
+                        By playing non lethal in this playthrough you will earn
+
+                        <span class="achievement">
+                            <%= achievements[8].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[8].icon %> />
+                                <span class="tooltip-text">
+                                    <%= achievements[8].description %>
+                                </span>
+                            </span>
+                        </span>,
+                        <span class="achievement">
+                            <%= achievements[16].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[16].icon %> />
+                                <span class="tooltip-text">
+                                    <%= achievements[16].description %>
+                                </span>
+                            </span>
+                        </span>,
+                        <span class="achievement">
+                            <%= achievements[23].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[23].icon %> />
+                                <span class="tooltip-text">
+                                    <%= achievements[23].description %>
+                                </span>
+                            </span>
+                        </span>,
+                        <span class="achievement">
+                            <%= achievements[22].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[22].icon %> />
+                                <span class="tooltip-text">
+                                    <%= achievements[22].description %>
+                                </span>
+                            </span>
+                        </span>,
+                        <span class="achievement">
+                            <%= achievements[26].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[26].icon %> />
+                                <span class="tooltip-text">
+                                    <%= achievements[26].description %>
+                                </span>
+                            </span>
+                        </span>,
+                        <span class="achievement">
+                            <%= achievements[27].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[27].icon %> />
+                                <span class="tooltip-text">
+                                    <%= achievements[27].description %>
+                                </span>
+                            </span>
+                        </span>
+
+                        and
+
+                        <span class="achievement">
+                            <%= achievements[30].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[30].icon %> />
+                                <span class="tooltip-text">
+                                    <%= achievements[30].description %>
+                                </span>
+                            </span>
+                        </span>.
                     </p>
                     <h2>Second Playthrough</h2>
                     <p>
                         For the second playthrough you can start a New Game or a New Game Plus. In the New Game Plus,
                         any collectibles and modifications you found, will carry on the next playthrough. Although, if
-                        you haven't unlocked <span class="achievement">Dressed for Success</span>, I recommend skipping
+                        you haven't unlocked
+
+                        <span class="achievement">
+                            <%= achievements[35].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[35].icon %> />
+                                <span class="tooltip-text">
+                                    <%= achievements[35].description %>
+                                </span>
+                            </span>
+                        </span>,
+
+                        I recommend skipping
                         the New Game Plus, since it needs a fresh playthrough and you have to collect eveything in this
                         playthrough anyway. You want to go for the "Bad" ending, which means taking
                         the lethal approach, kill everyone and make "unethical" choices. Choose an easy difficulty
                         level, also reload saves and chapters to do the chapter specific achievements and farm any kills
                         if necessary.<br>
-                        The achievement that needs special attention is <span class="achievement">Professional</span>
+                        The achievement that needs special attention is
+
+                        <span class="achievement">
+                            <%= achievements[31].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[31].icon %> />
+                                <span class="tooltip-text">
+                                    <%= achievements[31].description %>
+                                </span>
+                            </span>
+                        </span>
+
                         for making a kill with every weapon. Install a modification of each category on a single weapon
-                        for <span class="achievement">Gunsmith</span>. Spend 500 chemical resources on cleaning weapons
-                        for <span class="achievement">Tidyman</span>, spend 500 consumable resources on crafting for
-                        <span class="achievement">Handyman</span> and find all upgrades for Artyom's suit for <span
-                            class="achievement">Dressed for Success</span>.<br>
-                        There are killing a number of enemies achievements: <span class="achievement">Antibiotic</span>
-                        for mutants, <span class="achievement">Righteous vengeance</span> for cannibals, <span
-                            class="achievement">Firebird</span> for killing a demon with fire, <span
-                            class="achievement">Headhunter</span> for humans, <span class="achievement">Stand
-                            back</span> for long distance and <span class="achievement">Saboteur</span> for melee.
-                        Weapon specific are <span class="achievement">Silent marksman</span> for Tikhar, <span
-                            class="achievement">Robin Hood</span> for the crossbow and <span
-                            class="achievement">Carmaheddon</span> for the car. Kill 3 enemies using sniper scope while
-                        wearing the Gas mask and using the Night Vision goggles for <span
-                            class="achievement">Kaleidoscope</span>.<br>
-                        For the gasmask there are <span class="achievement">Martian</span> and <span
-                            class="achievement">Last Breath</span>.<br>
-                        The chapter specific achievements are <span class="achievement">Fisherman</span>, <span
-                            class="achievement">Roller coaster</span>, <span class="achievement">Master of the
-                            Forest</span>, <span class="achievement">5 o'clock</span>, <span class="achievement">Join us
-                            on air</span>, <span class="achievement">Decommunization</span> and <span
-                            class="achievement">Brakeman</span>.<br>
-                        Collecting all the diary pages and all the post cards with unlock <span
-                            class="achievement">Librarian</span> and <span class="achievement">Old world
-                            pictures</span>. Finally completing this playthrough you will unlock <span
-                            class="achievement">Eternal Voyage</span>.
+                        for
+
+                        <span class="achievement">
+                            <%= achievements[32].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[32].icon %> />
+                                <span class="tooltip-text">
+                                    <%= achievements[32].description %>
+                                </span>
+                            </span>
+                        </span>.
+
+                        Spend 500 chemical resources on cleaning weapons for
+
+                        <span class="achievement">
+                            <%= achievements[33].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[33].icon %> />
+                                <span class="tooltip-text">
+                                    <%= achievements[33].description %>
+                                </span>
+                            </span>
+                        </span>,
+
+                        spend 500 consumable resources on crafting for
+
+                        <span class="achievement">
+                            <%= achievements[34].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[34].icon %> />
+                                <span class="tooltip-text">
+                                    <%= achievements[34].description %>
+                                </span>
+                            </span>
+                        </span>
+
+                        and find all upgrades for Artyom's suit for
+
+                        <span class="achievement">
+                            <%= achievements[35].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[35].icon %> />
+                                <span class="tooltip-text">
+                                    <%= achievements[35].description %>
+                                </span>
+                            </span>
+                        </span>.<br>
+
+                        There are killing a number of enemies achievements:
+
+                        <span class="achievement">
+                            <%= achievements[38].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[38].icon %> />
+                                <span class="tooltip-text">
+                                    <%= achievements[38].description %>
+                                </span>
+                            </span>
+                        </span>
+
+                        for mutants,
+
+                        <span class="achievement">
+                            <%= achievements[10].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[10].icon %> />
+                                <span class="tooltip-text">
+                                    <%= achievements[10].description %>
+                                </span>
+                            </span>
+                        </span>
+
+                        for cannibals,
+
+                        <span class="achievement">
+                            <%= achievements[45].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[45].icon %> />
+                                <span class="tooltip-text">
+                                    <%= achievements[45].description %>
+                                </span>
+                            </span>
+                        </span>
+
+                        for killing a demon with fire,
+
+                        <span class="achievement">
+                            <%= achievements[42].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[42].icon %> />
+                                <span class="tooltip-text">
+                                    <%= achievements[42].description %>
+                                </span>
+                            </span>
+                        </span>
+
+                        for humans,
+
+                        <span class="achievement">
+                            <%= achievements[39].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[39].icon %> />
+                                <span class="tooltip-text">
+                                    <%= achievements[39].description %>
+                                </span>
+                            </span>
+                        </span>
+
+                        for long distance and
+
+                        <span class="achievement">
+                            <%= achievements[43].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[43].icon %> />
+                                <span class="tooltip-text">
+                                    <%= achievements[43].description %>
+                                </span>
+                            </span>
+                        </span>
+
+                        for melee. Weapon specific are
+
+                        <span class="achievement">
+                            <%= achievements[40].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[40].icon %> />
+                                <span class="tooltip-text">
+                                    <%= achievements[40].description %>
+                                </span>
+                            </span>
+                        </span>
+
+                        for Tikhar,
+
+                        <span class="achievement">
+                            <%= achievements[41].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[41].icon %> />
+                                <span class="tooltip-text">
+                                    <%= achievements[41].description %>
+                                </span>
+                            </span>
+                        </span>
+
+                        for the crossbow and
+
+                        <span class="achievement">
+                            <%= achievements[13].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[13].icon %> />
+                                <span class="tooltip-text">
+                                    <%= achievements[13].description %>
+                                </span>
+                            </span>
+                        </span>
+
+                        for the car. Kill 3 enemies using sniper scope while wearing the Gas mask and using the Night
+                        Vision goggles for
+
+                        <span class="achievement">
+                            <%= achievements[44].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[44].icon %> />
+                                <span class="tooltip-text">
+                                    <%= achievements[44].description %>
+                                </span>
+                            </span>
+                        </span>.<br>
+
+                        For the gasmask there are
+
+                        <span class="achievement">
+                            <%= achievements[36].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[36].icon %> />
+                                <span class="tooltip-text">
+                                    <%= achievements[36].description %>
+                                </span>
+                            </span>
+                        </span>
+
+                        and
+
+                        <span class="achievement">
+                            <%= achievements[37].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[37].icon %> />
+                                <span class="tooltip-text">
+                                    <%= achievements[37].description %>
+                                </span>
+                            </span>
+                        </span>.<br>
+
+                        The chapter specific achievements are
+
+                        <span class="achievement">
+                            <%= achievements[7].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[7].icon %> />
+                                <span class="tooltip-text">
+                                    <%= achievements[7].description %>
+                                </span>
+                            </span>
+                        </span>,
+                        <span class="achievement">
+                            <%= achievements[14].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[14].icon %> />
+                                <span class="tooltip-text">
+                                    <%= achievements[14].description %>
+                                </span>
+                            </span>
+                        </span>,
+                        <span class="achievement">
+                            <%= achievements[20].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[20].icon %> />
+                                <span class="tooltip-text">
+                                    <%= achievements[20].description %>
+                                </span>
+                            </span>
+                        </span>,
+                        <span class="achievement">
+                            <%= achievements[21].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[21].icon %> />
+                                <span class="tooltip-text">
+                                    <%= achievements[21].description %>
+                                </span>
+                            </span>
+                        </span>,
+                        <span class="achievement">
+                            <%= achievements[48].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[48].icon %> />
+                                <span class="tooltip-text">
+                                    <%= achievements[48].description %>
+                                </span>
+                            </span>
+                        </span>,
+                        <span class="achievement">
+                            <%= achievements[19].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[19].icon %> />
+                                <span class="tooltip-text">
+                                    <%= achievements[19].description %>
+                                </span>
+                            </span>
+                        </span>
+
+                        and
+
+                        <span class="achievement">
+                            <%= achievements[0].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[0].icon %> />
+                                <span class="tooltip-text">
+                                    <%= achievements[0].description %>
+                                </span>
+                            </span>
+                        </span>.<br>
+
+                        Collecting all the diary pages and all the post cards with unlock
+
+                        <span class="achievement">
+                            <%= achievements[46].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[46].icon %> />
+                                <span class="tooltip-text">
+                                    <%= achievements[46].description %>
+                                </span>
+                            </span>
+                        </span>
+
+                        and
+
+                        <span class="achievement">
+                            <%= achievements[47].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[47].icon %> />
+                                <span class="tooltip-text">
+                                    <%= achievements[47].description %>
+                                </span>
+                            </span>
+                        </span>.
+
+                        Finally completing this playthrough you will unlock
+
+                        <span class="achievement">
+                            <%= achievements[29].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[29].icon %> />
+                                <span class="tooltip-text">
+                                    <%= achievements[29].description %>
+                                </span>
+                            </span>
+                        </span>.
                     </p>
                     <h2>Third Playthrough</h2>
                     <p>
                         For the final playthrough, choose New Game Plus, the Iron Mode modification and the Ranger
-                        Hardcore difficulty. The only achievement you want to focus now is <span class="achievement">Toy
-                            seller</span>, which is a NG+ specific achievement. Completing this playthrough will earn
-                        you <span class="achievement">Hardcore</span>, <span class="achievement">Mutation</span> and
-                        <span class="achievement">Iron Mode</span>.
+                        Hardcore difficulty. The only achievement you want to focus now is
+
+                        <span class="achievement">
+                            <%= achievements[49].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[49].icon %> />
+                                <span class="tooltip-text">
+                                    <%= achievements[49].description %>
+                                </span>
+                            </span>
+                        </span>,
+
+                        which is a NG+ specific achievement. Completing this playthrough will earn you
+
+                        <span class="achievement">
+                            <%= achievements[28].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[28].icon %> />
+                                <span class="tooltip-text">
+                                    <%= achievements[28].description %>
+                                </span>
+                            </span>
+                        </span>,
+                        <span class="achievement">
+                            <%= achievements[50].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[50].icon %> />
+                                <span class="tooltip-text">
+                                    <%= achievements[50].description %>
+                                </span>
+                            </span>
+                        </span>
+
+                        and
+
+                        <span class="achievement">
+                            <%= achievements[51].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[51].icon %> />
+                                <span class="tooltip-text">
+                                    <%= achievements[51].description %>
+                                </span>
+                            </span>
+                        </span>.
                     </p>
                     <h2>DLC: the two colonels</h2>
                     <p>
@@ -150,29 +661,181 @@
                         recommend a blind playthrough, because there is no chapter select and if you miss an achievement
                         you have to play it from the start. It is more than a couple hours long and there is plenty
                         of dialogue that is unskippable.<br>
-                        Four achievements are story related and unmissable: <span class="achievement">New Year</span>,
-                        <span class="achievement">Duty and conscience</span>, <span class="achievement">Father and
-                            son</span> and <span class="achievement">Real Colonel</span>. <br>
-                        Collect all the diary pages for <span class="achievement">The whole picture</span> and finish
-                        the DLC without using medkits for <span class="achievement">It's just a scratch</span>.<br>
-                        Finally <span class="achievement">Mind you, it's quite heavy!</span> and <span
-                            class="achievement">Dodge master</span> are chapter specific and require certain actions.
+                        Four achievements are story related and unmissable:
+
+                        <span class="achievement">
+                            <%= achievements[52].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[52].icon %> />
+                                <span class="tooltip-text">
+                                    <%= achievements[52].description %>
+                                </span>
+                            </span>
+                        </span>,
+                        <span class="achievement">
+                            <%= achievements[53].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[53].icon %> />
+                                <span class="tooltip-text">
+                                    <%= achievements[53].description %>
+                                </span>
+                            </span>
+                        </span>,
+                        <span class="achievement">
+                            <%= achievements[54].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[54].icon %> />
+                                <span class="tooltip-text">
+                                    <%= achievements[54].description %>
+                                </span>
+                            </span>
+                        </span>
+
+                        and
+
+                        <span class="achievement">
+                            <%= achievements[55].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[55].icon %> />
+                                <span class="tooltip-text">
+                                    <%= achievements[55].description %>
+                                </span>
+                            </span>
+                        </span>. <br>
+
+                        Collect all the diary pages for
+
+                        <span class="achievement">
+                            <%= achievements[56].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[56].icon %> />
+                                <span class="tooltip-text">
+                                    <%= achievements[56].description %>
+                                </span>
+                            </span>
+                        </span>
+
+                        and finish the DLC without using medkits for
+
+                        <span class="achievement">
+                            <%= achievements[59].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[59].icon %> />
+                                <span class="tooltip-text">
+                                    <%= achievements[59].description %>
+                                </span>
+                            </span>
+                        </span>.<br>
+
+                        Finally
+
+                        <span class="achievement">
+                            <%= achievements[57].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[57].icon %> />
+                                <span class="tooltip-text">
+                                    <%= achievements[57].description %>
+                                </span>
+                            </span>
+                        </span>
+
+                        and
+
+                        <span class="achievement">
+                            <%= achievements[58].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[58].icon %> />
+                                <span class="tooltip-text">
+                                    <%= achievements[58].description %>
+                                </span>
+                            </span>
+                        </span>
+
+                        are chapter specific and require certain actions.
                     </p>
                     <h2>DLC: sam's story</h2>
                     <p>
                         Similar with The Two Colonels DLC, there are eight total achievements and they require normal
                         difficulty. There is no chapter select and you have to replay the whole DLC if you miss an
                         achievement.<br>
-                        Organize a documentary screening for <span class="achievement">Cinephile</span>. Set all 5 traps
-                        as the Captain requests for <span class="achievement">Trapper</span>.<br>
-                        Find all the Night Hunters' secret stashes for <span class="achievement">Great Owl</span>,
-                        collect all harmonica melodies for <span class="achievement">Music Lover</span> and collect all
-                        the upgrades for Sammy rifle and Stallion pistol for <span class="achievement">Lord of
-                            War</span>.<br>
+                        Organize a documentary screening for
+
+                        <span class="achievement">
+                            <%= achievements[60].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[60].icon %> />
+                                <span class="tooltip-text">
+                                    <%= achievements[60].description %>
+                                </span>
+                            </span>
+                        </span>.
+
+                        Set all 5 traps as the Captain requests for
+
+                        <span class="achievement">
+                            <%= achievements[61].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[61].icon %> />
+                                <span class="tooltip-text">
+                                    <%= achievements[61].description %>
+                                </span>
+                            </span>
+                        </span>.<br>
+
+                        Find all the Night Hunters' secret stashes for
+
+                        <span class="achievement">
+                            <%= achievements[65].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[65].icon %> />
+                                <span class="tooltip-text">
+                                    <%= achievements[65].description %>
+                                </span>
+                            </span>
+                        </span>,
+
+                        collect all harmonica melodies for
+
+                        <span class="achievement">
+                            <%= achievements[66].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[66].icon %> />
+                                <span class="tooltip-text">
+                                    <%= achievements[66].description %>
+                                </span>
+                            </span>
+                        </span>
+
+                        and collect all the upgrades for Sammy rifle and Stallion pistol for
+
+                        <span class="achievement">
+                            <%= achievements[67].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[67].icon %> />
+                                <span class="tooltip-text">
+                                    <%= achievements[67].description %>
+                                </span>
+                            </span>
+                        </span>.<br>
+
                         Finish the DLC without dying in Batwing encounters and by earning the Captain's full trust with
-                        unlock <span class="achievement">The Last Hero</span>, <span
-                            class="achievement">Untouchable</span> and <span class="achievement">A Man of
-                            Principle</span>.
+                        unlock
+
+                        <span class="achievement">
+                            <%= achievements[63].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[63].icon %> />
+                                <span class="tooltip-text">
+                                    <%= achievements[63].description %>
+                                </span>
+                            </span>
+                        </span>,
+
+                        <span class="achievement">
+                            <%= achievements[62].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[62].icon %> />
+                                <span class="tooltip-text">
+                                    <%= achievements[62].description %>
+                                </span>
+                            </span>
+                        </span>
+
+                        and
+
+                        <span class="achievement">
+                            <%= achievements[64].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[64].icon %> />
+                                <span class="tooltip-text">
+                                    <%= achievements[64].description %>
+                                </span>
+                            </span>
+                        </span>.
                     </p>
                     <h3>Time Saving Resources</h3>
                     <p><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2483474143" target="_blank">All
@@ -187,6 +850,12 @@
                     alt="">
             </div>
         </div>
+    </section>
+
+    <section>
+
+        <%- include('../partials/ach-list') %>
+
     </section>
 
     <footer>

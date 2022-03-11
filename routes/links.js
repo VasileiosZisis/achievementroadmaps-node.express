@@ -5,10 +5,6 @@ const ExpressError = require('../ExpressError.js');
 
 const router = express.Router();
 
-// for (let i = 0; i < vampyrAch.achievements.length; i++) {
-//   console.log(i, vampyrAch.achievements[i]);
-// }
-
 router.get('/', (req, res) => {
   res.render('index');
 });
@@ -34,11 +30,15 @@ router.get('/roadmaps/darksiders-3', (req, res) => {
 router.get('/roadmaps/darkwood', (req, res) => {
   res.render('./roadmaps/darkwood');
 });
+
+const elderbornAch = require('../public/ach_local/elderborn.json');
 router.get('/roadmaps/elderborn', (req, res) => {
-  res.render('./roadmaps/elderborn');
+  res.render('./roadmaps/elderborn', { ...elderbornAch });
 });
+
+const finalExamAch = require('../public/ach_local/final-exam.json');
 router.get('/roadmaps/final-exam', (req, res) => {
-  res.render('./roadmaps/final-exam');
+  res.render('./roadmaps/final-exam', { ...finalExamAch });
 });
 
 const vampyrAch = require('../public/ach_local/vampyr.json');
@@ -54,23 +54,34 @@ router.get('/roadmaps/xcom-chimera-squad', (req, res) => {
 router.get('/roadmaps/darksiders-genesis', (req, res) => {
   res.render('./roadmaps/darksiders-genesis');
 });
+
+const nowhereAch = require('../public/ach_local/nowhere-prophet.json');
 router.get('/roadmaps/nowhere-prophet', (req, res) => {
-  res.render('./roadmaps/nowhere-prophet');
+  res.render('./roadmaps/nowhere-prophet', { ...nowhereAch });
 });
+
+const resThreeAch = require('../public/ach_local/resident-evil-3.json');
 router.get('/roadmaps/resident-evil-3', (req, res) => {
-  res.render('./roadmaps/resident-evil-3');
+  res.render('./roadmaps/resident-evil-3', { ...resThreeAch });
 });
+
 router.get('/roadmaps/bullets-per-minute', (req, res) => {
   res.render('./roadmaps/bullets-per-minute');
 });
+
+const metroExAch = require('../public/ach_local/metro-exodus.json');
 router.get('/roadmaps/metro-exodus', (req, res) => {
-  res.render('./roadmaps/metro-exodus');
+  res.render('./roadmaps/metro-exodus', { ...metroExAch });
 });
 
 const sekiroAch = require('../public/ach_local/sekiro-shadows-die-twice.json');
 router.get('/roadmaps/sekiro-shadows-die-twice', (req, res) => {
   res.render('./roadmaps/sekiro-shadows-die-twice', { ...sekiroAch });
 });
+
+// for (let i = 0; i < elderbornAch.achievements.length; i++) {
+//   console.log(i, elderbornAch.achievements[i]);
+// }
 
 //roadmaps end
 
