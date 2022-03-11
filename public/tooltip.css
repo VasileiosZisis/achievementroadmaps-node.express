@@ -41,6 +41,7 @@
   text-align: center;
   margin: auto;
   padding-inline: 5px;
+  font-weight: normal;
 }
 
 .achievement:hover .tooltip-content {

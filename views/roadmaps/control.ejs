@@ -5,15 +5,15 @@
 
     <%- include('../partials/head') %>
 
-        <meta name="description" content="Control achievement roadmap. Guide to efficiently achieve 100% completion." />
-        <meta property="og:url" content="https://www.achievementroadmaps.com/roadmaps/control" />
-        <meta property="og:title" content="Control Achievement Roadmap" />
-        <meta property="og:site_name" content="Achievement Roadmaps" />
-        <meta property="og:description"
-            content="Control achievement roadmap. Guide to efficiently achieve 100% completion." />
-        <meta property="og:type" content="article" />
+    <meta name="description" content="Control achievement roadmap. Guide to efficiently achieve 100% completion." />
+    <meta property="og:url" content="https://www.achievementroadmaps.com/roadmaps/control" />
+    <meta property="og:title" content="Control Achievement Roadmap" />
+    <meta property="og:site_name" content="Achievement Roadmaps" />
+    <meta property="og:description"
+        content="Control achievement roadmap. Guide to efficiently achieve 100% completion." />
+    <meta property="og:type" content="article" />
 
-        <title>Control Achievement Roadmap - AchievementRoadmaps.com</title>
+    <title>Control Achievement Roadmap - AchievementRoadmaps.com</title>
 </head>
 
 <body>
@@ -40,20 +40,20 @@
             </div>
             <div class="middleColumnPages">
                 <ul class="entryTitles">
-                    <li>Time to 100%:<span class="editableTitles">35 - 40 hours</li></span>
-                    <li>Minimum Playthroughs:<span class="editableTitles">1</li></span>
+                    <li>Time to 100%:<span class="editableTitles">35 - 40 hours</span></li>
+                    <li>Minimum Playthroughs:<span class="editableTitles">1</span></li>
                     <li>Extra Content required:<span class="editableTitles">2 DLCs - Altered World Events, The
                             Foundation</li></span>
-                    <li>Total Achievements:<span class="editableTitles">67</li></span>
-                    <li>Single Player:<span class="editableTitles">67</li></span>
-                    <li>Multiplayer/CoOp:<span class="editableTitles">None</li></span>
+                    <li>Total Achievements:<span class="editableTitles">67</span></li>
+                    <li>Single Player:<span class="editableTitles">67</span></li>
+                    <li>Multiplayer/CoOp:<span class="editableTitles">None</span></li>
                     </span>
                     <li>Does difficulty affect achievements?:<span class="editableTitles">No
                     </li></span>
-                    <li>Do achievements stack?:<span class="editableTitles">Yes</li></span>
+                    <li>Do achievements stack?:<span class="editableTitles">Yes</span></li>
                     <li>Missable:<span class="editableTitles">None</span></li>
-                    <li>Glitched:<span class="editableTitles">None</li></span>
-                    <li>Grind:<span class="editableTitles">None</li></span>
+                    <li>Glitched:<span class="editableTitles">None</span></li>
+                    <li>Grind:<span class="editableTitles">None</span></li>
                 </ul>
                 <div class="aboutGameSection">
                     <h1>Does it worth your time?</h1>
@@ -62,48 +62,286 @@
                         guide for only a couple of them. There is not a point-of-no-return so you can start cleaning up
                         your achievements at any point.</p>
                     <h2>First Playthrough</h2>
-                    <p>There are total 18 side missions and for completing 15 side missions you will unlock <span
-                            class="achievement">The Importance of Synergy</span>, <span
-                            class="achievement">Inter-Departmental Cooperation</span> and <span class="achievement">FBC
-                            Crisis Solution Task Force</span>, so use this as your guide so you will know how many
-                        missions left, because you want to do all of them for the rewards. Pay attention to Board
-                        Countermeasures for <span class="achievement">Astral Tactician</span> and Bureau Alerts for
-                        <span class="achievement">Crisis Management</span>. For combat there are <span
-                            class="achievement">Cognitive Intruder</span> for the Seize ability, <span
-                            class="achievement">Unstable Matter</span> and <span class="achievement">Proper Handling
-                            Procedures</span> for the Launch ability. For collectibles there are <span
-                            class="achievement">Strange Collection</span>, <span class="achievement">Record
-                            Keeper</span> and <span class="achievement">Bureau Archivist</span>, but there are more
-                        collectibles in game than needed. The rest should unlock naturally.
-                        <br><br>
-                        <span class="dlc-title">The Foundation DLC</span>
-                        <br>
-                        There are total of 10 achievements. For combat there are <span class="achievement">Volatile
-                            Debris</span> for the Shiled ability, <span class="achievement">Make / Unmake</span> for the
-                        new abilities and <span class="achievement">Supportive Staff</span> for the new companion
-                        feature. You need to find all hidden locations for <span class="achievement">Niche
-                            Position</span> and all collectibles for <span class="achievement">Subterranean
-                            Research</span>. For <span class="achievement">One of Us</span> you will most likely need a
-                        guide. The rest should come naturally.
-                        <br><br>
-                        <span class="dlc-title">Altered World Events DLC</span>
-                        <br>
-                        There are total of 11 achievements. Pay attention to the vending machines for <span
-                            class="achievement">Vending Spree</span>. For combat there are <span
-                            class="achievement">Surge Protector</span>, <span class="achievement">Elevated Mind</span>,
-                        <span class="achievement">Work Smarter, Not Harder</span> and <span class="achievement">Multiple
-                            Applications</span>. You also need to get the new weapon to max level for <span
-                            class="achievement">Surge of Power</span>. Play a game at the arcade machines for the <span
-                            class="achievement">Workplace Recreation</span>. Finding 80% of the collectibles will unlock
-                        <span class="achievement">In-depth Investigations</span> and for finding 80% of the hidden
-                        locations you will unlock <span class="achievement">Chief Investigator</span>.
+                    <p>There are total 18 side missions and for completing 15 side missions you will unlock
+                        <span class="achievement">
+                            <%= achievements[33].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[33].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[33].description %>
+                                </span>
+                            </span>
+                        </span>,
+                        <span class="achievement">
+                            <%= achievements[34].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[34].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[34].description %>
+                                </span>
+                            </span>
+                        </span>
+
+                        and
+
+                        <span class="achievement">
+                            <%= achievements[35].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[35].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[35].description %>
+                                </span>
+                            </span>
+                        </span>,
+
+                        so use this as your guide so you will know how many missions left, because you want to do all of
+                        them for the rewards. Pay attention to Board Countermeasures for
+
+                        <span class="achievement">
+                            <%= achievements[52].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[52].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[52].description %>
+                                </span>
+                            </span>
+                        </span>
+
+                        and Bureau Alerts for
+
+                        <span class="achievement">
+                            <%= achievements[54].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[54].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[54].description %>
+                                </span>
+                            </span>
+                        </span>.
+
+                        For combat there are
+
+                        <span class="achievement">
+                            <%= achievements[47].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[47].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[47].description %>
+                                </span>
+                            </span>
+                        </span>
+
+                        for the Seize ability,
+
+                        <span class="achievement">
+                            <%= achievements[48].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[48].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[48].description %>
+                                </span>
+                            </span>
+                        </span>
+
+                        and
+
+                        <span class="achievement">
+                            <%= achievements[50].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[50].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[50].description %>
+                                </span>
+                            </span>
+                        </span>
+
+                        for the Launch ability. For collectibles there are
+
+                        <span class="achievement">
+                            <%= achievements[44].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[44].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[44].description %>
+                                </span>
+                            </span>
+                        </span>,
+                        <span class="achievement">
+                            <%= achievements[45].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[45].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[45].description %>
+                                </span>
+                            </span>
+                        </span>
+
+                        and
+
+                        <span class="achievement">
+                            <%= achievements[46].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[46].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[46].description %>
+                                </span>
+                            </span>
+                        </span>,
+
+                        but there are more collectibles in game than needed. The rest should unlock naturally.
+                    </p>
+                    <h2>DLC: the foundation</h2>
+                    <p>
+                        There are total of 10 achievements. For combat there are
+
+                        <span class="achievement">
+                            <%= achievements[49].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[49].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[49].description %>
+                                </span>
+                            </span>
+                        </span>
+
+                        for the Shiled ability,
+
+                        <span class="achievement">
+                            <%= achievements[55].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[55].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[55].description %>
+                                </span>
+                            </span>
+                        </span>
+
+                        for the new abilities and
+
+                        <span class="achievement">
+                            <%= achievements[59].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[59].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[59].description %>
+                                </span>
+                            </span>
+                        </span>
+
+                        for the new companion feature. You need to find all hidden locations for <span
+                            class="achievement">Niche
+                            Position</span> and all collectibles for
+
+                        <span class="achievement">
+                            <%= achievements[58].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[58].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[58].description %>
+                                </span>
+                            </span>
+                        </span>.
+
+                        For
+
+                        <span class="achievement">
+                            <%= achievements[22].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[22].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[22].description %>
+                                </span>
+                            </span>
+                        </span>
+
+                        you will most likely need a guide. The rest should come naturally.
+                    </p>
+                    <h2>DLC: altered world events</h2>
+                    <p>
+                        There are total of 11 achievements. Pay attention to the vending machines for
+
+                        <span class="achievement">
+                            <%= achievements[27].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[27].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[27].description %>
+                                </span>
+                            </span>
+                        </span>.
+
+                        For combat there are
+
+                        <span class="achievement">
+                            <%= achievements[61].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[61].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[61].description %>
+                                </span>
+                            </span>
+                        </span>,
+                        <span class="achievement">
+                            <%= achievements[62].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[62].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[62].description %>
+                                </span>
+                            </span>
+                        </span>,
+                        <span class="achievement">
+                            <%= achievements[65].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[65].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[65].description %>
+                                </span>
+                            </span>
+                        </span>
+
+                        and
+
+                        <span class="achievement">
+                            <%= achievements[63].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[63].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[63].description %>
+                                </span>
+                            </span>
+                        </span>.
+
+                        You also need to get the new weapon to max level for
+
+                        <span class="achievement">
+                            <%= achievements[66].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[66].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[66].description %>
+                                </span>
+                            </span>
+                        </span>.
+
+                        Play a game at the arcade machines for the
+
+                        <span class="achievement">
+                            <%= achievements[29].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[29].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[29].description %>
+                                </span>
+                            </span>
+                        </span>.
+
+                        Finding 80% of the collectibles will unlock
+
+                        <span class="achievement">
+                            <%= achievements[64].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[64].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[64].description %>
+                                </span>
+                            </span>
+                        </span>
+
+                        and for finding 80% of the hidden locations you will unlock
+
+                        <span class="achievement">
+                            <%= achievements[26].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[26].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[26].description %>
+                                </span>
+                            </span>
+                        </span>.
                     </p>
                     <h3>Time Saving Resources</h3>
                     <p><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2211042472"
                             target="_blank">[Control] All achievements+DLC</a> - Steam achievement guide.<br>
-                        <a href="https://www.nexusmods.com/control/mods/47" target="_blank">Service Weapon Hotkeys</a>
-                        and <a href="https://www.nexusmods.com/control/mods/20" target="_blank">Health Regen</a> - My
-                        recommended mods to use.
+                        <a href="https://www.nexusmods.com/control/mods/47" target="_blank">Service Weapon
+                            Hotkeys</a>
+                        and <a href="https://www.nexusmods.com/control/mods/20" target="_blank">Health Regen</a>
+                        - My recommended mods to use.
                     </p>
                 </div>
             </div>
@@ -112,6 +350,12 @@
                     alt="">
             </div>
         </div>
+    </section>
+
+    <section>
+
+        <%- include('../partials/ach-list') %>
+
     </section>
 
     <footer>

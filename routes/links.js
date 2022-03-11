@@ -21,8 +21,10 @@ router.get('/roadmaps/broforce', (req, res) => {
 router.get('/roadmaps/children-of-morta', (req, res) => {
   res.render('./roadmaps/children-of-morta');
 });
+
+const controlAch = require('../public/ach_local/control.json');
 router.get('/roadmaps/control', (req, res) => {
-  res.render('./roadmaps/control');
+  res.render('./roadmaps/control', { ...controlAch });
 });
 
 const darksidersThree = require('../public/ach_local/darksiders-3.json');
@@ -84,8 +86,8 @@ router.get('/roadmaps/sekiro-shadows-die-twice', (req, res) => {
   res.render('./roadmaps/sekiro-shadows-die-twice', { ...sekiroAch });
 });
 
-// for (let i = 0; i < darksidersThree.achievements.length; i++) {
-//   console.log(i, darksidersThree.achievements[i]);
+// for (let i = 0; i < controlAch.achievements.length; i++) {
+//   console.log(i, controlAch.achievements[i]);
 // }
 
 //roadmaps end

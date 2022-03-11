@@ -269,7 +269,6 @@ body {
   background-color: var(--darkGrey);
   display: grid;
   grid-template-columns: 20% auto 20%;
-  min-height: 100vh;
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
@@ -528,10 +527,6 @@ h4 {
 .aboutGameSection p {
   color: var(--lightGrey);
   font-weight: 600;
-}
-
-.dlc-title {
-  text-decoration: underline;
 }
 
 .aboutGameSection ul {
