@@ -12,14 +12,20 @@ router.get('/', (req, res) => {
 router.get('/roadmaps', (req, res) => {
   res.render('roadmaps');
 });
+
+const plagueTaleAch = require('../public/ach_local/a-plague-tale-innocence.json');
 router.get('/roadmaps/a-plague-tale-innocence', (req, res) => {
-  res.render('./roadmaps/a-plague-tale-innocence');
+  res.render('./roadmaps/a-plague-tale-innocence', { ...plagueTaleAch });
 });
+
+const broforceAch = require('../public/ach_local/broforce.json');
 router.get('/roadmaps/broforce', (req, res) => {
-  res.render('./roadmaps/broforce');
+  res.render('./roadmaps/broforce', { ...broforceAch });
 });
+
+const childrenMortaAch = require('../public/ach_local/children-of-morta.json');
 router.get('/roadmaps/children-of-morta', (req, res) => {
-  res.render('./roadmaps/children-of-morta');
+  res.render('./roadmaps/children-of-morta', { ...childrenMortaAch });
 });
 
 const controlAch = require('../public/ach_local/control.json');
@@ -72,8 +78,9 @@ router.get('/roadmaps/resident-evil-3', (req, res) => {
   res.render('./roadmaps/resident-evil-3', { ...resThreeAch });
 });
 
+const bullletsMinAch = require('../public/ach_local/bullets-per-minute.json');
 router.get('/roadmaps/bullets-per-minute', (req, res) => {
-  res.render('./roadmaps/bullets-per-minute');
+  res.render('./roadmaps/bullets-per-minute', { ...bullletsMinAch });
 });
 
 const metroExAch = require('../public/ach_local/metro-exodus.json');
@@ -86,8 +93,8 @@ router.get('/roadmaps/sekiro-shadows-die-twice', (req, res) => {
   res.render('./roadmaps/sekiro-shadows-die-twice', { ...sekiroAch });
 });
 
-// for (let i = 0; i < controlAch.achievements.length; i++) {
-//   console.log(i, controlAch.achievements[i]);
+// for (let i = 0; i < plagueTaleAch.achievements.length; i++) {
+//   console.log(i, plagueTaleAch.achievements[i]);
 // }
 
 //roadmaps end

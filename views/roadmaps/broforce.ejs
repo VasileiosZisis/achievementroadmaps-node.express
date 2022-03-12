@@ -5,16 +5,15 @@
 
     <%- include('../partials/head') %>
 
-        <meta name="description"
-            content="Broforce achievement roadmap. Guide to efficiently achieve 100% completion." />
-        <meta property="og:url" content="https://www.achievementroadmaps.com/roadmaps/broforce" />
-        <meta property="og:title" content="Broforce Achievement Roadmap" />
-        <meta property="og:site_name" content="Achievement Roadmaps" />
-        <meta property="og:description"
-            content="Broforce achievement roadmap. Guide to efficiently achieve 100% completion." />
-        <meta property="og:type" content="article" />
+    <meta name="description" content="Broforce achievement roadmap. Guide to efficiently achieve 100% completion." />
+    <meta property="og:url" content="https://www.achievementroadmaps.com/roadmaps/broforce" />
+    <meta property="og:title" content="Broforce Achievement Roadmap" />
+    <meta property="og:site_name" content="Achievement Roadmaps" />
+    <meta property="og:description"
+        content="Broforce achievement roadmap. Guide to efficiently achieve 100% completion." />
+    <meta property="og:type" content="article" />
 
-        <title>Broforce Achievement Roadmap - AchievementRoadmaps.com</title>
+    <title>Broforce Achievement Roadmap - AchievementRoadmaps.com</title>
 </head>
 
 <body>
@@ -41,20 +40,20 @@
             </div>
             <div class="middleColumnPages">
                 <ul class="entryTitles">
-                    <li>Time to 100%:<span class="editableTitles">10 hours (with cheatcodes)</li></span>
-                    <li>Minimum Playthroughs:<span class="editableTitles">3 (counting arcade more)</li></span>
-                    <li>Extra Content required:<span class="editableTitles">None</li></span>
-                    <li>Total Achievements:<span class="editableTitles">17</li></span>
-                    <li>Single Player:<span class="editableTitles">17</li></span>
-                    <li>Multiplayer/CoOp:<span class="editableTitles">Everything can be done with one keyboard</li>
-                    </span>
+                    <li>Time to 100%:<span class="editableTitles">10 hours (with cheatcodes)</span></li>
+                    <li>Minimum Playthroughs:<span class="editableTitles">3 (counting arcade more)</span></li>
+                    <li>Extra Content required:<span class="editableTitles">None</span></li>
+                    <li>Total Achievements:<span class="editableTitles">17</span></li>
+                    <li>Single Player:<span class="editableTitles">17</span></li>
+                    <li>Multiplayer/CoOp:<span class="editableTitles">Everything can be done with one keyboard</span>
+                    </li>
                     <li>Does difficulty affect achievements?:<span class="editableTitles">Yes, need to finish on hard
-                    </li></span>
-                    <li>Do achievements stack?:<span class="editableTitles">Yes</li></span>
+                        </span></li>
+                    <li>Do achievements stack?:<span class="editableTitles">Yes</span></li>
                     <li>Missable:<span class="editableTitles">None, there is arcade mode where you can repeat the
                             missions</span></li>
-                    <li>Glitched:<span class="editableTitles">None</li></span>
-                    <li>Grind:<span class="editableTitles">None</li></span>
+                    <li>Glitched:<span class="editableTitles">None</span></li>
+                    <li>Grind:<span class="editableTitles">None</span></li>
                 </ul>
                 <div class="aboutGameSection">
                     <h1>Does it worth your time?</h1>
@@ -64,24 +63,87 @@
                         replay the missions, but instead you need go through the arcade mode, but you keep the bros you
                         have unlocked.</p>
                     <h2>First Playthrough</h2>
-                    <p>First play the game on normal and if possible play in co-op, which is arguably more fun. <span
-                            class="achievement">I did not want to resort to violence, but I did not have a choice</span>
-                        can be done during the mission select screen at any point during the campaign. <span
-                            class="achievement">Front Row Tickets To The Gun Show</span> can be done at any point during
-                        the missions and if you configure the keyboard controls you can do it solo. <span
-                            class="achievement">Hot Brotato</span> and <span class="achievement">You're Fired</span> are
-                        the only achievements that are not bro specific. You will earn <span class="achievement">Area
-                            Liberated</span> for completing the campaign. There 8 total bro specific achievements. If
-                        you can keep track of them, then it would save you some time, for the arcade mode later, to
-                        complete as many as you can.
+                    <p>First play the game on normal and if possible play in co-op, which is arguably more fun.
+
+                        <span class="achievement"> <%= achievements[16].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[16].icon %> alt="" />
+                                <span class="tooltip-text"> <%= achievements[16].description %>
+                                </span>
+                            </span>
+                        </span>
+
+                        can be done during the mission select screen at any point during the campaign.
+                        <span class="achievement"> <%= achievements[13].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[13].icon %> alt="" />
+                                <span class="tooltip-text"> <%= achievements[13].description %>
+                                </span>
+                            </span>
+                        </span>
+
+                        can be done at any point during the missions and if you configure the keyboard controls you can
+                        do it solo.
+
+                        <span class="achievement"> <%= achievements[5].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[5].icon %> alt="" />
+                                <span class="tooltip-text"> <%= achievements[5].description %>
+                                </span>
+                            </span>
+                        </span>
+
+                        and
+
+                        <span class="achievement"> <%= achievements[14].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[14].icon %> alt="" />
+                                <span class="tooltip-text"> <%= achievements[14].description %>
+                                </span>
+                            </span>
+                        </span>
+
+                        are the only achievements that are not bro specific. You will earn
+
+                        <span class="achievement"> <%= achievements[0].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[0].icon %> alt="" />
+                                <span class="tooltip-text"> <%= achievements[0].description %>
+                                </span>
+                            </span>
+                        </span>
+
+                        for completing the campaign. There 8 total bro specific achievements. If you can keep track of
+                        them, then it would save you some time, for the arcade mode later, to complete as many as you
+                        can.
                     </p>
                     <h2>Second Playthrough</h2>
                     <p>The next step is to complete the campaign on ironbro hard without dying. If you choose to use the
                         developer cheatcodes it will take 5 minuntes. If you choose to play normally then it most likely
-                        take you over 9000 hours. You will earn <span class="achievement">A Very Particular Set Of
-                            Skills</span>, <span class="achievement">You're the disease, I'm the cure</span>, <span
-                            class="achievement">I'll give you a war you wouldn't believe</span> and <span
-                            class="achievement">There Can Bro Only One</span>
+                        take you over 9000 hours. You will earn
+
+                        <span class="achievement"> <%= achievements[1].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[1].icon %> alt="" />
+                                <span class="tooltip-text"> <%= achievements[1].description %>
+                                </span>
+                            </span>
+                        </span>,
+                        <span class="achievement"> <%= achievements[2].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[2].icon %> alt="" />
+                                <span class="tooltip-text"> <%= achievements[2].description %>
+                                </span>
+                            </span>
+                        </span>,
+                        <span class="achievement"> <%= achievements[3].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[3].icon %> alt="" />
+                                <span class="tooltip-text"> <%= achievements[3].description %>
+                                </span>
+                            </span>
+                        </span>
+
+                        and
+
+                        <span class="achievement"> <%= achievements[4].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[4].icon %> alt="" />
+                                <span class="tooltip-text"> <%= achievements[4].description %>
+                                </span>
+                            </span>
+                        </span>.
                     </p>
                     <h2>Third Playthrough (Arcade Mode)</h2>
                     <p>Now what's left are the bro specific achievements. Either start a new campaing or play the
@@ -105,6 +167,12 @@
                     alt="">
             </div>
         </div>
+    </section>
+
+    <section>
+
+        <%- include('../partials/ach-list') %>
+
     </section>
 
     <footer>

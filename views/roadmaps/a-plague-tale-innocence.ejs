@@ -5,16 +5,16 @@
 
     <%- include('../partials/head') %>
 
-        <meta name="description"
-            content="A Plague Tale: Innocence achievement roadmap. Guide to efficiently achieve 100% completion." />
-        <meta property="og:url" content="https://www.achievementroadmaps.com/roadmaps/a-plague-tale-innocence" />
-        <meta property="og:title" content="A Plague Tale: Innocence Achievement Roadmap" />
-        <meta property="og:site_name" content="Achievement Roadmaps" />
-        <meta property="og:description"
-            content="A Plague Tale: Innocence achievement roadmap. Guide to efficiently achieve 100% completion." />
-        <meta property="og:type" content="article" />
+    <meta name="description"
+        content="A Plague Tale: Innocence achievement roadmap. Guide to efficiently achieve 100% completion." />
+    <meta property="og:url" content="https://www.achievementroadmaps.com/roadmaps/a-plague-tale-innocence" />
+    <meta property="og:title" content="A Plague Tale: Innocence Achievement Roadmap" />
+    <meta property="og:site_name" content="Achievement Roadmaps" />
+    <meta property="og:description"
+        content="A Plague Tale: Innocence achievement roadmap. Guide to efficiently achieve 100% completion." />
+    <meta property="og:type" content="article" />
 
-        <title>A Plague Tale: Innocence Achievement Roadmap - AchievementRoadmaps.com</title>
+    <title>A Plague Tale: Innocence Achievement Roadmap - AchievementRoadmaps.com</title>
 </head>
 
 <body>
@@ -41,20 +41,26 @@
             </div>
             <div class="middleColumnPages">
                 <ul class="entryTitles">
-                    <li>Time to 100%:<span class="editableTitles">10 - 15 hours</li></span>
-                    <li>Minimum Playthroughs:<span class="editableTitles">1</li></span>
-                    <li>Extra Content required:<span class="editableTitles">None</li></span>
-                    <li>Total Achievements:<span class="editableTitles">35</li></span>
-                    <li>Single Player:<span class="editableTitles">35</li></span>
-                    <li>Multiplayer/CoOp:<span class="editableTitles">None</li></span>
+                    <li>Time to 100%:<span class="editableTitles">10 - 15 hours</span></li>
+                    <li>Minimum Playthroughs:<span class="editableTitles">1</span></li>
+                    <li>Extra Content required:<span class="editableTitles">None</span></li>
+                    <li>Total Achievements:<span class="editableTitles">35</span></li>
+                    <li>Single Player:<span class="editableTitles">35</span></li>
+                    <li>Multiplayer/CoOp:<span class="editableTitles">None</span></li>
                     <li>Does difficulty affect achievements?:<span class="editableTitles">There is no difficulty
-                            select
-                            option</li></span>
-                    <li>Do achievements stack?:<span class="editableTitles">Yes</li></span>
+                            select option</span></li>
+                    <li>Do achievements stack?:<span class="editableTitles">Yes</span></li>
                     <li>Missable:<span class="editableTitles">None, there is a chapter select option</span></li>
-                    <li>Glitched:<span class="editableTitles">None</li></span>
-                    <li>Grind:<span class="editableTitles">1 - <span class="achievement">Alchemist</span></li>
-                    </span>
+                    <li>Glitched:<span class="editableTitles">None</span></li>
+                    <li>Grind:<span class="editableTitles">1 -
+                            <span class="achievement"> <%= achievements[24].displayName %>
+                                <span class="tooltip-content"><img src=<%= achievements[24].icon %> alt="" />
+                                    <span class="tooltip-text"> <%= achievements[24].description %>
+                                    </span>
+                                </span>
+                            </span>
+                        </span></li>
+
                 </ul>
                 <div class="aboutGameSection">
                     <h1>Does it worth your time?</h1>
@@ -65,12 +71,42 @@
                         chapters to unlock the achievements, or follow a guide to unlock everything in a single
                         playthrough with minor spoilers.</p>
                     <h2>First Playthrough</h2>
-                    <p>You mostly need to worry about <span class="achievement">Not a toy anymore</span>, <span
-                            class="achievement">Handfull of pockets</span> and <span
-                            class="achievement">Alchemist</span>. Collectibes appear in your inventory so you know
-                        what you are missing except from <span class="achievement">Resource sharing</span>. With
-                        chapter select you do not need to play until the end of the chapter, but only until you find
-                        what you are missing.</p>
+                    <p>You mostly need to worry about
+
+                        <span class="achievement"> <%= achievements[22].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[22].icon %> alt="" />
+                                <span class="tooltip-text"> <%= achievements[22].description %>
+                                </span>
+                            </span>
+                        </span>,
+                        <span class="achievement"> <%= achievements[23].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[23].icon %> alt="" />
+                                <span class="tooltip-text"> <%= achievements[23].description %>
+                                </span>
+                            </span>
+                        </span>
+
+                        and
+
+                        <span class="achievement"> <%= achievements[24].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[24].icon %> alt="" />
+                                <span class="tooltip-text"> <%= achievements[24].description %>
+                                </span>
+                            </span>
+                        </span>.
+
+                        Collectibes appear in your inventory so you know what you are missing except from
+
+                        <span class="achievement"> <%= achievements[25].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[25].icon %> alt="" />
+                                <span class="tooltip-text"> <%= achievements[25].description %>
+                                </span>
+                            </span>
+                        </span>.
+
+                        With chapter select you do not need to play until the end of the chapter, but only until you
+                        find what you are missing.
+                    </p>
                     <h3>Time Saving Resources</h3>
                     <p><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1987696466"
                             target="_blank">Plague Tale:
@@ -83,6 +119,12 @@
                     alt="">
             </div>
         </div>
+    </section>
+
+    <section>
+
+        <%- include('../partials/ach-list') %>
+
     </section>
 
     <footer>

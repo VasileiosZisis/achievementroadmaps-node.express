@@ -5,16 +5,16 @@
 
     <%- include('../partials/head') %>
 
-        <meta name="description"
-            content="Bullets Per Minute achievement roadmap. Guide to efficiently achieve 100% completion." />
-        <meta property="og:url" content="https://www.achievementroadmaps.com/roadmaps/bullets-per-minute" />
-        <meta property="og:title" content="Bullets Per Minute Achievement Roadmap" />
-        <meta property="og:site_name" content="Achievement Roadmaps" />
-        <meta property="og:description"
-            content="Bullets Per Minute achievement roadmap. Guide to efficiently achieve 100% completion." />
-        <meta property="og:type" content="article" />
+    <meta name="description"
+        content="Bullets Per Minute achievement roadmap. Guide to efficiently achieve 100% completion." />
+    <meta property="og:url" content="https://www.achievementroadmaps.com/roadmaps/bullets-per-minute" />
+    <meta property="og:title" content="Bullets Per Minute Achievement Roadmap" />
+    <meta property="og:site_name" content="Achievement Roadmaps" />
+    <meta property="og:description"
+        content="Bullets Per Minute achievement roadmap. Guide to efficiently achieve 100% completion." />
+    <meta property="og:type" content="article" />
 
-        <title>Bullets Per Minute Achievement Roadmap - AchievementRoadmaps.com</title>
+    <title>Bullets Per Minute Achievement Roadmap - AchievementRoadmaps.com</title>
 </head>
 
 <body>
@@ -71,11 +71,54 @@
                     <p>
                         At the beginning you can only choose one character. I recommend playing on easy with
                         the first character until you beat the final boss, then play on hard, with the same character,
-                        until you beat the final boss again. You will unlock <span class="achievement">Asgard</span>,
-                        <span class="achievement">Vanaheim</span>, <span class="achievement">Svartalfheim</span>, <span
-                            class="achievement">Helheim</span>, <span class="achievement">Defeated Nidhogg</span>, <span
-                            class="achievement">Göll Ascending</span> and <span class="achievement">Göll - Of
-                            War</span>. Another goal during your playthroughs should be unlocking Geri, Herfjötur and
+                        until you beat the final boss again. You will unlock
+                        <span class="achievement"> <%= achievements[1].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[1].icon %> alt="" />
+                                <span class="tooltip-text"> <%= achievements[1].description %>
+                                </span>
+                            </span>
+                        </span>,
+                        <span class="achievement"> <%= achievements[2].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[2].icon %> alt="" />
+                                <span class="tooltip-text"> <%= achievements[2].description %>
+                                </span>
+                            </span>
+                        </span>,
+                        <span class="achievement"> <%= achievements[3].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[3].icon %> alt="" />
+                                <span class="tooltip-text"> <%= achievements[3].description %>
+                                </span>
+                            </span>
+                        </span>,
+                        <span class="achievement"> <%= achievements[4].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[4].icon %> alt="" />
+                                <span class="tooltip-text"> <%= achievements[4].description %>
+                                </span>
+                            </span>
+                        </span>,
+                        <span class="achievement"> <%= achievements[0].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[0].icon %> alt="" />
+                                <span class="tooltip-text"> <%= achievements[0].description %>
+                                </span>
+                            </span>
+                        </span>,
+                        <span class="achievement"> <%= achievements[5].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[5].icon %> alt="" />
+                                <span class="tooltip-text"> <%= achievements[5].description %>
+                                </span>
+                            </span>
+                        </span>
+
+                        and
+
+                        <span class="achievement"> <%= achievements[10].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[10].icon %> alt="" />
+                                <span class="tooltip-text"> <%= achievements[10].description %>
+                                </span>
+                            </span>
+                        </span>.
+
+                        Another goal during your playthroughs should be unlocking Geri, Herfjötur and
                         Rún. Which means placing 100 coins in the bank, 100 coins in the well at the final chapter and
                         spending 1000 coins in the armory.
                     </p>
@@ -84,25 +127,153 @@
                         After having completed the game with Göll, you can now start playing the game with all the other
                         characters, leaving Odr and Sanngriðr for last. You can skip the easy difficulty and go straight
                         for hard. The difference is barely noticeable. Also now you can work towards getting a score of
-                        700,000 for <span class="achievement">Multiplier</span>. During these playthroughs you will earn
-                        <span class="achievement">Freyr Ascending</span>, <span class="achievement">Freyr - Ruler of
-                            Peace</span>, <span class="achievement">Hildr Ascending</span>, <span
-                            class="achievement">Hildr - Of Battle</span>, <span class="achievement">Njord
-                            Ascending</span>, <span class="achievement">Njord - Ruler of the Sea</span>
-                        <span class="achievement">Skuld Ascending</span>, <span class="achievement">Skuld - The
-                            Debtor</span>, <span class="achievement">Geri Ascending</span>, <span
-                            class="achievement">Geri - Odin's Hound</span>, <span class="achievement">Herfjötur
-                            Ascending</span>, <span class="achievement">Herfjötur - The Fetter</span>, <span
-                            class="achievement">Rún Ascending</span> and <span class="achievement">Rún - The
-                            Mystery</span>.
+                        700,000 for
+
+                        <span class="achievement"> <%= achievements[16].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[16].icon %> alt="" />
+                                <span class="tooltip-text"> <%= achievements[16].description %>
+                                </span>
+                            </span>
+                        </span>.
+
+                        During these playthroughs you will earn
+
+                        <span class="achievement"> <%= achievements[6].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[6].icon %> alt="" />
+                                <span class="tooltip-text"> <%= achievements[6].description %>
+                                </span>
+                            </span>
+                        </span>,
+                        <span class="achievement"> <%= achievements[11].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[11].icon %> alt="" />
+                                <span class="tooltip-text"> <%= achievements[11].description %>
+                                </span>
+                            </span>
+                        </span>,
+                        <span class="achievement"> <%= achievements[7].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[7].icon %> alt="" />
+                                <span class="tooltip-text"> <%= achievements[7].description %>
+                                </span>
+                            </span>
+                        </span>,
+                        <span class="achievement"> <%= achievements[12].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[12].icon %> alt="" />
+                                <span class="tooltip-text"> <%= achievements[12].description %>
+                                </span>
+                            </span>
+                        </span>,
+                        <span class="achievement"> <%= achievements[8].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[8].icon %> alt="" />
+                                <span class="tooltip-text"> <%= achievements[8].description %>
+                                </span>
+                            </span>
+                        </span>,
+                        <span class="achievement"> <%= achievements[13].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[13].icon %> alt="" />
+                                <span class="tooltip-text"> <%= achievements[13].description %>
+                                </span>
+                            </span>
+                        </span>
+                        <span class="achievement"> <%= achievements[17].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[17].icon %> alt="" />
+                                <span class="tooltip-text"> <%= achievements[17].description %>
+                                </span>
+                            </span>
+                        </span>,
+                        <span class="achievement"> <%= achievements[22].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[22].icon %> alt="" />
+                                <span class="tooltip-text"> <%= achievements[22].description %>
+                                </span>
+                            </span>
+                        </span>,
+                        <span class="achievement"> <%= achievements[18].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[18].icon %> alt="" />
+                                <span class="tooltip-text"> <%= achievements[18].description %>
+                                </span>
+                            </span>
+                        </span>,
+                        <span class="achievement"> <%= achievements[23].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[23].icon %> alt="" />
+                                <span class="tooltip-text"> <%= achievements[23].description %>
+                                </span>
+                            </span>
+                        </span>,
+                        <span class="achievement"> <%= achievements[19].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[19].icon %> alt="" />
+                                <span class="tooltip-text"> <%= achievements[19].description %>
+                                </span>
+                            </span>
+                        </span>,
+                        <span class="achievement"> <%= achievements[24].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[24].icon %> alt="" />
+                                <span class="tooltip-text"> <%= achievements[24].description %>
+                                </span>
+                            </span>
+                        </span>,
+                        <span class="achievement"> <%= achievements[20].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[20].icon %> alt="" />
+                                <span class="tooltip-text"> <%= achievements[20].description %>
+                                </span>
+                            </span>
+                        </span>
+
+                        and
+
+                        <span class="achievement"> <%= achievements[25].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[25].icon %> alt="" />
+                                <span class="tooltip-text"> <%= achievements[25].description %>
+                                </span>
+                            </span>
+                        </span>.
                     </p>
                     <h2>Third Playthrough</h2>
                     <p>
                         Now what's left is finishing the game twice without taking a hit. Once with Odr for
-                        <span class="achievement">Odr Ascending</span>, <span class="achievement">Odr - The
-                            Frenzy</span> and <span class="achievement">Mastery</span>, and finally with Sanngriðr for
-                        <span class="achievement">Sanngriðr Ascending</span>, <span class="achievement">Sanngriðr - The
-                            Cruel</span> and <span class="achievement">Graslu - The First</span>.
+                        <span class="achievement"> <%= achievements[9].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[9].icon %> alt="" />
+                                <span class="tooltip-text"> <%= achievements[9].description %>
+                                </span>
+                            </span>
+                        </span>,
+                        <span class="achievement"> <%= achievements[14].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[14].icon %> alt="" />
+                                <span class="tooltip-text"> <%= achievements[14].description %>
+                                </span>
+                            </span>
+                        </span>
+
+                        and
+
+                        <span class="achievement"> <%= achievements[15].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[15].icon %> alt="" />
+                                <span class="tooltip-text"> <%= achievements[15].description %>
+                                </span>
+                            </span>
+                        </span>,
+
+                        and finally with Sanngriðr for
+
+                        <span class="achievement"> <%= achievements[21].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[21].icon %> alt="" />
+                                <span class="tooltip-text"> <%= achievements[21].description %>
+                                </span>
+                            </span>
+                        </span>,
+                        <span class="achievement"> <%= achievements[26].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[26].icon %> alt="" />
+                                <span class="tooltip-text"> <%= achievements[26].description %>
+                                </span>
+                            </span>
+                        </span>
+
+                        and
+
+                        <span class="achievement"> <%= achievements[27].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[27].icon %> alt="" />
+                                <span class="tooltip-text"> <%= achievements[27].description %>
+                                </span>
+                            </span>
+                        </span>.
                     </p>
                     <h3>Time Saving Resources</h3>
                     <p><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2567258618" target="_blank">Items
@@ -121,6 +292,12 @@
                     alt="">
             </div>
         </div>
+    </section>
+
+    <section>
+
+        <%- include('../partials/ach-list') %>
+
     </section>
 
     <footer>

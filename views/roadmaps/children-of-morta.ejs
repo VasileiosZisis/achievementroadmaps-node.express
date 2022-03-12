@@ -5,16 +5,16 @@
 
     <%- include('../partials/head') %>
 
-        <meta name="description"
-            content="Children of Morta achievement roadmap. Guide to efficiently achieve 100% completion." />
-        <meta property="og:url" content="https://www.achievementroadmaps.com/roadmaps/children-of-morta" />
-        <meta property="og:title" content="Children of Morta Achievement Roadmap" />
-        <meta property="og:site_name" content="Achievement Roadmaps" />
-        <meta property="og:description"
-            content="Children of Morta achievement roadmap. Guide to efficiently achieve 100% completion." />
-        <meta property="og:type" content="article" />
+    <meta name="description"
+        content="Children of Morta achievement roadmap. Guide to efficiently achieve 100% completion." />
+    <meta property="og:url" content="https://www.achievementroadmaps.com/roadmaps/children-of-morta" />
+    <meta property="og:title" content="Children of Morta Achievement Roadmap" />
+    <meta property="og:site_name" content="Achievement Roadmaps" />
+    <meta property="og:description"
+        content="Children of Morta achievement roadmap. Guide to efficiently achieve 100% completion." />
+    <meta property="og:type" content="article" />
 
-        <title>Children of Morta Achievement Roadmap - AchievementRoadmaps.com</title>
+    <title>Children of Morta Achievement Roadmap - AchievementRoadmaps.com</title>
 </head>
 
 <body>
@@ -41,20 +41,20 @@
             </div>
             <div class="middleColumnPages">
                 <ul class="entryTitles">
-                    <li>Time to 100%:<span class="editableTitles">25 - 30 hours</li></span>
-                    <li>Minimum Playthroughs:<span class="editableTitles">1</li></span>
-                    <li>Extra Content required:<span class="editableTitles">None</li></span>
-                    <li>Total Achievements:<span class="editableTitles">45</li></span>
-                    <li>Single Player:<span class="editableTitles">43</li></span>
+                    <li>Time to 100%:<span class="editableTitles">25 - 30 hours</span></li>
+                    <li>Minimum Playthroughs:<span class="editableTitles">1</span></li>
+                    <li>Extra Content required:<span class="editableTitles">None</span></li>
+                    <li>Total Achievements:<span class="editableTitles">45</span></li>
+                    <li>Single Player:<span class="editableTitles">43</span></li>
                     <li>Multiplayer/CoOp:<span class="editableTitles">2, also can be done local with an extra controller
                     </li></span>
                     <li>Does difficulty affect achievements?:<span class="editableTitles">No, everything can be done on
-                            normal</li></span>
-                    <li>Do achievements stack?:<span class="editableTitles">Yes</li></span>
+                            normal</span></li>
+                    <li>Do achievements stack?:<span class="editableTitles">Yes</span></li>
                     <li>Missable:<span class="editableTitles">None</span></li>
-                    <li>Glitched:<span class="editableTitles">None</li></span>
-                    <li>Grind:<span class="editableTitles">At least 5</li>
-                    </span>
+                    <li>Glitched:<span class="editableTitles">None</span></li>
+                    <li>Grind:<span class="editableTitles">At least 5</span></li>
+
                 </ul>
                 <div class="aboutGameSection">
                     <h1>Does it worth your time?</h1>
@@ -68,18 +68,119 @@
                         specific achievements. Fully exploring the dungeons on every run will save you a lot of
                         post-story grinding. Nine achievements are main story related. Seven are unlocked from finishing
                         the side quests that are dungeon specific. Getting all family members to level 20 will earn you
-                        four achievements. You mailnly have to worry for <span class="achievement">It runs in the
-                            Family</span>, <span class="achievement">Trickster</span> and <span
-                            class="achievement">Perfectionist</span> and secondly for <span class="achievement">No more
-                            secrets</span>, <span class="achievement">Most Curious</span>, <span
-                            class="achievement">Explorer</span>, <span class="achievement">Charming Bergson</span>,
-                        <span class="achievement">Challenger</span> and <span class="achievement">Perfectionist</span>.
-                        <span class="achievement">Loremaster</span> and <span class="achievement">Scavenger</span> are
-                        about collectibes. Buying all the upgrades earn you another five achievements. <span
-                            class="achievement">Master of the Obelisk</span>, <span class="achievement">Charming
-                            Bergson</span>, <span class="achievement">Faithful</span> and <span
-                            class="achievement">Geared up</span> are about dungeon items, runes, obelisks and you will
-                        need luck for these.
+                        four achievements. You mailnly have to worry for
+
+                        <span class="achievement"> <%= achievements[43].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[43].icon %> alt="" />
+                                <span class="tooltip-text"> <%= achievements[43].description %>
+                                </span>
+                            </span>
+                        </span>,
+                        <span class="achievement"> <%= achievements[36].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[36].icon %> alt="" />
+                                <span class="tooltip-text"> <%= achievements[36].description %>
+                                </span>
+                            </span>
+                        </span>
+
+                        and
+
+                        <span class="achievement"> <%= achievements[44].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[44].icon %> alt="" />
+                                <span class="tooltip-text"> <%= achievements[44].description %>
+                                </span>
+                            </span>
+                        </span>
+
+                        and secondly for
+
+                        <span class="achievement"> <%= achievements[42].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[42].icon %> alt="" />
+                                <span class="tooltip-text"> <%= achievements[42].description %>
+                                </span>
+                            </span>
+                        </span>,
+
+                        <span class="achievement"> <%= achievements[30].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[30].icon %> alt="" />
+                                <span class="tooltip-text"> <%= achievements[30].description %>
+                                </span>
+                            </span>
+                        </span>,
+                        <span class="achievement"> <%= achievements[13].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[13].icon %> alt="" />
+                                <span class="tooltip-text"> <%= achievements[13].description %>
+                                </span>
+                            </span>
+                        </span>,
+                        <span class="achievement"> <%= achievements[34].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[34].icon %> alt="" />
+                                <span class="tooltip-text"> <%= achievements[34].description %>
+                                </span>
+                            </span>
+                        </span>,
+                        <span class="achievement"> <%= achievements[31].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[31].icon %> alt="" />
+                                <span class="tooltip-text"> <%= achievements[31].description %>
+                                </span>
+                            </span>
+                        </span>
+
+                        and
+
+                        <span class="achievement"> <%= achievements[44].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[44].icon %> alt="" />
+                                <span class="tooltip-text"> <%= achievements[44].description %>
+                                </span>
+                            </span>
+                        </span>.
+                        <span class="achievement"> <%= achievements[29].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[29].icon %> alt="" />
+                                <span class="tooltip-text"> <%= achievements[29].description %>
+                                </span>
+                            </span>
+                        </span>
+
+                        and
+
+                        <span class="achievement"> <%= achievements[28].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[28].icon %> alt="" />
+                                <span class="tooltip-text"> <%= achievements[28].description %>
+                                </span>
+                            </span>
+                        </span>
+
+                        are about collectibes. Buying all the upgrades earn you another five achievements.
+
+                        <span class="achievement"> <%= achievements[35].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[35].icon %> alt="" />
+                                <span class="tooltip-text"> <%= achievements[35].description %>
+                                </span>
+                            </span>
+                        </span>,
+                        <span class="achievement"> <%= achievements[34].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[34].icon %> alt="" />
+                                <span class="tooltip-text"> <%= achievements[34].description %>
+                                </span>
+                            </span>
+                        </span>,
+                        <span class="achievement"> <%= achievements[32].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[32].icon %> alt="" />
+                                <span class="tooltip-text"> <%= achievements[32].description %>
+                                </span>
+                            </span>
+                        </span>
+
+                        and
+
+                        <span class="achievement"> <%= achievements[33].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[33].icon %> alt="" />
+                                <span class="tooltip-text"> <%= achievements[33].description %>
+                                </span>
+                            </span>
+                        </span>
+
+                        are about dungeon items, runes, obelisks and you will need luck for these.
                     </p>
                     <h3>Time Saving Resources</h3>
                     <p><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1858553435"
@@ -95,6 +196,12 @@
                     alt="">
             </div>
         </div>
+    </section>
+
+    <section>
+
+        <%- include('../partials/ach-list') %>
+
     </section>
 
     <footer>
