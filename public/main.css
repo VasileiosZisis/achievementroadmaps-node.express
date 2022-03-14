@@ -44,8 +44,30 @@ body {
   width: 70px;
 }
 
+.sr-only {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
 .hamMenu {
+  background-image: url('https://res.cloudinary.com/dmdbza74n/image/upload/v1630951447/achievementroadmaps/navigation-menu_eupyto.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
   display: none;
+  width: 4rem;
+  height: 2rem;
+  background-color: transparent;
+  padding-top: 2rem;
+}
+
+.hamMenu:hover,
+.hamMenu:focus {
+  cursor: pointer;
 }
 
 .navbarSection li {
@@ -618,12 +640,6 @@ h4 {
   }
   .hamMenu {
     display: inline-block;
-    width: 60px;
-    height: 40px;
-  }
-  .hamMenu:hover,
-  .hamMenu:focus {
-    cursor: pointer;
   }
   .aboutGameSection {
     word-break: break-word;
