@@ -93,6 +93,11 @@ router.get('/roadmaps/sekiro-shadows-die-twice', (req, res) => {
   res.render('./roadmaps/sekiro-shadows-die-twice', { ...sekiroAch });
 });
 
+const titanfallAch = require('../public/ach_local/titanfall-2.json');
+router.get('/roadmaps/titanfall-2', (req, res) => {
+  res.render('./roadmaps/titanfall-2', { ...titanfallAch });
+});
+
 // for (let i = 0; i < plagueTaleAch.achievements.length; i++) {
 //   console.log(i, plagueTaleAch.achievements[i]);
 // }

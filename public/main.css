@@ -5,7 +5,7 @@
   --mediumGrey: #474a4f;
   --lightGrey: #808488;
   --myWhite: #f2f2f2;
-  --textWhite: #d3d3d3;
+  --textWhite: #b4b4b4;
 }
 
 * {
@@ -293,6 +293,7 @@ body {
   grid-template-columns: 20% auto 20%;
   padding-top: 2rem;
   padding-bottom: 2rem;
+  min-height: 100vh;
 }
 
 .middleColumn {
@@ -380,6 +381,7 @@ body {
   grid-template-columns: 20% auto 20%;
   padding-bottom: 2rem;
   justify-content: center;
+  color: var(--myWhite);
 }
 
 .achievement-list-section li {
@@ -525,7 +527,7 @@ body {
 
 .editableTitles {
   padding-left: 1rem;
-  color: var(--lightGrey);
+  color: var(--textWhite);
   font-weight: 600;
 }
 
@@ -547,7 +549,7 @@ h4 {
 }
 
 .aboutGameSection p {
-  color: var(--lightGrey);
+  color: var(--textWhite);
   font-weight: 600;
 }
 
@@ -557,7 +559,7 @@ h4 {
 
 .aboutGameSection li {
   list-style-type: disc;
-  color: var(--lightGrey);
+  color: var(--textWhite);
   font-weight: 600;
 }
 

@@ -5,11 +5,11 @@
   word-spacing: 0rem;
   white-space: nowrap;
   background-color: var(--mediumGrey);
-  color: var(--textWhite);
+  color: var(--myWhite);
 }
 
 .achievement:hover {
-  border: 0.1rem solid var(--textWhite);
+  border: 0.1rem solid var(--myWhite);
   cursor: pointer;
 }
 
@@ -21,8 +21,8 @@
   max-width: 350px;
   text-align: center;
   background-color: var(--darkGrey);
-  border: 0.1rem solid var(--textWhite);
-  color: var(--textWhite);
+  border: 0.1rem solid var(--myWhite);
+  color: var(--myWhite);
   border-radius: 6px;
   padding: 5px;
   position: absolute;
