@@ -5,6 +5,7 @@
   word-spacing: 0rem;
   white-space: nowrap;
   background-color: var(--mediumGrey);
+  border-radius: 5px;
   color: var(--myWhite);
 }
 

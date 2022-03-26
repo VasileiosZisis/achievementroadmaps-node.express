@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo&family=Nunito+Sans&display=swap');
 
 :root {
-  --darkGrey: #222629;
+  --darkGrey: #1d2124;
   --mediumGrey: #474a4f;
   --lightGrey: #808488;
   --myWhite: #f2f2f2;
@@ -564,7 +564,7 @@ h4 {
 }
 
 .aboutGameSection a {
-  color: var(--lightGrey);
+  color: var(--textWhite);
   text-decoration: underline;
 }
 

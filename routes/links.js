@@ -98,8 +98,8 @@ router.get('/roadmaps/titanfall-2', (req, res) => {
   res.render('./roadmaps/titanfall-2', { ...titanfallAch });
 });
 
-// for (let i = 0; i < plagueTaleAch.achievements.length; i++) {
-//   console.log(i, plagueTaleAch.achievements[i]);
+// for (let i = 0; i < titanfallAch.achievements.length; i++) {
+//   console.log(i, titanfallAch.achievements[i]);
 // }
 
 //roadmaps end
