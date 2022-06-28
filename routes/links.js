@@ -98,8 +98,13 @@ router.get('/roadmaps/titanfall-2', (req, res) => {
   res.render('./roadmaps/titanfall-2', { ...titanfallAch });
 });
 
-// for (let i = 0; i < titanfallAch.achievements.length; i++) {
-//   console.log(i, titanfallAch.achievements[i]);
+const dmcV = require('../public/ach_local/devil-may-cry-5.json');
+router.get('/roadmaps/devil-may-cry-5', (req, res) => {
+  res.render('./roadmaps/devil-may-cry-5', { ...dmcV });
+});
+
+// for (let i = 0; i < dmcV.achievements.length; i++) {
+//   console.log(i, dmcV.achievements[i]);
 // }
 
 //roadmaps end

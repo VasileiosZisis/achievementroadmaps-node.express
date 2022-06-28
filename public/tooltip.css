@@ -7,6 +7,7 @@
   background-color: var(--mediumGrey);
   border-radius: 5px;
   color: var(--myWhite);
+  text-indent: 0rem;
 }
 
 .achievement:hover {
