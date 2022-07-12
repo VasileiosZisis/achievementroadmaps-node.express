@@ -103,8 +103,13 @@ router.get('/roadmaps/devil-may-cry-5', (req, res) => {
   res.render('./roadmaps/devil-may-cry-5', { ...dmcV });
 });
 
-// for (let i = 0; i < dmcV.achievements.length; i++) {
-//   console.log(i, dmcV.achievements[i]);
+const nightmareDecay = require('../public/ach_local/nightmare-of-decay.json');
+router.get('/roadmaps/nightmare-of-decay', (req, res) => {
+  res.render('./roadmaps/nightmare-of-decay', { ...nightmareDecay });
+});
+
+// for (let i = 0; i < nightmareDecay.achievements.length; i++) {
+//   console.log(i, nightmareDecay.achievements[i]);
 // }
 
 //roadmaps end

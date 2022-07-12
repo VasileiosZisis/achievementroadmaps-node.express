@@ -488,7 +488,7 @@ p {
 }
 
 .leftColumn img {
-  mix-blend-mode: multiply;
+  mix-blend-mode: soft-light;
   height: 100%;
 }
 
@@ -497,7 +497,7 @@ p {
 }
 
 .rightColumn img {
-  mix-blend-mode: multiply;
+  mix-blend-mode: soft-light;
   height: 100%;
 }
 
