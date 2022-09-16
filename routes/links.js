@@ -108,8 +108,22 @@ router.get('/roadmaps/nightmare-of-decay', (req, res) => {
   res.render('./roadmaps/nightmare-of-decay', { ...nightmareDecay });
 });
 
-// for (let i = 0; i < nightmareDecay.achievements.length; i++) {
-//   console.log(i, nightmareDecay.achievements[i]);
+const dishonoredDOTO = require('../public/ach_local/dishonored-death-of-the-outsider.json');
+router.get('/roadmaps/dishonored-death-of-the-outsider', (req, res) => {
+  res.render('./roadmaps/dishonored-death-of-the-outsider', {
+    ...dishonoredDOTO,
+  });
+});
+
+const deathsDoor = require('../public/ach_local/deaths-door.json');
+router.get('/roadmaps/deaths-door', (req, res) => {
+  res.render('./roadmaps/deaths-door', {
+    ...deathsDoor,
+  });
+});
+
+// for (let i = 0; i < deathsDoor.achievements.length; i++) {
+//   console.log(i, deathsDoor.achievements[i]);
 // }
 
 //roadmaps end
@@ -121,8 +135,8 @@ router.get('/about', (req, res) => {
 router.get('/about/contact', (req, res) => {
   res.render('./about/contact');
 });
-router.get('/site-news', (req, res) => {
-  res.render('site-news');
+router.get('/support', (req, res) => {
+  res.render('./support');
 });
 //about end
 
