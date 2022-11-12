@@ -1,8 +1,29 @@
 <div class="coffee-div">
-    <p class="coffee-p">If you find this page useful consider supporting me on
-
+    <div class="coffee-p">
+        <p>You can support me on
+        </p>
+    </div>
+    <div class="coffee-a">
         <a href='https://ko-fi.com/U7U6EZ5FL' target='_blank'><img src='https://cdn.ko-fi.com/cdn/kofi5.png?v=3'
                 alt='Buy Me a Coffee at ko-fi.com' />
         </a>
-    </p>
+    </div>
+    <div class="coffee-p">
+        <p> &nbsp; or &nbsp; </p>
+    </div>
+    <div id="donate-button-container">
+        <div id="donate-button"></div>
+        <script src="https://www.paypalobjects.com/donate/sdk/donate-sdk.js" charset="UTF-8"></script>
+        <script>
+            PayPal.Donation.Button({
+                env: 'production',
+                hosted_button_id: 'MM9HPRWSDS3EQ',
+                image: {
+                    src: 'https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif',
+                    alt: 'Donate with PayPal button',
+                    title: 'PayPal - The safer, easier way to pay online!',
+                }
+            }).render('#donate-button');
+        </script>
+    </div>
 </div>

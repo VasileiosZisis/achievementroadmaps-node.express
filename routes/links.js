@@ -122,8 +122,15 @@ router.get('/roadmaps/deaths-door', (req, res) => {
   });
 });
 
-// for (let i = 0; i < deathsDoor.achievements.length; i++) {
-//   console.log(i, deathsDoor.achievements[i]);
+const shadowWarrior2 = require('../public/ach_local/shadow-warrior-2.json');
+router.get('/roadmaps/shadow-warrior-2', (req, res) => {
+  res.render('./roadmaps/shadow-warrior-2', {
+    ...shadowWarrior2,
+  });
+});
+
+// for (let i = 0; i < shadowWarrior2.achievements.length; i++) {
+//   console.log(i, shadowWarrior2.achievements[i]);
 // }
 
 //roadmaps end

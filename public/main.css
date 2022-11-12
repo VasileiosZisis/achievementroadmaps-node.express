@@ -134,13 +134,20 @@ p {
   background-color: var(--myWhite);
   display: flex;
   align-items: center;
-  text-align: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-grow: 1;
 }
 
 .coffee-p {
   color: var(--darkGrey);
   font-size: 1.1rem;
   font-weight: 600;
+}
+
+.coffee-a {
+  padding-left: 1rem;
+  padding-top: 0.5rem;
 }
 
 .coffee-div img {
@@ -376,9 +383,11 @@ p {
   border: 3px solid var(--myWhite);
 }
 
-.latest-p {
-  display: block;
-  height: 120px;
+.latest-p p {
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
   padding: 0.5rem;
 }
 
@@ -432,6 +441,7 @@ p {
 
 .achievement-button {
   width: 100%;
+  padding: 1rem;
   color: var(--textWhite);
   cursor: pointer;
   background-color: var(--darkGrey);
