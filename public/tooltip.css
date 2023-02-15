@@ -1,10 +1,9 @@
 .achievement {
   position: relative;
   display: inline-block;
-  border: 0.1rem solid var(--mediumGrey);
+  border: 0.1rem solid var(--darkGrey);
   word-spacing: 0rem;
   white-space: nowrap;
-  background-color: var(--mediumGrey);
   border-radius: 5px;
   color: var(--myWhite);
   text-indent: 0rem;

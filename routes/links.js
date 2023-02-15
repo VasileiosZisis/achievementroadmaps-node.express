@@ -129,8 +129,15 @@ router.get('/roadmaps/shadow-warrior-2', (req, res) => {
   });
 });
 
-// for (let i = 0; i < shadowWarrior2.achievements.length; i++) {
-//   console.log(i, shadowWarrior2.achievements[i]);
+const terminatorResistance = require('../public/ach_local/terminator-resistance.json');
+router.get('/roadmaps/terminator-resistance', (req, res) => {
+  res.render('./roadmaps/terminator-resistance', {
+    ...terminatorResistance,
+  });
+});
+
+// for (let i = 0; i < terminatorResistance.achievements.length; i++) {
+//   console.log(i, terminatorResistance.achievements[i]);
 // }
 
 //roadmaps end
