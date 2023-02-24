@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <%- include('../partials/head') %>
+
+    <meta name="description"
+        content="Ender Lilies achievement roadmap. Guide to efficiently achieve 100% completion." />
+    <meta property="og:url" content="https://www.achievementroadmaps.com/roadmaps/ender-lilies" />
+    <meta property="og:title" content="Ender Lilies Achievement Roadmap" />
+    <meta property="og:site_name" content="Achievement Roadmaps" />
+    <meta property="og:description"
+        content="Ender Lilies achievement roadmap. Guide to efficiently achieve 100% completion." />
+    <meta property="og:type" content="article" />
+
+    <title>
+        Ender Lilies Achievement Roadmap - AchievementRoadmaps.com
+    </title>
+</head>
+
+<% layout('/layouts/boilerplate') -%>
+
+<section class="header">
+    <img src="https://res.cloudinary.com/dmdbza74n/image/upload/v1676834613/achievementroadmaps/enderLiliesHQ_wxdq0s.webp"
+        alt="Ender Lilies Cover" />
+</section>
+<section class="mainSection">
+    <div class="middleColumnParent">
+        <div class="leftColumn">
+            <img src="https://res.cloudinary.com/dmdbza74n/image/upload/v1676836290/achievementroadmaps/enderLiliesL_ardgnn.webp"
+                alt="" />
+        </div>
+        <div class="middleColumnPages">
+            <ul class="entryTitles">
+                <li>
+                    Time to 100%:<span class="editableTitles">20 hours</span>
+                </li>
+                <li>
+                    Minimum Playthroughs:<span class="editableTitles">1</span>
+                </li>
+                <li>
+                    Extra Content required:<span class="editableTitles">None</span>
+                </li>
+                <li>
+                    Total Achievements:<span class="editableTitles">38</span>
+                </li>
+                <li>
+                    Single Player:<span class="editableTitles">38</span>
+                </li>
+                <li>
+                    Multiplayer/CoOp:<span class="editableTitles">0</span>
+                </li>
+                <li>
+                    Does difficulty affect achievements?:<span class="editableTitles">No</span>
+                </li>
+                <li>
+                    Do achievements stack?:<span class="editableTitles">No</span>
+                </li>
+                <li>
+                    Missable:<span class="editableTitles">0</span>
+                </li>
+                <li>
+                    Glitched:<span class="editableTitles">0</span>
+                </li>
+                <li>
+                    Grind:<span class="editableTitles">0</span>
+                </li>
+            </ul>
+            <div class="aboutGameSection">
+                <h1>Does it worth your time?</h1>
+                <p class="indent">
+                    One of the best metroidvanias. An under-the-radar game that deserves more attention. Everything
+                    is so well made, the art, the music, the story, the combat mechanics. There are a few minor flaws,
+                    but it is easy to overlook them. The game is short, not that hard and gets more and more interesting
+                    as you progress. Honestly it is hard to understand why this game hasn't been more renowned.
+                </p>
+                <p class="indent">
+                    All the achievements can be completed in a single playthrough. You do not really need a guide since
+                    the game provides you with the information you need for your completion tasks. There may be a
+                    couple exceptions if you feel impatient, but the game progresses in a way that you can just enjoy
+                    it, without trying too hard to reach 100% completion. And that is rare.
+                </p>
+                <h2>First Playthrough</h2>
+                <p class="indent">
+                    There is no difficulty selection but instead the game gets harder every time you beat a boss. There
+                    is no real missable achievements, but be aware of
+                    <span class="achievement">
+                        <%= achievements[20].displayName %>
+                        <span class="tooltip-content"><img src=<%= achievements[20].icon %> alt="" />
+                            <span class="tooltip-text">
+                                <%= achievements[20].description %>
+                            </span>
+                        </span>
+                    </span>, because there are not enough Blights to fully upgrade every Blighted Spirit, and it's
+                    really really painful to farm them. Also, it is possible to finish the game without reaching level
+                    100 for
+                    <span class="achievement">
+                        <%= achievements[17].displayName %>
+                        <span class="tooltip-content"><img src=<%= achievements[17].icon %> alt="" />
+                            <span class="tooltip-text">
+                                <%= achievements[17].description %>
+                            </span>
+                        </span>
+                    </span>. So, kill everything as you move from room to room, in order to reduce the post-game
+                    farming. Finally, the room's color will change to orange when everything is collected and that
+                    ensures that you cannot miss any collectible.
+                </p>
+                <p class="indent">
+                    There are eight unmissable/story achievements:
+                    <span class="achievement">
+                        <%= achievements[0].displayName %>
+                        <span class="tooltip-content"><img src=<%= achievements[0].icon %> alt="" />
+                            <span class="tooltip-text">
+                                <%= achievements[0].description %>
+                            </span>
+                        </span>
+                    </span>,
+                    <span class="achievement">
+                        <%= achievements[1].displayName %>
+                        <span class="tooltip-content"><img src=<%= achievements[1].icon %> alt="" />
+                            <span class="tooltip-text">
+                                <%= achievements[1].description %>
+                            </span>
+                        </span>
+                    </span>,
+                    <span class="achievement">
+                        <%= achievements[2].displayName %>
+                        <span class="tooltip-content"><img src=<%= achievements[2].icon %> alt="" />
+                            <span class="tooltip-text">
+                                <%= achievements[2].description %>
+                            </span>
+                        </span>
+                    </span>,
+                    <span class="achievement">
+                        <%= achievements[3].displayName %>
+                        <span class="tooltip-content"><img src=<%= achievements[3].icon %> alt="" />
+                            <span class="tooltip-text">
+                                <%= achievements[3].description %>
+                            </span>
+                        </span>
+                    </span>,
+                    <span class="achievement">
+                        <%= achievements[4].displayName %>
+                        <span class="tooltip-content"><img src=<%= achievements[4].icon %> alt="" />
+                            <span class="tooltip-text">
+                                <%= achievements[4].description %>
+                            </span>
+                        </span>
+                    </span>,
+                    <span class="achievement">
+                        <%= achievements[5].displayName %>
+                        <span class="tooltip-content"><img src=<%= achievements[5].icon %> alt="" />
+                            <span class="tooltip-text">
+                                <%= achievements[5].description %>
+                            </span>
+                        </span>
+                    </span>,
+                    <span class="achievement">
+                        <%= achievements[6].displayName %>
+                        <span class="tooltip-content"><img src=<%= achievements[6].icon %> alt="" />
+                            <span class="tooltip-text">
+                                <%= achievements[6].description %>
+                            </span>
+                        </span>
+                    </span> and
+                    <span class="achievement">
+                        <%= achievements[7].displayName %>
+                        <span class="tooltip-content"><img src=<%= achievements[7].icon %> alt="" />
+                            <span class="tooltip-text">
+                                <%= achievements[7].description %>
+                            </span>
+                        </span>
+                    </span>.
+                </p>
+                <p class="indent">
+                    Blighted Spirits are essentially skills and are obtained after defeating bosses and mini-bosses. For
+                    collecting them you will unlock
+                    <span class="achievement">
+                        <%= achievements[8].displayName %>
+                        <span class="tooltip-content"><img src=<%= achievements[8].icon %> alt="" />
+                            <span class="tooltip-text">
+                                <%= achievements[8].description %>
+                            </span>
+                        </span>
+                    </span>,
+                    <span class="achievement">
+                        <%= achievements[9].displayName %>
+                        <span class="tooltip-content"><img src=<%= achievements[9].icon %> alt="" />
+                            <span class="tooltip-text">
+                                <%= achievements[9].description %>
+                            </span>
+                        </span>
+                    </span>,
+                    <span class="achievement">
+                        <%= achievements[10].displayName %>
+                        <span class="tooltip-content"><img src=<%= achievements[10].icon %> alt="" />
+                            <span class="tooltip-text">
+                                <%= achievements[10].description %>
+                            </span>
+                        </span>
+                    </span> and finally
+                    <span class="achievement">
+                        <%= achievements[11].displayName %>
+                        <span class="tooltip-content"><img src=<%= achievements[11].icon %> alt="" />
+                            <span class="tooltip-text">
+                                <%= achievements[11].description %>
+                            </span>
+                        </span>
+                    </span>. For upgrading them you will unlock
+                    <span class="achievement">
+                        <%= achievements[36].displayName %>
+                        <span class="tooltip-content"><img src=<%= achievements[36].icon %> alt="" />
+                            <span class="tooltip-text">
+                                <%= achievements[36].description %>
+                            </span>
+                        </span>
+                    </span>,
+                    <span class="achievement">
+                        <%= achievements[19].displayName %>
+                        <span class="tooltip-content"><img src=<%= achievements[19].icon %> alt="" />
+                            <span class="tooltip-text">
+                                <%= achievements[19].description %>
+                            </span>
+                        </span>
+                    </span>,
+                    <span class="achievement">
+                        <%= achievements[20].displayName %>
+                        <span class="tooltip-content"><img src=<%= achievements[20].icon %> alt="" />
+                            <span class="tooltip-text">
+                                <%= achievements[20].description %>
+                            </span>
+                        </span>
+                    </span> and
+                    <span class="achievement">
+                        <%= achievements[21].displayName %>
+                        <span class="tooltip-content"><img src=<%= achievements[21].icon %> alt="" />
+                            <span class="tooltip-text">
+                                <%= achievements[21].description %>
+                            </span>
+                        </span>
+                    </span> for fully upgrading the first skill.
+                    <span class="achievement">
+                        <%= achievements[33].displayName %>
+                        <span class="tooltip-content"><img src=<%= achievements[33].icon %> alt="" />
+                            <span class="tooltip-text">
+                                <%= achievements[33].description %>
+                            </span>
+                        </span>
+                    </span> and
+                    <span class="achievement">
+                        <%= achievements[34].displayName %>
+                        <span class="tooltip-content"><img src=<%= achievements[34].icon %> alt="" />
+                            <span class="tooltip-text">
+                                <%= achievements[34] %>
+                            </span>
+                        </span>
+                    </span> are for using the mentioned skills at their full power. You will most likely unlock them
+                    naturally as you are trying to access different ares in the map.
+                    Relics are the only type of wearable. Collecting them will unlock
+                    <span class="achievement">
+                        <%= achievements[12].displayName %>
+                        <span class="tooltip-content"><img src=<%= achievements[12].icon %> alt="" />
+                            <span class="tooltip-text">
+                                <%= achievements[12].description %>
+                            </span>
+                        </span>
+                    </span>,
+                    <span class="achievement">
+                        <%= achievements[13].displayName %>
+                        <span class="tooltip-content"><img src=<%= achievements[13].icon %> alt="" />
+                            <span class="tooltip-text">
+                                <%= achievements[13].description %>
+                            </span>
+                        </span>
+                    </span> and
+                    <span class="achievement">
+                        <%= achievements[14].displayName %>
+                        <span class="tooltip-content"><img src=<%= achievements[14].icon %> alt="" />
+                            <span class="tooltip-text">
+                                <%= achievements[14].description %>
+                            </span>
+                        </span>
+                    </span>. Obtaining amulets, wishes and chains will unlock
+                    <span class="achievement">
+                        <%= achievements[22].displayName %>
+                        <span class="tooltip-content"><img src=<%= achievements[22].icon %> alt="" />
+                            <span class="tooltip-text">
+                                <%= achievements[22].description %>
+                            </span>
+                        </span>
+                    </span>,
+                    <span class="achievement">
+                        <%= achievements[23].displayName %>
+                        <span class="tooltip-content"><img src=<%= achievements[23].icon %> alt="" />
+                            <span class="tooltip-text">
+                                <%= achievements[23].description %>
+                            </span>
+                        </span>
+                    </span> and
+                    <span class="achievement">
+                        <%= achievements[35].displayName %>
+                        <span class="tooltip-content"><img src=<%= achievements[35].icon %> alt="" />
+                            <span class="tooltip-text">
+                                <%= achievements[35].description %>
+                            </span>
+                        </span>
+                    </span> respectively.
+                </p>
+                <p class="indent">
+                    For reaching level 100 you will earn
+                    <span class="achievement">
+                        <%= achievements[15].displayName %>
+                        <span class="tooltip-content"><img src=<%= achievements[15].icon %> alt="" />
+                            <span class="tooltip-text">
+                                <%= achievements[15].description %>
+                            </span>
+                        </span>
+                    </span>,
+                    <span class="achievement">
+                        <%= achievements[16].displayName %>
+                        <span class="tooltip-content"><img src=<%= achievements[16].icon %> alt="" />
+                            <span class="tooltip-text">
+                                <%= achievements[16].description %>
+                            </span>
+                        </span>
+                    </span> and
+                    <span class="achievement">
+                        <%= achievements[17].displayName %>
+                        <span class="tooltip-content"><img src=<%= achievements[17].icon %> alt="" />
+                            <span class="tooltip-text">
+                                <%= achievements[17].description %>
+                            </span>
+                        </span>
+                    </span>. Respites are checkpoints, where you can equip and upgrade your skills and items.
+                    Finding them will unlock
+                    <span class="achievement">
+                        <%= achievements[27].displayName %>
+                        <span class="tooltip-content"><img src=<%= achievements[27].icon %> alt="" />
+                            <span class="tooltip-text">
+                                <%= achievements[27].description %>
+                            </span>
+                        </span>
+                    </span> and
+                    <span class="achievement">
+                        <%= achievements[28].displayName %>
+                        <span class="tooltip-content"><img src=<%= achievements[28].icon %> alt="" />
+                            <span class="tooltip-text">
+                                <%= achievements[28].description %>
+                            </span>
+                        </span>
+                    </span>. Findings are notes. Find them to unlock
+                    <span class="achievement">
+                        <%= achievements[24].displayName %>
+                        <span class="tooltip-content"><img src=<%= achievements[24].icon %> alt="" />
+                            <span class="tooltip-text">
+                                <%= achievements[24].description %>
+                            </span>
+                        </span>
+                    </span>,
+                    <span class="achievement">
+                        <%= achievements[25].displayName %>
+                        <span class="tooltip-content"><img src=<%= achievements[25].icon %> alt="" />
+                            <span class="tooltip-text">
+                                <%= achievements[25].description %>
+                            </span>
+                        </span>
+                    </span> and
+                    <span class="achievement">
+                        <%= achievements[26].displayName %>
+                        <span class="tooltip-content"><img src=<%= achievements[26].icon %> alt="" />
+                            <span class="tooltip-text">
+                                <%= achievements[26].description %>
+                            </span>
+                        </span>
+                    </span>.
+                </p>
+                <p class="indent">
+                    There are three endings that can be done in order
+                    <span class="achievement">
+                        <%= achievements[30].displayName %>
+                        <span class="tooltip-content"><img src=<%= achievements[30].icon %> alt="" />
+                            <span class="tooltip-text">
+                                <%= achievements[30].description %>
+                            </span>
+                        </span>
+                    </span>,
+                    <span class="achievement">
+                        <%= achievements[31].displayName %>
+                        <span class="tooltip-content"><img src=<%= achievements[31].icon %> alt="" />
+                            <span class="tooltip-text">
+                                <%= achievements[31].description %>
+                            </span>
+                        </span>
+                    </span> and
+                    <span class="achievement">
+                        <%= achievements[32].displayName %>
+                        <span class="tooltip-content"><img src=<%= achievements[32].icon %> alt="" />
+                            <span class="tooltip-text">
+                                <%= achievements[32].description %>
+                            </span>
+                        </span>
+                    </span>. At that point of the game you will also unlock
+                    <span class="achievement">
+                        <%= achievements[18].displayName %>
+                        <span class="tooltip-content"><img src=<%= achievements[18].icon %> alt="" />
+                            <span class="tooltip-text">
+                                <%= achievements[18].description %>
+                            </span>
+                        </span>
+                    </span> for defeating all the Blighted heroes,
+                    <span class="achievement">
+                        <%= achievements[29].displayName %>
+                        <span class="tooltip-content"><img src=<%= achievements[29].icon %> alt="" />
+                            <span class="tooltip-text">
+                                <%= achievements[29].description %>
+                            </span>
+                        </span>
+                    </span> for visiting every room and
+                    <span class="achievement">
+                        <%= achievements[37].displayName %>
+                        <span class="tooltip-content"><img src=<%= achievements[37].icon %> alt="" />
+                            <span class="tooltip-text">
+                                <%= achievements[37].description %>
+                            </span>
+                        </span>
+                    </span> for crafting the final relic.
+                </p>
+                <h3>Time Saving Resources</h3>
+                <p>
+                    <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2373987591" target="_blank">A Guide
+                        to Ender Lilies: Quietus of the Knights</a> - Stean guide that contains a lot of information
+                    about the game, along with walkthough, images and youtube videos.<br>
+                    <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2370788219" target="_blank">Ender
+                        Lilies - 100% & Area Maps</a> - Images with locations of every boss, secret, note etc.<br>
+                    <a href="https://www.neoseeker.com/ender-lilies-quietus-of-the-knights/walkthrough"
+                        target="_blank">ENDER LILIES: Quietus of the Knights Walkthrough and Guide</a> - The most
+                    thorough guide at neoseeker.com, contains guides for every boss fight, collectible etc.
+                </p>
+            </div>
+        </div>
+        <div class="rightColumn">
+            <img src="https://res.cloudinary.com/dmdbza74n/image/upload/v1676836291/achievementroadmaps/enderLiliesR_pthdnv.webp"
+                alt="" />
+        </div>
+    </div>
+</section>
+
+</html>

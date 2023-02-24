@@ -136,8 +136,15 @@ router.get('/roadmaps/terminator-resistance', (req, res) => {
   });
 });
 
-// for (let i = 0; i < terminatorResistance.achievements.length; i++) {
-//   console.log(i, terminatorResistance.achievements[i]);
+const enderLilies = require('../public/ach_local/ender-lilies.json');
+router.get('/roadmaps/ender-lilies', (req, res) => {
+  res.render('./roadmaps/ender-lilies', {
+    ...enderLilies,
+  });
+});
+
+// for (let i = 0; i < enderLilies.achievements.length; i++) {
+//   console.log(i, enderLilies.achievements[i]);
 // }
 
 //roadmaps end
