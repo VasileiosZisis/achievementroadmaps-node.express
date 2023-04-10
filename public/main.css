@@ -587,7 +587,7 @@ h4 {
 .aboutGameSection p {
   color: var(--textWhite);
   font-weight: 600;
-  max-width: 75ch;
+  max-width: 70ch;
 }
 
 .indent {

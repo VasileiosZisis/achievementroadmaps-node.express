@@ -143,8 +143,15 @@ router.get('/roadmaps/ender-lilies', (req, res) => {
   });
 });
 
-// for (let i = 0; i < enderLilies.achievements.length; i++) {
-//   console.log(i, enderLilies.achievements[i]);
+const rage2 = require('../public/ach_local/rage-2.json');
+router.get('/roadmaps/rage-2', (req, res) => {
+  res.render('./roadmaps/rage-2', {
+    ...rage2,
+  });
+});
+
+// for (let i = 0; i < rage2.achievements.length; i++) {
+//   console.log(i, rage2.achievements[i]);
 // }
 
 //roadmaps end

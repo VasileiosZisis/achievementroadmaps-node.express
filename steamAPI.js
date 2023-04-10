@@ -6,7 +6,7 @@ const steam = new SteamAPI('3C128AC38062B1A86CD2A0E2E14F4D32');
 async function createFile(filename) {
   this.filename = filename;
 
-  steam.getGameSchema('1369630').then((data) => {
+  steam.getGameSchema('548570').then((data) => {
     const ach = JSON.parse(JSON.stringify(data.availableGameStats));
 
     fs.writeFile(
@@ -30,4 +30,4 @@ async function createFile(filename) {
   });
 }
 
-createFile('ender-lilies.json');
+createFile('rage-2.json');
