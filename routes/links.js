@@ -150,8 +150,15 @@ router.get('/roadmaps/rage-2', (req, res) => {
   });
 });
 
-// for (let i = 0; i < rage2.achievements.length; i++) {
-//   console.log(i, rage2.achievements[i]);
+const thronebreaker = require('../public/ach_local/thronebreaker-the-witcher-tales.json');
+router.get('/roadmaps/thronebreaker-the-witcher-tales', (req, res) => {
+  res.render('./roadmaps/thronebreaker-the-witcher-tales', {
+    ...thronebreaker,
+  });
+});
+
+// for (let i = 0; i < thronebreaker.achievements.length; i++) {
+//   console.log(i, thronebreaker.achievements[i]);
 // }
 
 //roadmaps end
