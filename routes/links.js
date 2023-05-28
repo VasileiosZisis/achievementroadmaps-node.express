@@ -157,8 +157,15 @@ router.get('/roadmaps/thronebreaker-the-witcher-tales', (req, res) => {
   });
 });
 
-// for (let i = 0; i < thronebreaker.achievements.length; i++) {
-//   console.log(i, thronebreaker.achievements[i]);
+const fobia = require('../public/ach_local/fobia-st-dinfna-hotel.json');
+router.get('/roadmaps/fobia-st-dinfna-hotel', (req, res) => {
+  res.render('./roadmaps/fobia-st-dinfna-hotel', {
+    ...fobia,
+  });
+});
+
+// for (let i = 0; i < fobia.achievements.length; i++) {
+//   console.log(i, fobia.achievements[i]);
 // }
 
 //roadmaps end
