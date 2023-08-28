@@ -164,8 +164,15 @@ router.get('/roadmaps/fobia-st-dinfna-hotel', (req, res) => {
   });
 });
 
-// for (let i = 0; i < fobia.achievements.length; i++) {
-//   console.log(i, fobia.achievements[i]);
+const othercide = require('../public/ach_local/othercide.json');
+router.get('/roadmaps/othercide', (req, res) => {
+  res.render('./roadmaps/othercide', {
+    ...othercide,
+  });
+});
+
+// for (let i = 0; i < othercide.achievements.length; i++) {
+//   console.log(i, othercide.achievements[i]);
 // }
 
 //roadmaps end
