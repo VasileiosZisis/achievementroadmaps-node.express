@@ -19,46 +19,630 @@
     </title>
 </head>
 
-<% layout('/layouts/boilerplate') -%>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WQWHH8Z" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
 
-<section class="header">
-    <img src="https://res.cloudinary.com/dmdbza74n/image/upload/v1665512446/achievementroadmaps/shadowWarrior2HQ_s3c1me.webp"
-        alt="Shadow Warrior 2 Cover" />
-</section>
-<section class="mainSection">
-    <div class="middleColumnParent">
-        <div class="leftColumn">
-            <img src="https://res.cloudinary.com/dmdbza74n/image/upload/v1665513907/achievementroadmaps/shadowWarrior2L_xp1bat.webp"
-                alt="" />
-        </div>
-        <div class="middleColumnPages">
-            <ul class="entryTitles">
-                <li>
-                    Time to 100%:<span class="editableTitles">50 hours</span>
-                </li>
-                <li>
-                    Minimum Playthroughs:<span class="editableTitles">2</span>
-                </li>
-                <li>
-                    Extra Content required:<span class="editableTitles">No</span>
-                </li>
-                <li>
-                    Total Achievements:<span class="editableTitles">64</span>
-                </li>
-                <li>
-                    Single Player:<span class="editableTitles">64</span>
-                </li>
-                <li>
-                    Multiplayer/CoOp:<span class="editableTitles">0</span>
-                </li>
-                <li>
-                    Does difficulty affect achievements?:<span class="editableTitles">Yes</span>
-                </li>
-                <li>
-                    Do achievements stack?:<span class="editableTitles">Yes</span>
-                </li>
-                <li>
-                    Missable:<span class="editableTitles">3-
+    <%- include('../partials/navbar') %>
+
+    <section class="header">
+        <img src="https://res.cloudinary.com/dmdbza74n/image/upload/v1665512446/achievementroadmaps/shadowWarrior2HQ_s3c1me.webp"
+            alt="Shadow Warrior 2 Cover" />
+    </section>
+    <section class="mainSection">
+        <div class="middleColumnParent">
+            <div class="leftColumn">
+                <img src="https://res.cloudinary.com/dmdbza74n/image/upload/v1665513907/achievementroadmaps/shadowWarrior2L_xp1bat.webp"
+                    alt="" />
+            </div>
+            <div class="middleColumnPages">
+                <ul class="entryTitles">
+                    <li>
+                        Time to 100%:<span class="editableTitles">50 hours</span>
+                    </li>
+                    <li>
+                        Minimum Playthroughs:<span class="editableTitles">2</span>
+                    </li>
+                    <li>
+                        Extra Content required:<span class="editableTitles">No</span>
+                    </li>
+                    <li>
+                        Total Achievements:<span class="editableTitles">64</span>
+                    </li>
+                    <li>
+                        Single Player:<span class="editableTitles">64</span>
+                    </li>
+                    <li>
+                        Multiplayer/CoOp:<span class="editableTitles">0</span>
+                    </li>
+                    <li>
+                        Does difficulty affect achievements?:<span class="editableTitles">Yes</span>
+                    </li>
+                    <li>
+                        Do achievements stack?:<span class="editableTitles">Yes</span>
+                    </li>
+                    <li>
+                        Missable:<span class="editableTitles">3-
+                            <span class="achievement">
+                                <%= achievements[15].displayName %>
+                                <span class="tooltip-content"><img src=<%= achievements[15].icon %> alt="" />
+                                    <span class="tooltip-text">
+                                        <%= achievements[15].description %>
+                                    </span>
+                                </span>
+                            </span>,
+                            <span class="achievement">
+                                <%= achievements[16].displayName %>
+                                <span class="tooltip-content"><img src=<%= achievements[16].icon %> alt="" />
+                                    <span class="tooltip-text">
+                                        <%= achievements[16].description %>
+                                    </span>
+                                </span>
+                            </span>,
+                            <span class="achievement">
+                                <%= achievements[17].displayName %>
+                                <span class="tooltip-content"><img src=<%= achievements[17].icon %> alt="" />
+                                    <span class="tooltip-text">
+                                        <%= achievements[17].description %>
+                                    </span>
+                                </span>
+                            </span>
+                        </span>
+
+                    </li>
+                    <li>
+                        Glitched:<span class="editableTitles">0</span>
+                    </li>
+                    <li>
+                        Grind:<span class="editableTitles">5-
+                            <span class="achievement">
+                                <%= achievements[61].displayName %>
+                                <span class="tooltip-content"><img src=<%= achievements[61].icon %> alt="" />
+                                    <span class="tooltip-text">
+                                        <%= achievements[61].description %>
+                                    </span>
+                                </span>
+                            </span>,
+                            <span class="achievement">
+                                <%= achievements[62].displayName %>
+                                <span class="tooltip-content"><img src=<%= achievements[62].icon %> alt="" />
+                                    <span class="tooltip-text">
+                                        <%= achievements[62].description %>
+                                    </span>
+                                </span>
+                            </span>,
+                            <span class="achievement">
+                                <%= achievements[63].displayName %>
+                                <span class="tooltip-content"><img src=<%= achievements[63].icon %> alt="" />
+                                    <span class="tooltip-text">
+                                        <%= achievements[63].description %>
+                                    </span>
+                                </span>
+                            </span>,
+                            <span class="achievement">
+                                <%= achievements[18].displayName %>
+                                <span class="tooltip-content"><img src=<%= achievements[18].icon %> alt="" />
+                                    <span class="tooltip-text">
+                                        <%= achievements[18].description %>
+                                    </span>
+                                </span>
+                            </span>,
+                            <span class="achievement">
+                                <%= achievements[19].displayName %>
+                                <span class="tooltip-content"><img src=<%= achievements[19].icon %> alt="" />
+                                    <span class="tooltip-text">
+                                        <%= achievements[19].description %>
+                                    </span>
+                                </span>
+                            </span>
+                        </span>
+                    </li>
+                </ul>
+                <div class="aboutGameSection">
+                    <h1>Does it worth your time?</h1>
+                    <p class="indent">
+                        A very different sequel of the Shadow Warrior 2013 game. You have a central hub from where you
+                        travel at the mission locations and the environments are procedural generated. There are more
+                        weapons and a crafting/gem system to customize the weapons even further. Finally there is co-op
+                        functionality, which is useful for the higher difficulties. All in all the game is ok.
+                    </p>
+                    <p class="indent">
+                        The grinding is unfortunate. Having to collect 10.000 orbs will add 5+ hours of playtime. And
+                        this
+                        is the only reason you will need a co-op buddy. Apart from that, co-op is useless.
+                    </p>
+                    <h2>First Playthrough</h2>
+                    <p class="indent">
+                        For the first playthrough I recommend the Who Wants Wang difficulty. You can change the
+                        difficulty
+                        midgame if you feel it is too hard. Important things to be aware are first, sell all your gems
+                        except from the legendary ones. Legendary gems are the ones worth crafting. Second, you have to
+                        use
+                        every elementary gem and kill 100 enemies with each. Third, just use whatever weapons you feel
+                        comfortable with, do not wait for the best weapon, gems are what makes the difference. On this
+                        playthrough you will unlock at least 56 achievements.
+                    </p>
+                    <p class="indent">
+                        There are 12 combat related achievements. For killing 2500 enemies you will earn
+                        <span class="achievement">
+                            <%= achievements[12].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[12].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[12].description %>
+                                </span>
+                            </span>
+                        </span>,
+                        <span class="achievement">
+                            <%= achievements[13].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[13].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[13].description %>
+                                </span>
+                            </span>
+                        </span> and
+                        <span class="achievement">
+                            <%= achievements[14].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[14].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[14].description %>
+                                </span>
+                            </span>
+                        </span>. Kill 200 enemies with the special attack for
+                        <span class="achievement">
+                            <%= achievements[25].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[25].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[25].description %>
+                                </span>
+                            </span>
+                        </span>, 100 enemies with the Grip of Darkness skill for
+                        <span class="achievement">
+                            <%= achievements[26].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[26].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[26].description %>
+                                </span>
+                            </span>
+                        </span>, 50 enemies with the Vanish skill for
+                        <span class="achievement">
+                            <%= achievements[32].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[32].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[32].description %>
+                                </span>
+                            </span>
+                        </span> and 100 weakspot kills for
+                        <span class="achievement">
+                            <%= achievements[31].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[31].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[31].description %>
+                                </span>
+                            </span>
+                        </span>. Killing 100 enemies with each elementary gem will earn you
+                        <span class="achievement">
+                            <%= achievements[27].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[27].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[27].description %>
+                                </span>
+                            </span>
+                        </span> for ice,
+                        <span class="achievement">
+                            <%= achievements[28].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[28].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[28].description %>
+                                </span>
+                            </span>
+                        </span> for toxic,
+                        <span class="achievement">
+                            <%= achievements[29].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[29].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[29].description %>
+                                </span>
+                            </span>
+                        </span> for fire and
+                        <span class="achievement">
+                            <%= achievements[30].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[30].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[30].description %>
+                                </span>
+                            </span>
+                        </span> for electricity. Finally kill 10 bunny lords for
+                        <span class="achievement">
+                            <%= achievements[58].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[58].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[58].description %>
+                                </span>
+                            </span>
+                        </span>.
+                    </p>
+                    <p class="indent">
+                        5 achievements are about the gems.
+                        <span class="achievement">
+                            <%= achievements[20].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[20].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[20].description %>
+                                </span>
+                            </span>
+                        </span>,
+                        <span class="achievement">
+                            <%= achievements[21].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[21].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[21].description %>
+                                </span>
+                            </span>
+                        </span> and
+                        <span class="achievement">
+                            <%= achievements[22].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[22].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[2].description %>
+                                </span>
+                            </span>
+                        </span> are for collecting and should unlock naturally as long as you pick up everything.
+                        <span class="achievement">
+                            <%= achievements[23].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[23].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[23].description %>
+                                </span>
+                            </span>
+                        </span> and
+                        <span class="achievement">
+                            <%= achievements[24].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[24].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[24].description %>
+                                </span>
+                            </span>
+                        </span> are for crafting.
+                    </p>
+                    <p class="indent">
+                        15 achievements are for killing champions/bosses in side missions. In Chi-ters for
+                        <span class="achievement">
+                            <%= achievements[35].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[35].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[35].description %>
+                                </span>
+                            </span>
+                        </span>, The Cookery for
+                        <span class="achievement">
+                            <%= achievements[36].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[36].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[36].description %>
+                                </span>
+                            </span>
+                        </span>, Ninja Scrolls Part 1 for
+                        <span class="achievement">
+                            <%= achievements[37].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[37].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[37].description %>
+                                </span>
+                            </span>
+                        </span>, part 2 for
+                        <span class="achievement">
+                            <%= achievements[38].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[38].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[38].description %>
+                                </span>
+                            </span>
+                        </span> and part 3 for
+                        <span class="achievement">
+                            <%= achievements[39].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[39].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[39].description %>
+                                </span>
+                            </span>
+                        </span>. In Demon Trafficking for
+                        <span class="achievement">
+                            <%= achievements[41].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[41].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[41].description %>
+                                </span>
+                            </span>
+                        </span>, Monster Tea Party for
+                        <span class="achievement">
+                            <%= achievements[43].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[43].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[43].description %>
+                                </span>
+                            </span>
+                        </span>, Flirty Fishing Part 1 for
+                        <span class="achievement">
+                            <%= achievements[46].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[46].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[46].description %>
+                                </span>
+                            </span>
+                        </span>, Part 2 for
+                        <span class="achievement">
+                            <%= achievements[44].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[44].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[44].description %>
+                                </span>
+                            </span>
+                        </span> and Part 3 for
+                        <span class="achievement">
+                            <%= achievements[45].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[45].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[45].description %>
+                                </span>
+                            </span>
+                        </span>. In Stop the Propaganda for
+                        <span class="achievement">
+                            <%= achievements[50].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[50].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[50].description %>
+                                </span>
+                            </span>
+                        </span>, One More thing for
+                        <span class="achievement">
+                            <%= achievements[53].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[53].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[53].description %>
+                                </span>
+                            </span>
+                        </span>, Heisenberg Part 1 for
+                        <span class="achievement">
+                            <%= achievements[54].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[54].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[54].description %>
+                                </span>
+                            </span>
+                        </span>, Part 2 for
+                        <span class="achievement">
+                            <%= achievements[51].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[51].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[51].description %>
+                                </span>
+                            </span>
+                        </span> and Part 3 for
+                        <span class="achievement">
+                            <%= achievements[55].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[55].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[55].description %>
+                                </span>
+                            </span>
+                        </span>.
+                    </p>
+                    <p class="indent">
+                        There are 10 champions/bosses in the main story missions and some are missable:
+                        in My Hero there is
+                        <span class="achievement">
+                            <%= achievements[33].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[33].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[33].description %>
+                                </span>
+                            </span>
+                        </span>, in Hot Blooded
+                        <span class="achievement">
+                            <%= achievements[34].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[34].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[34].description %>
+                                </span>
+                            </span>
+                        </span>, in Zilla attack
+                        <span class="achievement">
+                            <%= achievements[40].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[40].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[40].description %>
+                                </span>
+                            </span>
+                        </span>, in Industrial Espionage
+                        <span class="achievement">
+                            <%= achievements[42].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[42].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[42].description %>
+                                </span>
+                            </span>
+                        </span>, in Ancestral Ties
+                        <span class="achievement">
+                            <%= achievements[47].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[47].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[47].description %>
+                                </span>
+                            </span>
+                        </span>, in Body Shaking
+                        <span class="achievement">
+                            <%= achievements[48].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[48].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[48].description %>
+                                </span>
+                            </span>
+                        </span>, in All in the Family
+                        <span class="achievement">
+                            <%= achievements[49].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[49].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[49].description %>
+                                </span>
+                            </span>
+                        </span>, in Stop the Ooze
+                        <span class="achievement">
+                            <%= achievements[52].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[52].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[52].description %>
+                                </span>
+                            </span>
+                        </span>, in Corporate Shill
+                        <span class="achievement">
+                            <%= achievements[56].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[56].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[56].description %>
+                                </span>
+                            </span>
+                        </span> and in Violet Takeover
+                        <span class="achievement">
+                            <%= achievements[57].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[57].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[57].description %>
+                                </span>
+                            </span>
+                        </span>.
+                    </p>
+                    <p class="indent">
+                        Make sure you reach level 50 in this playthrough for
+                        <span class="achievement">
+                            <%= achievements[9].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[9].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[9].description %>
+                                </span>
+                            </span>
+                        </span>,
+                        <span class="achievement">
+                            <%= achievements[10].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[10].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[10].description %>
+                                </span>
+                            </span>
+                        </span> and
+                        <span class="achievement">
+                            <%= achievements[11].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[11].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[11].description %>
+                                </span>
+                            </span>
+                        </span>. You can farm xp in the Trials and Orbs at the same time. Completing the Trials will
+                        earn
+                        you
+                        <span class="achievement">
+                            <%= achievements[59].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[59].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[59].description %>
+                                </span>
+                            </span>
+                        </span> and
+                        <span class="achievement">
+                            <%= achievements[60].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[60].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[60].description %>
+                                </span>
+                            </span>
+                        </span>. You might as well collect 10000000 zillyen for
+                        <span class="achievement">
+                            <%= achievements[18].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[18].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[18].description %>
+                                </span>
+                            </span>
+                        </span> and
+                        <span class="achievement">
+                            <%= achievements[19].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[19].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[19].description %>
+                                </span>
+                            </span>
+                        </span>. An easy way is to resell items from the mechants, since you you sell at the same price
+                        you
+                        buy them and still count towards the achievements.
+                    </p>
+                    <p class="indent">
+                        Finally, there are 4 story achievements
+                        <span class="achievement">
+                            <%= achievements[5].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[5].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[5].description %>
+                                </span>
+                            </span>
+                        </span>,
+                        <span class="achievement">
+                            <%= achievements[6].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[6].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[6].description %>
+                                </span>
+                            </span>
+                        </span>,
+                        <span class="achievement">
+                            <%= achievements[7].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[7].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[7].description %>
+                                </span>
+                            </span>
+                        </span>,
+                        <span class="achievement">
+                            <%= achievements[8].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[8].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[8].description %>
+                                </span>
+                            </span>
+                        </span> and for completing this playthrough will unlock
+                        <span class="achievement">
+                            <%= achievements[1].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[1].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[1].description %>
+                                </span>
+                            </span>
+                        </span>,
+                        <span class="achievement">
+                            <%= achievements[2].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[2].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[2].description %>
+                                </span>
+                            </span>
+                        </span> and
+                        <span class="achievement">
+                            <%= achievements[3].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[3].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[3].description %>
+                                </span>
+                            </span>
+                        </span>.
+                    </p>
+                    <h2>Second Playthrough</h2>
+                    <p class="indent">
+                        For this playthrough choose NG+ and No Pain No Gain difficulty. Now what is left is to find 50
+                        secrets, and collect 10000 orbs. You will have to play a few side missions, so you unlock more
+                        locations in order to find at least 50 secrets. Some are in the main missions, which are
+                        missable
+                        and some in side missions that are procedurally generated, which means not every secret will be
+                        accessible at the same mission. Finding at least 50 secrets will unlock
                         <span class="achievement">
                             <%= achievements[15].displayName %>
                             <span class="tooltip-content"><img src=<%= achievements[15].icon %> alt="" />
@@ -74,7 +658,7 @@
                                     <%= achievements[16].description %>
                                 </span>
                             </span>
-                        </span>,
+                        </span> and
                         <span class="achievement">
                             <%= achievements[17].displayName %>
                             <span class="tooltip-content"><img src=<%= achievements[17].icon %> alt="" />
@@ -82,15 +666,8 @@
                                     <%= achievements[17].description %>
                                 </span>
                             </span>
-                        </span>
-                    </span>
-
-                </li>
-                <li>
-                    Glitched:<span class="editableTitles">0</span>
-                </li>
-                <li>
-                    Grind:<span class="editableTitles">5-
+                        </span>.
+                        Collecting 10000 orbs will unlock
                         <span class="achievement">
                             <%= achievements[61].displayName %>
                             <span class="tooltip-content"><img src=<%= achievements[61].icon %> alt="" />
@@ -106,7 +683,7 @@
                                     <%= achievements[62].description %>
                                 </span>
                             </span>
-                        </span>,
+                        </span> and
                         <span class="achievement">
                             <%= achievements[63].displayName %>
                             <span class="tooltip-content"><img src=<%= achievements[63].icon %> alt="" />
@@ -114,607 +691,52 @@
                                     <%= achievements[63].description %>
                                 </span>
                             </span>
-                        </span>,
+                        </span>.
+                    </p>
+                    <p class="indent">
+                        For completing the main story you will earn
                         <span class="achievement">
-                            <%= achievements[18].displayName %>
-                            <span class="tooltip-content"><img src=<%= achievements[18].icon %> alt="" />
+                            <%= achievements[4].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[4].icon %> alt="" />
                                 <span class="tooltip-text">
-                                    <%= achievements[18].description %>
+                                    <%= achievements[4].description %>
                                 </span>
                             </span>
-                        </span>,
+                        </span> and
                         <span class="achievement">
-                            <%= achievements[19].displayName %>
-                            <span class="tooltip-content"><img src=<%= achievements[19].icon %> alt="" />
+                            <%= achievements[0].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[0].icon %> alt="" />
                                 <span class="tooltip-text">
-                                    <%= achievements[19].description %>
+                                    <%= achievements[0].description %>
                                 </span>
                             </span>
-                        </span>
-                    </span>
-                </li>
-            </ul>
-            <div class="aboutGameSection">
-                <h1>Does it worth your time?</h1>
-                <p class="indent">
-                    A very different sequel of the Shadow Warrior 2013 game. You have a central hub from where you
-                    travel at the mission locations and the environments are procedural generated. There are more
-                    weapons and a crafting/gem system to customize the weapons even further. Finally there is co-op
-                    functionality, which is useful for the higher difficulties. All in all the game is ok.
-                </p>
-                <p class="indent">
-                    The grinding is unfortunate. Having to collect 10.000 orbs will add 5+ hours of playtime. And this
-                    is the only reason you will need a co-op buddy. Apart from that, co-op is useless.
-                </p>
-                <h2>First Playthrough</h2>
-                <p class="indent">
-                    For the first playthrough I recommend the Who Wants Wang difficulty. You can change the difficulty
-                    midgame if you feel it is too hard. Important things to be aware are first, sell all your gems
-                    except from the legendary ones. Legendary gems are the ones worth crafting. Second, you have to use
-                    every elementary gem and kill 100 enemies with each. Third, just use whatever weapons you feel
-                    comfortable with, do not wait for the best weapon, gems are what makes the difference. On this
-                    playthrough you will unlock at least 56 achievements.
-                </p>
-                <p class="indent">
-                    There are 12 combat related achievements. For killing 2500 enemies you will earn
-                    <span class="achievement">
-                        <%= achievements[12].displayName %>
-                        <span class="tooltip-content"><img src=<%= achievements[12].icon %> alt="" />
-                            <span class="tooltip-text">
-                                <%= achievements[12].description %>
-                            </span>
-                        </span>
-                    </span>,
-                    <span class="achievement">
-                        <%= achievements[13].displayName %>
-                        <span class="tooltip-content"><img src=<%= achievements[13].icon %> alt="" />
-                            <span class="tooltip-text">
-                                <%= achievements[13].description %>
-                            </span>
-                        </span>
-                    </span> and
-                    <span class="achievement">
-                        <%= achievements[14].displayName %>
-                        <span class="tooltip-content"><img src=<%= achievements[14].icon %> alt="" />
-                            <span class="tooltip-text">
-                                <%= achievements[14].description %>
-                            </span>
-                        </span>
-                    </span>. Kill 200 enemies with the special attack for
-                    <span class="achievement">
-                        <%= achievements[25].displayName %>
-                        <span class="tooltip-content"><img src=<%= achievements[25].icon %> alt="" />
-                            <span class="tooltip-text">
-                                <%= achievements[25].description %>
-                            </span>
-                        </span>
-                    </span>, 100 enemies with the Grip of Darkness skill for
-                    <span class="achievement">
-                        <%= achievements[26].displayName %>
-                        <span class="tooltip-content"><img src=<%= achievements[26].icon %> alt="" />
-                            <span class="tooltip-text">
-                                <%= achievements[26].description %>
-                            </span>
-                        </span>
-                    </span>, 50 enemies with the Vanish skill for
-                    <span class="achievement">
-                        <%= achievements[32].displayName %>
-                        <span class="tooltip-content"><img src=<%= achievements[32].icon %> alt="" />
-                            <span class="tooltip-text">
-                                <%= achievements[32].description %>
-                            </span>
-                        </span>
-                    </span> and 100 weakspot kills for
-                    <span class="achievement">
-                        <%= achievements[31].displayName %>
-                        <span class="tooltip-content"><img src=<%= achievements[31].icon %> alt="" />
-                            <span class="tooltip-text">
-                                <%= achievements[31].description %>
-                            </span>
-                        </span>
-                    </span>. Killing 100 enemies with each elementary gem will earn you
-                    <span class="achievement">
-                        <%= achievements[27].displayName %>
-                        <span class="tooltip-content"><img src=<%= achievements[27].icon %> alt="" />
-                            <span class="tooltip-text">
-                                <%= achievements[27].description %>
-                            </span>
-                        </span>
-                    </span> for ice,
-                    <span class="achievement">
-                        <%= achievements[28].displayName %>
-                        <span class="tooltip-content"><img src=<%= achievements[28].icon %> alt="" />
-                            <span class="tooltip-text">
-                                <%= achievements[28].description %>
-                            </span>
-                        </span>
-                    </span> for toxic,
-                    <span class="achievement">
-                        <%= achievements[29].displayName %>
-                        <span class="tooltip-content"><img src=<%= achievements[29].icon %> alt="" />
-                            <span class="tooltip-text">
-                                <%= achievements[29].description %>
-                            </span>
-                        </span>
-                    </span> for fire and
-                    <span class="achievement">
-                        <%= achievements[30].displayName %>
-                        <span class="tooltip-content"><img src=<%= achievements[30].icon %> alt="" />
-                            <span class="tooltip-text">
-                                <%= achievements[30].description %>
-                            </span>
-                        </span>
-                    </span> for electricity. Finally kill 10 bunny lords for
-                    <span class="achievement">
-                        <%= achievements[58].displayName %>
-                        <span class="tooltip-content"><img src=<%= achievements[58].icon %> alt="" />
-                            <span class="tooltip-text">
-                                <%= achievements[58].description %>
-                            </span>
-                        </span>
-                    </span>.
-                </p>
-                <p class="indent">
-                    5 achievements are about the gems.
-                    <span class="achievement">
-                        <%= achievements[20].displayName %>
-                        <span class="tooltip-content"><img src=<%= achievements[20].icon %> alt="" />
-                            <span class="tooltip-text">
-                                <%= achievements[20].description %>
-                            </span>
-                        </span>
-                    </span>,
-                    <span class="achievement">
-                        <%= achievements[21].displayName %>
-                        <span class="tooltip-content"><img src=<%= achievements[21].icon %> alt="" />
-                            <span class="tooltip-text">
-                                <%= achievements[21].description %>
-                            </span>
-                        </span>
-                    </span> and
-                    <span class="achievement">
-                        <%= achievements[22].displayName %>
-                        <span class="tooltip-content"><img src=<%= achievements[22].icon %> alt="" />
-                            <span class="tooltip-text">
-                                <%= achievements[2].description %>
-                            </span>
-                        </span>
-                    </span> are for collecting and should unlock naturally as long as you pick up everything.
-                    <span class="achievement">
-                        <%= achievements[23].displayName %>
-                        <span class="tooltip-content"><img src=<%= achievements[23].icon %> alt="" />
-                            <span class="tooltip-text">
-                                <%= achievements[23].description %>
-                            </span>
-                        </span>
-                    </span> and
-                    <span class="achievement">
-                        <%= achievements[24].displayName %>
-                        <span class="tooltip-content"><img src=<%= achievements[24].icon %> alt="" />
-                            <span class="tooltip-text">
-                                <%= achievements[24].description %>
-                            </span>
-                        </span>
-                    </span> are for crafting.
-                </p>
-                <p class="indent">
-                    15 achievements are for killing champions/bosses in side missions. In Chi-ters for
-                    <span class="achievement">
-                        <%= achievements[35].displayName %>
-                        <span class="tooltip-content"><img src=<%= achievements[35].icon %> alt="" />
-                            <span class="tooltip-text">
-                                <%= achievements[35].description %>
-                            </span>
-                        </span>
-                    </span>, The Cookery for
-                    <span class="achievement">
-                        <%= achievements[36].displayName %>
-                        <span class="tooltip-content"><img src=<%= achievements[36].icon %> alt="" />
-                            <span class="tooltip-text">
-                                <%= achievements[36].description %>
-                            </span>
-                        </span>
-                    </span>, Ninja Scrolls Part 1 for
-                    <span class="achievement">
-                        <%= achievements[37].displayName %>
-                        <span class="tooltip-content"><img src=<%= achievements[37].icon %> alt="" />
-                            <span class="tooltip-text">
-                                <%= achievements[37].description %>
-                            </span>
-                        </span>
-                    </span>, part 2 for
-                    <span class="achievement">
-                        <%= achievements[38].displayName %>
-                        <span class="tooltip-content"><img src=<%= achievements[38].icon %> alt="" />
-                            <span class="tooltip-text">
-                                <%= achievements[38].description %>
-                            </span>
-                        </span>
-                    </span> and part 3 for
-                    <span class="achievement">
-                        <%= achievements[39].displayName %>
-                        <span class="tooltip-content"><img src=<%= achievements[39].icon %> alt="" />
-                            <span class="tooltip-text">
-                                <%= achievements[39].description %>
-                            </span>
-                        </span>
-                    </span>. In Demon Trafficking for
-                    <span class="achievement">
-                        <%= achievements[41].displayName %>
-                        <span class="tooltip-content"><img src=<%= achievements[41].icon %> alt="" />
-                            <span class="tooltip-text">
-                                <%= achievements[41].description %>
-                            </span>
-                        </span>
-                    </span>, Monster Tea Party for
-                    <span class="achievement">
-                        <%= achievements[43].displayName %>
-                        <span class="tooltip-content"><img src=<%= achievements[43].icon %> alt="" />
-                            <span class="tooltip-text">
-                                <%= achievements[43].description %>
-                            </span>
-                        </span>
-                    </span>, Flirty Fishing Part 1 for
-                    <span class="achievement">
-                        <%= achievements[46].displayName %>
-                        <span class="tooltip-content"><img src=<%= achievements[46].icon %> alt="" />
-                            <span class="tooltip-text">
-                                <%= achievements[46].description %>
-                            </span>
-                        </span>
-                    </span>, Part 2 for
-                    <span class="achievement">
-                        <%= achievements[44].displayName %>
-                        <span class="tooltip-content"><img src=<%= achievements[44].icon %> alt="" />
-                            <span class="tooltip-text">
-                                <%= achievements[44].description %>
-                            </span>
-                        </span>
-                    </span> and Part 3 for
-                    <span class="achievement">
-                        <%= achievements[45].displayName %>
-                        <span class="tooltip-content"><img src=<%= achievements[45].icon %> alt="" />
-                            <span class="tooltip-text">
-                                <%= achievements[45].description %>
-                            </span>
-                        </span>
-                    </span>. In Stop the Propaganda for
-                    <span class="achievement">
-                        <%= achievements[50].displayName %>
-                        <span class="tooltip-content"><img src=<%= achievements[50].icon %> alt="" />
-                            <span class="tooltip-text">
-                                <%= achievements[50].description %>
-                            </span>
-                        </span>
-                    </span>, One More thing for
-                    <span class="achievement">
-                        <%= achievements[53].displayName %>
-                        <span class="tooltip-content"><img src=<%= achievements[53].icon %> alt="" />
-                            <span class="tooltip-text">
-                                <%= achievements[53].description %>
-                            </span>
-                        </span>
-                    </span>, Heisenberg Part 1 for
-                    <span class="achievement">
-                        <%= achievements[54].displayName %>
-                        <span class="tooltip-content"><img src=<%= achievements[54].icon %> alt="" />
-                            <span class="tooltip-text">
-                                <%= achievements[54].description %>
-                            </span>
-                        </span>
-                    </span>, Part 2 for
-                    <span class="achievement">
-                        <%= achievements[51].displayName %>
-                        <span class="tooltip-content"><img src=<%= achievements[51].icon %> alt="" />
-                            <span class="tooltip-text">
-                                <%= achievements[51].description %>
-                            </span>
-                        </span>
-                    </span> and Part 3 for
-                    <span class="achievement">
-                        <%= achievements[55].displayName %>
-                        <span class="tooltip-content"><img src=<%= achievements[55].icon %> alt="" />
-                            <span class="tooltip-text">
-                                <%= achievements[55].description %>
-                            </span>
-                        </span>
-                    </span>.
-                </p>
-                <p class="indent">
-                    There are 10 champions/bosses in the main story missions and some are missable:
-                    in My Hero there is
-                    <span class="achievement">
-                        <%= achievements[33].displayName %>
-                        <span class="tooltip-content"><img src=<%= achievements[33].icon %> alt="" />
-                            <span class="tooltip-text">
-                                <%= achievements[33].description %>
-                            </span>
-                        </span>
-                    </span>, in Hot Blooded
-                    <span class="achievement">
-                        <%= achievements[34].displayName %>
-                        <span class="tooltip-content"><img src=<%= achievements[34].icon %> alt="" />
-                            <span class="tooltip-text">
-                                <%= achievements[34].description %>
-                            </span>
-                        </span>
-                    </span>, in Zilla attack
-                    <span class="achievement">
-                        <%= achievements[40].displayName %>
-                        <span class="tooltip-content"><img src=<%= achievements[40].icon %> alt="" />
-                            <span class="tooltip-text">
-                                <%= achievements[40].description %>
-                            </span>
-                        </span>
-                    </span>, in Industrial Espionage
-                    <span class="achievement">
-                        <%= achievements[42].displayName %>
-                        <span class="tooltip-content"><img src=<%= achievements[42].icon %> alt="" />
-                            <span class="tooltip-text">
-                                <%= achievements[42].description %>
-                            </span>
-                        </span>
-                    </span>, in Ancestral Ties
-                    <span class="achievement">
-                        <%= achievements[47].displayName %>
-                        <span class="tooltip-content"><img src=<%= achievements[47].icon %> alt="" />
-                            <span class="tooltip-text">
-                                <%= achievements[47].description %>
-                            </span>
-                        </span>
-                    </span>, in Body Shaking
-                    <span class="achievement">
-                        <%= achievements[48].displayName %>
-                        <span class="tooltip-content"><img src=<%= achievements[48].icon %> alt="" />
-                            <span class="tooltip-text">
-                                <%= achievements[48].description %>
-                            </span>
-                        </span>
-                    </span>, in All in the Family
-                    <span class="achievement">
-                        <%= achievements[49].displayName %>
-                        <span class="tooltip-content"><img src=<%= achievements[49].icon %> alt="" />
-                            <span class="tooltip-text">
-                                <%= achievements[49].description %>
-                            </span>
-                        </span>
-                    </span>, in Stop the Ooze
-                    <span class="achievement">
-                        <%= achievements[52].displayName %>
-                        <span class="tooltip-content"><img src=<%= achievements[52].icon %> alt="" />
-                            <span class="tooltip-text">
-                                <%= achievements[52].description %>
-                            </span>
-                        </span>
-                    </span>, in Corporate Shill
-                    <span class="achievement">
-                        <%= achievements[56].displayName %>
-                        <span class="tooltip-content"><img src=<%= achievements[56].icon %> alt="" />
-                            <span class="tooltip-text">
-                                <%= achievements[56].description %>
-                            </span>
-                        </span>
-                    </span> and in Violet Takeover
-                    <span class="achievement">
-                        <%= achievements[57].displayName %>
-                        <span class="tooltip-content"><img src=<%= achievements[57].icon %> alt="" />
-                            <span class="tooltip-text">
-                                <%= achievements[57].description %>
-                            </span>
-                        </span>
-                    </span>.
-                </p>
-                <p class="indent">
-                    Make sure you reach level 50 in this playthrough for
-                    <span class="achievement">
-                        <%= achievements[9].displayName %>
-                        <span class="tooltip-content"><img src=<%= achievements[9].icon %> alt="" />
-                            <span class="tooltip-text">
-                                <%= achievements[9].description %>
-                            </span>
-                        </span>
-                    </span>,
-                    <span class="achievement">
-                        <%= achievements[10].displayName %>
-                        <span class="tooltip-content"><img src=<%= achievements[10].icon %> alt="" />
-                            <span class="tooltip-text">
-                                <%= achievements[10].description %>
-                            </span>
-                        </span>
-                    </span> and
-                    <span class="achievement">
-                        <%= achievements[11].displayName %>
-                        <span class="tooltip-content"><img src=<%= achievements[11].icon %> alt="" />
-                            <span class="tooltip-text">
-                                <%= achievements[11].description %>
-                            </span>
-                        </span>
-                    </span>. You can farm xp in the Trials and Orbs at the same time. Completing the Trials will earn
-                    you
-                    <span class="achievement">
-                        <%= achievements[59].displayName %>
-                        <span class="tooltip-content"><img src=<%= achievements[59].icon %> alt="" />
-                            <span class="tooltip-text">
-                                <%= achievements[59].description %>
-                            </span>
-                        </span>
-                    </span> and
-                    <span class="achievement">
-                        <%= achievements[60].displayName %>
-                        <span class="tooltip-content"><img src=<%= achievements[60].icon %> alt="" />
-                            <span class="tooltip-text">
-                                <%= achievements[60].description %>
-                            </span>
-                        </span>
-                    </span>. You might as well collect 10000000 zillyen for
-                    <span class="achievement">
-                        <%= achievements[18].displayName %>
-                        <span class="tooltip-content"><img src=<%= achievements[18].icon %> alt="" />
-                            <span class="tooltip-text">
-                                <%= achievements[18].description %>
-                            </span>
-                        </span>
-                    </span> and
-                    <span class="achievement">
-                        <%= achievements[19].displayName %>
-                        <span class="tooltip-content"><img src=<%= achievements[19].icon %> alt="" />
-                            <span class="tooltip-text">
-                                <%= achievements[19].description %>
-                            </span>
-                        </span>
-                    </span>. An easy way is to resell items from the mechants, since you you sell at the same price you
-                    buy them and still count towards the achievements.
-                </p>
-                <p class="indent">
-                    Finally, there are 4 story achievements
-                    <span class="achievement">
-                        <%= achievements[5].displayName %>
-                        <span class="tooltip-content"><img src=<%= achievements[5].icon %> alt="" />
-                            <span class="tooltip-text">
-                                <%= achievements[5].description %>
-                            </span>
-                        </span>
-                    </span>,
-                    <span class="achievement">
-                        <%= achievements[6].displayName %>
-                        <span class="tooltip-content"><img src=<%= achievements[6].icon %> alt="" />
-                            <span class="tooltip-text">
-                                <%= achievements[6].description %>
-                            </span>
-                        </span>
-                    </span>,
-                    <span class="achievement">
-                        <%= achievements[7].displayName %>
-                        <span class="tooltip-content"><img src=<%= achievements[7].icon %> alt="" />
-                            <span class="tooltip-text">
-                                <%= achievements[7].description %>
-                            </span>
-                        </span>
-                    </span>,
-                    <span class="achievement">
-                        <%= achievements[8].displayName %>
-                        <span class="tooltip-content"><img src=<%= achievements[8].icon %> alt="" />
-                            <span class="tooltip-text">
-                                <%= achievements[8].description %>
-                            </span>
-                        </span>
-                    </span> and for completing this playthrough will unlock
-                    <span class="achievement">
-                        <%= achievements[1].displayName %>
-                        <span class="tooltip-content"><img src=<%= achievements[1].icon %> alt="" />
-                            <span class="tooltip-text">
-                                <%= achievements[1].description %>
-                            </span>
-                        </span>
-                    </span>,
-                    <span class="achievement">
-                        <%= achievements[2].displayName %>
-                        <span class="tooltip-content"><img src=<%= achievements[2].icon %> alt="" />
-                            <span class="tooltip-text">
-                                <%= achievements[2].description %>
-                            </span>
-                        </span>
-                    </span> and
-                    <span class="achievement">
-                        <%= achievements[3].displayName %>
-                        <span class="tooltip-content"><img src=<%= achievements[3].icon %> alt="" />
-                            <span class="tooltip-text">
-                                <%= achievements[3].description %>
-                            </span>
-                        </span>
-                    </span>.
-                </p>
-                <h2>Second Playthrough</h2>
-                <p class="indent">
-                    For this playthrough choose NG+ and No Pain No Gain difficulty. Now what is left is to find 50
-                    secrets, and collect 10000 orbs. You will have to play a few side missions, so you unlock more
-                    locations in order to find at least 50 secrets. Some are in the main missions, which are missable
-                    and some in side missions that are procedurally generated, which means not every secret will be
-                    accessible at the same mission. Finding at least 50 secrets will unlock
-                    <span class="achievement">
-                        <%= achievements[15].displayName %>
-                        <span class="tooltip-content"><img src=<%= achievements[15].icon %> alt="" />
-                            <span class="tooltip-text">
-                                <%= achievements[15].description %>
-                            </span>
-                        </span>
-                    </span>,
-                    <span class="achievement">
-                        <%= achievements[16].displayName %>
-                        <span class="tooltip-content"><img src=<%= achievements[16].icon %> alt="" />
-                            <span class="tooltip-text">
-                                <%= achievements[16].description %>
-                            </span>
-                        </span>
-                    </span> and
-                    <span class="achievement">
-                        <%= achievements[17].displayName %>
-                        <span class="tooltip-content"><img src=<%= achievements[17].icon %> alt="" />
-                            <span class="tooltip-text">
-                                <%= achievements[17].description %>
-                            </span>
-                        </span>
-                    </span>.
-                    Collecting 10000 orbs will unlock
-                    <span class="achievement">
-                        <%= achievements[61].displayName %>
-                        <span class="tooltip-content"><img src=<%= achievements[61].icon %> alt="" />
-                            <span class="tooltip-text">
-                                <%= achievements[61].description %>
-                            </span>
-                        </span>
-                    </span>,
-                    <span class="achievement">
-                        <%= achievements[62].displayName %>
-                        <span class="tooltip-content"><img src=<%= achievements[62].icon %> alt="" />
-                            <span class="tooltip-text">
-                                <%= achievements[62].description %>
-                            </span>
-                        </span>
-                    </span> and
-                    <span class="achievement">
-                        <%= achievements[63].displayName %>
-                        <span class="tooltip-content"><img src=<%= achievements[63].icon %> alt="" />
-                            <span class="tooltip-text">
-                                <%= achievements[63].description %>
-                            </span>
-                        </span>
-                    </span>.
-                </p>
-                <p class="indent">
-                    For completing the main story you will earn
-                    <span class="achievement">
-                        <%= achievements[4].displayName %>
-                        <span class="tooltip-content"><img src=<%= achievements[4].icon %> alt="" />
-                            <span class="tooltip-text">
-                                <%= achievements[4].description %>
-                            </span>
-                        </span>
-                    </span> and
-                    <span class="achievement">
-                        <%= achievements[0].displayName %>
-                        <span class="tooltip-content"><img src=<%= achievements[0].icon %> alt="" />
-                            <span class="tooltip-text">
-                                <%= achievements[0].description %>
-                            </span>
-                        </span>
-                    </span>.
-                </p>
-                <h3>Time Saving Resources</h3>
-                <p>
-                    <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=785723700" target="_blank">100%
-                        Achievements</a> - Steam guide with images. And some useful console commands.<br>
-                    <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=784575949" target="_blank">50+
-                        Secrets in Shadow Warrior 2</a> - Steam guide with images.<br>
+                        </span>.
+                    </p>
+                    <h3>Time Saving Resources</h3>
+                    <p>
+                        <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=785723700" target="_blank">100%
+                            Achievements</a> - Steam guide with images. And some useful console commands.<br>
+                        <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=784575949" target="_blank">50+
+                            Secrets in Shadow Warrior 2</a> - Steam guide with images.<br>
 
-                </p>
+                    </p>
+                </div>
+            </div>
+            <div class="rightColumn">
+                <img src="https://res.cloudinary.com/dmdbza74n/image/upload/v1665514110/achievementroadmaps/shadowWarrior2R_vfivc5.webp"
+                    alt="" />
             </div>
         </div>
-        <div class="rightColumn">
-            <img src="https://res.cloudinary.com/dmdbza74n/image/upload/v1665514110/achievementroadmaps/shadowWarrior2R_vfivc5.webp"
-                alt="" />
-        </div>
-    </div>
-</section>
+    </section>
+    <section>
+        <%- include('../partials/ach-list') %>
+    </section>
+
+    <footer>
+        <%- include('../partials/footer') %>
+    </footer>
+
+    <script src="/main.js"></script>
+</body>
 
 </html>

@@ -18,317 +18,337 @@
     </title>
 </head>
 
-<% layout('/layouts/boilerplate') -%>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WQWHH8Z" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
 
-<section class="header">
-    <img src="https://res.cloudinary.com/dmdbza74n/image/upload/v1693147935/achievementroadmaps/othercideHQ_cigusd.png"
-        alt="Othercide Cover" />
-</section>
-<section class="mainSection">
-    <div class="middleColumnParent">
-        <div class="leftColumn">
-            <img src="https://res.cloudinary.com/dmdbza74n/image/upload/v1693154839/achievementroadmaps/othercideL_bwp4yn.webp"
-                alt="" />
-        </div>
-        <div class="middleColumnPages">
-            <ul class="entryTitles">
-                <li>
-                    Time to 100%:<span class="editableTitles">50 hours</span>
-                </li>
-                <li>
-                    Minimum Playthroughs:<span class="editableTitles">Multiple</span>
-                </li>
-                <li>
-                    Extra Content required:<span class="editableTitles">0</span>
-                </li>
-                <li>
-                    Total Achievements:<span class="editableTitles">26</span>
-                </li>
-                <li>
-                    Single Player:<span class="editableTitles">26</span>
-                </li>
-                <li>
-                    Multiplayer/CoOp:<span class="editableTitles">0</span>
-                </li>
-                <li>
-                    Does difficulty affect achievements?:<span class="editableTitles">No</span>
-                </li>
-                <li>
-                    Do achievements stack?:<span class="editableTitles">No</span>
-                </li>
-                <li>
-                    Missable:<span class="editableTitles">2 - <span class="achievement">
+    <%- include('../partials/navbar') %>
+
+    <section class="header">
+        <img src="https://res.cloudinary.com/dmdbza74n/image/upload/v1693147935/achievementroadmaps/othercideHQ_cigusd.png"
+            alt="Othercide Cover" />
+    </section>
+    <section class="mainSection">
+        <div class="middleColumnParent">
+            <div class="leftColumn">
+                <img src="https://res.cloudinary.com/dmdbza74n/image/upload/v1693154839/achievementroadmaps/othercideL_bwp4yn.webp"
+                    alt="" />
+            </div>
+            <div class="middleColumnPages">
+                <ul class="entryTitles">
+                    <li>
+                        Time to 100%:<span class="editableTitles">50 hours</span>
+                    </li>
+                    <li>
+                        Minimum Playthroughs:<span class="editableTitles">Multiple</span>
+                    </li>
+                    <li>
+                        Extra Content required:<span class="editableTitles">0</span>
+                    </li>
+                    <li>
+                        Total Achievements:<span class="editableTitles">26</span>
+                    </li>
+                    <li>
+                        Single Player:<span class="editableTitles">26</span>
+                    </li>
+                    <li>
+                        Multiplayer/CoOp:<span class="editableTitles">0</span>
+                    </li>
+                    <li>
+                        Does difficulty affect achievements?:<span class="editableTitles">No</span>
+                    </li>
+                    <li>
+                        Do achievements stack?:<span class="editableTitles">No</span>
+                    </li>
+                    <li>
+                        Missable:<span class="editableTitles">2 - <span class="achievement">
+                                <%= achievements[6].displayName %>
+                                <span class="tooltip-content"><img src=<%= achievements[6].icon %> alt="" />
+                                    <span class="tooltip-text">
+                                        <%= achievements[6].description %>
+                                    </span>
+                                </span>
+                            </span>, <span class="achievement">
+                                <%= achievements[5].displayName %>
+                                <span class="tooltip-content"><img src=<%= achievements[5].icon %> alt="" />
+                                    <span class="tooltip-text">
+                                        <%= achievements[5].description %>
+                                    </span>
+                                </span>
+                            </span></span>
+                    </li>
+                    <li>
+                        Glitched:<span class="editableTitles">0</span>
+                    </li>
+                    <li>
+                        Grind:<span class="editableTitles">0</span>
+                    </li>
+                </ul>
+                <div class="aboutGameSection">
+                    <h1>Does it worth your time?</h1>
+                    <p class="indent">
+                        A unique tactical turn-based game. Truly challenging, that requires planning in and out of
+                        combat. An easier difficulty option has been added, that can save you some playtime. Although, I
+                        find that the original experience the developers aimed for works well, as long as you have the
+                        patience. It is a little slow and it can get repetitive, but if you are looking for a challenge
+                        it
+                        is worth your time.
+                    </p>
+                    <p class="indent">
+                        The game may be challenging, but the achievements are not. You are left to focus on the
+                        mechanics
+                        and enjoy the game without having to pay any attention on them. Almost all achievements will
+                        unlock
+                        naturally.
+                    </p>
+                    <h2>First Playthrough</h2>
+                    <p class="indent">
+                        The first playthrough will take 95% of the total playtime. You will also unlock 90% of the
+                        achievements by the time you defeat the final boss. Story related achievements are:
+                        <span class="achievement">
+                            <%= achievements[0].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[0].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[0].description %>
+                                </span>
+                            </span>
+                        </span>,
+                        <span class="achievement">
+                            <%= achievements[1].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[1].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[1].description %>
+                                </span>
+                            </span>
+                        </span>,
+                        <span class="achievement">
+                            <%= achievements[2].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[2].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[2].description %>
+                                </span>
+                            </span>
+                        </span>,
+                        <span class="achievement">
+                            <%= achievements[3].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[3].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[3].description %>
+                                </span>
+                            </span>
+                        </span>,
+                        <span class="achievement">
+                            <%= achievements[4].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[4].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[4].description %>
+                                </span>
+                            </span>
+                        </span> and
+                        <span class="achievement">
+                            <%= achievements[7].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[7].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[7].description %>
+                                </span>
+                            </span>
+                        </span>. For restarting the campaign you will unlock
+                        <span class="achievement">
+                            <%= achievements[11].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[11].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[11].description %>
+                                </span>
+                            </span>
+                        </span>. Combat related achievements are:
+                        <span class="achievement">
+                            <%= achievements[8].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[8].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[8].description %>
+                                </span>
+                            </span>
+                        </span>,
+                        <span class="achievement">
+                            <%= achievements[9].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[9].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[9].description %>
+                                </span>
+                            </span>
+                        </span>,
+                        <span class="achievement">
+                            <%= achievements[13].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[13].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[13].description %>
+                                </span>
+                            </span>
+                        </span>,
+                        <span class="achievement">
+                            <%= achievements[14].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[14].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[14].description %>
+                                </span>
+                            </span>
+                        </span>,
+                        <span class="achievement">
+                            <%= achievements[15].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[15].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[15].description %>
+                                </span>
+                            </span>
+                        </span> and
+                        <span class="achievement">
+                            <%= achievements[24].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[24].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[24].description %>
+                                </span>
+                            </span>
+                        </span>. For
+                        <span class="achievement">
+                            <%= achievements[19].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[19].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[19].description %>
+                                </span>
+                            </span>
+                        </span> you need to kill all enemy types multiple times and successfully complete all types of
+                        missions, since Memories have a drop chance. Make sure to choose both options after successfully
+                        finishing the Rescue synapses for
+                        <span class="achievement">
+                            <%= achievements[17].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[17].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[17].description %>
+                                </span>
+                            </span>
+                        </span> and
+                        <span class="achievement">
+                            <%= achievements[18].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[18].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[18].description %>
+                                </span>
+                            </span>
+                        </span>.
+                    </p>
+                    <p class="indent">
+                        While managing your daughters you will earn
+                        <span class="achievement">
+                            <%= achievements[10].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[10].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[10].description %>
+                                </span>
+                            </span>
+                        </span>,
+                        <span class="achievement">
+                            <%= achievements[12].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[12].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[12].description %>
+                                </span>
+                            </span>
+                        </span>,
+                        <span class="achievement">
+                            <%= achievements[16].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[16].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[16].description %>
+                                </span>
+                            </span>
+                        </span>,
+                        <span class="achievement">
+                            <%= achievements[21].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[21].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[21].description %>
+                                </span>
+                            </span>
+                        </span>,
+                        <span class="achievement">
+                            <%= achievements[22].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[22].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[22].description %>
+                                </span>
+                            </span>
+                        </span>,
+                        <span class="achievement">
+                            <%= achievements[23].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[23].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[23].description %>
+                                </span>
+                            </span>
+                        </span> and by reaching a daughter at max level you will unlock
+                        <span class="achievement">
+                            <%= achievements[25].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[25].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[25].description %>
+                                </span>
+                            </span>
+                        </span>. Eventually every Remembrance will unlock and by activating them all you will earn
+                        <span class="achievement">
+                            <%= achievements[20].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[20].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[20].description %>
+                                </span>
+                            </span>
+                        </span>.
+                    </p>
+                    <h2>Second Playthrough</h2>
+                    <p class="indent">
+                        What is left now is to finish the tutorial by defeating all enemies for
+                        <span class="achievement">
                             <%= achievements[6].displayName %>
                             <span class="tooltip-content"><img src=<%= achievements[6].icon %> alt="" />
                                 <span class="tooltip-text">
                                     <%= achievements[6].description %>
                                 </span>
                             </span>
-                        </span>, <span class="achievement">
+                        </span> and defeat all bosses in a single Recollection for
+                        <span class="achievement">
                             <%= achievements[5].displayName %>
                             <span class="tooltip-content"><img src=<%= achievements[5].icon %> alt="" />
                                 <span class="tooltip-text">
                                     <%= achievements[5].description %>
                                 </span>
                             </span>
-                        </span></span>
-                </li>
-                <li>
-                    Glitched:<span class="editableTitles">0</span>
-                </li>
-                <li>
-                    Grind:<span class="editableTitles">0</span>
-                </li>
-            </ul>
-            <div class="aboutGameSection">
-                <h1>Does it worth your time?</h1>
-                <p class="indent">
-                    A unique tactical turn-based game. Truly challenging, that requires planning in and out of
-                    combat. An easier difficulty option has been added, that can save you some playtime. Although, I
-                    find that the original experience the developers aimed for works well, as long as you have the
-                    patience. It is a little slow and it can get repetitive, but if you are looking for a challenge it
-                    is worth your time.
-                </p>
-                <p class="indent">
-                    The game may be challenging, but the achievements are not. You are left to focus on the mechanics
-                    and enjoy the game without having to pay any attention on them. Almost all achievements will unlock
-                    naturally.
-                </p>
-                <h2>First Playthrough</h2>
-                <p class="indent">
-                    The first playthrough will take 95% of the total playtime. You will also unlock 90% of the
-                    achievements by the time you defeat the final boss. Story related achievements are:
-                    <span class="achievement">
-                        <%= achievements[0].displayName %>
-                        <span class="tooltip-content"><img src=<%= achievements[0].icon %> alt="" />
-                            <span class="tooltip-text">
-                                <%= achievements[0].description %>
-                            </span>
-                        </span>
-                    </span>,
-                    <span class="achievement">
-                        <%= achievements[1].displayName %>
-                        <span class="tooltip-content"><img src=<%= achievements[1].icon %> alt="" />
-                            <span class="tooltip-text">
-                                <%= achievements[1].description %>
-                            </span>
-                        </span>
-                    </span>,
-                    <span class="achievement">
-                        <%= achievements[2].displayName %>
-                        <span class="tooltip-content"><img src=<%= achievements[2].icon %> alt="" />
-                            <span class="tooltip-text">
-                                <%= achievements[2].description %>
-                            </span>
-                        </span>
-                    </span>,
-                    <span class="achievement">
-                        <%= achievements[3].displayName %>
-                        <span class="tooltip-content"><img src=<%= achievements[3].icon %> alt="" />
-                            <span class="tooltip-text">
-                                <%= achievements[3].description %>
-                            </span>
-                        </span>
-                    </span>,
-                    <span class="achievement">
-                        <%= achievements[4].displayName %>
-                        <span class="tooltip-content"><img src=<%= achievements[4].icon %> alt="" />
-                            <span class="tooltip-text">
-                                <%= achievements[4].description %>
-                            </span>
-                        </span>
-                    </span> and
-                    <span class="achievement">
-                        <%= achievements[7].displayName %>
-                        <span class="tooltip-content"><img src=<%= achievements[7].icon %> alt="" />
-                            <span class="tooltip-text">
-                                <%= achievements[7].description %>
-                            </span>
-                        </span>
-                    </span>. For restarting the campaign you will unlock
-                    <span class="achievement">
-                        <%= achievements[11].displayName %>
-                        <span class="tooltip-content"><img src=<%= achievements[11].icon %> alt="" />
-                            <span class="tooltip-text">
-                                <%= achievements[11].description %>
-                            </span>
-                        </span>
-                    </span>. Combat related achievements are:
-                    <span class="achievement">
-                        <%= achievements[8].displayName %>
-                        <span class="tooltip-content"><img src=<%= achievements[8].icon %> alt="" />
-                            <span class="tooltip-text">
-                                <%= achievements[8].description %>
-                            </span>
-                        </span>
-                    </span>,
-                    <span class="achievement">
-                        <%= achievements[9].displayName %>
-                        <span class="tooltip-content"><img src=<%= achievements[9].icon %> alt="" />
-                            <span class="tooltip-text">
-                                <%= achievements[9].description %>
-                            </span>
-                        </span>
-                    </span>,
-                    <span class="achievement">
-                        <%= achievements[13].displayName %>
-                        <span class="tooltip-content"><img src=<%= achievements[13].icon %> alt="" />
-                            <span class="tooltip-text">
-                                <%= achievements[13].description %>
-                            </span>
-                        </span>
-                    </span>,
-                    <span class="achievement">
-                        <%= achievements[14].displayName %>
-                        <span class="tooltip-content"><img src=<%= achievements[14].icon %> alt="" />
-                            <span class="tooltip-text">
-                                <%= achievements[14].description %>
-                            </span>
-                        </span>
-                    </span>,
-                    <span class="achievement">
-                        <%= achievements[15].displayName %>
-                        <span class="tooltip-content"><img src=<%= achievements[15].icon %> alt="" />
-                            <span class="tooltip-text">
-                                <%= achievements[15].description %>
-                            </span>
-                        </span>
-                    </span> and
-                    <span class="achievement">
-                        <%= achievements[24].displayName %>
-                        <span class="tooltip-content"><img src=<%= achievements[24].icon %> alt="" />
-                            <span class="tooltip-text">
-                                <%= achievements[24].description %>
-                            </span>
-                        </span>
-                    </span>. For
-                    <span class="achievement">
-                        <%= achievements[19].displayName %>
-                        <span class="tooltip-content"><img src=<%= achievements[19].icon %> alt="" />
-                            <span class="tooltip-text">
-                                <%= achievements[19].description %>
-                            </span>
-                        </span>
-                    </span> you need to kill all enemy types multiple times and successfully complete all types of
-                    missions, since Memories have a drop chance. Make sure to choose both options after successfully
-                    finishing the Rescue synapses for
-                    <span class="achievement">
-                        <%= achievements[17].displayName %>
-                        <span class="tooltip-content"><img src=<%= achievements[17].icon %> alt="" />
-                            <span class="tooltip-text">
-                                <%= achievements[17].description %>
-                            </span>
-                        </span>
-                    </span> and
-                    <span class="achievement">
-                        <%= achievements[18].displayName %>
-                        <span class="tooltip-content"><img src=<%= achievements[18].icon %> alt="" />
-                            <span class="tooltip-text">
-                                <%= achievements[18].description %>
-                            </span>
-                        </span>
-                    </span>.
-                </p>
-                <p class="indent">
-                    While managing your daughters you will earn
-                    <span class="achievement">
-                        <%= achievements[10].displayName %>
-                        <span class="tooltip-content"><img src=<%= achievements[10].icon %> alt="" />
-                            <span class="tooltip-text">
-                                <%= achievements[10].description %>
-                            </span>
-                        </span>
-                    </span>,
-                    <span class="achievement">
-                        <%= achievements[12].displayName %>
-                        <span class="tooltip-content"><img src=<%= achievements[12].icon %> alt="" />
-                            <span class="tooltip-text">
-                                <%= achievements[12].description %>
-                            </span>
-                        </span>
-                    </span>,
-                    <span class="achievement">
-                        <%= achievements[16].displayName %>
-                        <span class="tooltip-content"><img src=<%= achievements[16].icon %> alt="" />
-                            <span class="tooltip-text">
-                                <%= achievements[16].description %>
-                            </span>
-                        </span>
-                    </span>,
-                    <span class="achievement">
-                        <%= achievements[21].displayName %>
-                        <span class="tooltip-content"><img src=<%= achievements[21].icon %> alt="" />
-                            <span class="tooltip-text">
-                                <%= achievements[21].description %>
-                            </span>
-                        </span>
-                    </span>,
-                    <span class="achievement">
-                        <%= achievements[22].displayName %>
-                        <span class="tooltip-content"><img src=<%= achievements[22].icon %> alt="" />
-                            <span class="tooltip-text">
-                                <%= achievements[22].description %>
-                            </span>
-                        </span>
-                    </span>,
-                    <span class="achievement">
-                        <%= achievements[23].displayName %>
-                        <span class="tooltip-content"><img src=<%= achievements[23].icon %> alt="" />
-                            <span class="tooltip-text">
-                                <%= achievements[23].description %>
-                            </span>
-                        </span>
-                    </span> and by reaching a daughter at max level you will unlock
-                    <span class="achievement">
-                        <%= achievements[25].displayName %>
-                        <span class="tooltip-content"><img src=<%= achievements[25].icon %> alt="" />
-                            <span class="tooltip-text">
-                                <%= achievements[25].description %>
-                            </span>
-                        </span>
-                    </span>. Eventually every Remembrance will unlock and by activating them all you will earn
-                    <span class="achievement">
-                        <%= achievements[20].displayName %>
-                        <span class="tooltip-content"><img src=<%= achievements[20].icon %> alt="" />
-                            <span class="tooltip-text">
-                                <%= achievements[20].description %>
-                            </span>
-                        </span>
-                    </span>.
-                </p>
-                <h2>Second Playthrough</h2>
-                <p class="indent">
-                    What is left now is to finish the tutorial by defeating all enemies for
-                    <span class="achievement">
-                        <%= achievements[6].displayName %>
-                        <span class="tooltip-content"><img src=<%= achievements[6].icon %> alt="" />
-                            <span class="tooltip-text">
-                                <%= achievements[6].description %>
-                            </span>
-                        </span>
-                    </span> and defeat all bosses in a single Recollection for
-                    <span class="achievement">
-                        <%= achievements[5].displayName %>
-                        <span class="tooltip-content"><img src=<%= achievements[5].icon %> alt="" />
-                            <span class="tooltip-text">
-                                <%= achievements[5].description %>
-                            </span>
-                        </span>
-                    </span>.
-                </p>
-                <h3>Time Saving Resources</h3>
-                <p>
-                    <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2391126546" target="_blank">100%
-                        Achievements</a> - Also includes a few general tips and guides for a couple achievements if you
-                    are having trouble, especially for the tutorial.<br>
-                </p>
+                        </span>.
+                    </p>
+                    <h3>Time Saving Resources</h3>
+                    <p>
+                        <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2391126546" target="_blank">100%
+                            Achievements</a> - Also includes a few general tips and guides for a couple achievements if
+                        you
+                        are having trouble, especially for the tutorial.<br>
+                    </p>
+                </div>
+            </div>
+            <div class="rightColumn">
+                <img src="https://res.cloudinary.com/dmdbza74n/image/upload/v1693154838/achievementroadmaps/othercideR_kxuokp.webp"
+                    alt="" />
             </div>
         </div>
-        <div class="rightColumn">
-            <img src="https://res.cloudinary.com/dmdbza74n/image/upload/v1693154838/achievementroadmaps/othercideR_kxuokp.webp"
-                alt="" />
-        </div>
-    </div>
-</section>
+    </section>
+    <section>
+        <%- include('../partials/ach-list') %>
+    </section>
+
+    <footer>
+        <%- include('../partials/footer') %>
+    </footer>
+
+    <script src="/main.js"></script>
+</body>
 
 </html>

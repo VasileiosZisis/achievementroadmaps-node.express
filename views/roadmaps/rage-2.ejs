@@ -18,656 +18,690 @@
     </title>
 </head>
 
-<% layout('/layouts/boilerplate') -%>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WQWHH8Z" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
 
-<section class="header">
-    <img src="https://res.cloudinary.com/dmdbza74n/image/upload/v1679342349/achievementroadmaps/Rage2HQ_vwe2lm.webp"
-        alt="Rage 2 Cover" />
-</section>
-<section class="mainSection">
-    <div class="middleColumnParent">
-        <div class="leftColumn">
-            <img src="https://res.cloudinary.com/dmdbza74n/image/upload/v1679343196/achievementroadmaps/Rage2L_or8zxi.webp"
-                alt="" />
-        </div>
-        <div class="middleColumnPages">
-            <ul class="entryTitles">
-                <li>
-                    Time to 100%:<span class="editableTitles">50-70 hours</span>
-                </li>
-                <li>
-                    Minimum Playthroughs:<span class="editableTitles">2</span>
-                </li>
-                <li>
-                    Extra Content required:<span class="editableTitles">2 DLCs - Rise of the Ghosts, TerrorMania</span>
-                </li>
-                <li>
-                    Total Achievements:<span class="editableTitles">64</span>
-                </li>
-                <li>
-                    Single Player:<span class="editableTitles">64</span>
-                </li>
-                <li>
-                    Multiplayer/CoOp:<span class="editableTitles">0</span>
-                </li>
-                <li>
-                    Does difficulty affect achievements?:<span class="editableTitles">Yes</span>
-                </li>
-                <li>
-                    Do achievements stack?:<span class="editableTitles">Yes</span>
-                </li>
-                <li>
-                    Missable:<span class="editableTitles">0</span>
-                </li>
-                <li>
-                    Glitched:<span class="editableTitles">0</span>
-                </li>
-                <li>
-                    Grind:<span class="editableTitles">2-<span class="achievement">
+    <%- include('../partials/navbar') %>
+
+    <section class="header">
+        <img src="https://res.cloudinary.com/dmdbza74n/image/upload/v1679342349/achievementroadmaps/Rage2HQ_vwe2lm.webp"
+            alt="Rage 2 Cover" />
+    </section>
+    <section class="mainSection">
+        <div class="middleColumnParent">
+            <div class="leftColumn">
+                <img src="https://res.cloudinary.com/dmdbza74n/image/upload/v1679343196/achievementroadmaps/Rage2L_or8zxi.webp"
+                    alt="" />
+            </div>
+            <div class="middleColumnPages">
+                <ul class="entryTitles">
+                    <li>
+                        Time to 100%:<span class="editableTitles">50-70 hours</span>
+                    </li>
+                    <li>
+                        Minimum Playthroughs:<span class="editableTitles">2</span>
+                    </li>
+                    <li>
+                        Extra Content required:<span class="editableTitles">2 DLCs - Rise of the Ghosts,
+                            TerrorMania</span>
+                    </li>
+                    <li>
+                        Total Achievements:<span class="editableTitles">64</span>
+                    </li>
+                    <li>
+                        Single Player:<span class="editableTitles">64</span>
+                    </li>
+                    <li>
+                        Multiplayer/CoOp:<span class="editableTitles">0</span>
+                    </li>
+                    <li>
+                        Does difficulty affect achievements?:<span class="editableTitles">Yes</span>
+                    </li>
+                    <li>
+                        Do achievements stack?:<span class="editableTitles">Yes</span>
+                    </li>
+                    <li>
+                        Missable:<span class="editableTitles">0</span>
+                    </li>
+                    <li>
+                        Glitched:<span class="editableTitles">0</span>
+                    </li>
+                    <li>
+                        Grind:<span class="editableTitles">2-<span class="achievement">
+                                <%= achievements[14].displayName %>
+                                <span class="tooltip-content"><img src=<%= achievements[14].icon %> alt="" />
+                                    <span class="tooltip-text">
+                                        <%= achievements[14].description %>
+                                    </span>
+                                </span>
+                            </span>, <span class="achievement">
+                                <%= achievements[17].displayName %>
+                                <span class="tooltip-content"><img src=<%= achievements[17].icon %> alt="" />
+                                    <span class="tooltip-text">
+                                        <%= achievements[17].description %>
+                                    </span>
+                                </span>
+                            </span></span>
+                    </li>
+                </ul>
+                <div class="aboutGameSection">
+                    <h1>Does it worth your time?</h1>
+                    <p class="indent">
+                        It seems with this game, you either love it or hate it. I personally found it to be a very fun
+                        first
+                        person shooter. It had a bumpy launch, with the in-game microtransactions and the not very few
+                        game
+                        breaking bugs, but it came through. The gameplay is different than the prequel. Now an open
+                        world
+                        game with a lot of things to do, although the map could be smaller. The combat is improved and
+                        it is
+                        the strongest component, although the upgrade system could be less complicated. In conclusion,
+                        lots
+                        of guns, lots of skills, lots of vehicles, lots of enemies.
+                    </p>
+                    <p class="indent">
+                        The achievements are more time-consuming than difficult. You will have to upgrade everything and
+                        clear everything from the map. Fortunately everything can be tracked ingame so 99% of the time
+                        you
+                        know where to go and what to do and they will not take away the fun.
+                    </p>
+                    <h2>First Playthrough</h2>
+                    <p class="indent">
+                        For the first playthrough start on Ultra Nightmare difficulty. The beginning will be steep, but
+                        if
+                        you first focus on acquiring weapons and abilities from the Arks, as the game recommends then
+                        you
+                        will overpower everything soon enough. In my opinion the game feels that was made for this
+                        difficulty. The DLCs are a step harder than the main game, but you have the option to finish the
+                        main mission first, then lower the difficulty and then move on the DLC missions. And always
+                        remember
+                        if you are stuck on a mission, you can abandon it from the escape menu.
+                    </p>
+                    <p class="indent">
+                        A final thing to keep in mind is the Spy Drones. They are hard to find without the specific
+                        skill,
+                        and
+                        they fly away as soon as the spot you. You need to destroy 30 of them, but there are actually
+                        more.
+                        My advice is when you see one fly away, reload the checkpoint and destroy it. You will save a
+                        lot of
+                        time searching for them post-game.
+                    </p>
+                    <p class="indent">
+                        There are 8 story achievements that are unmissable and will unlock after completing each of the
+                        main
+                        missions:
+                        <span class="achievement">
+                            <%= achievements[27].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[27].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[27].description %>
+                                </span>
+                            </span>
+                        </span>,
+                        <span class="achievement">
+                            <%= achievements[28].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[28].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[28].description %>
+                                </span>
+                            </span>
+                        </span>,
+                        <span class="achievement">
+                            <%= achievements[29].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[29].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[29].description %>
+                                </span>
+                            </span>
+                        </span>,
+                        <span class="achievement">
+                            <%= achievements[30].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[30].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[30].description %>
+                                </span>
+                            </span>
+                        </span>,
+                        <span class="achievement">
+                            <%= achievements[31].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[31].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[31].description %>
+                                </span>
+                            </span>
+                        </span>,
+                        <span class="achievement">
+                            <%= achievements[32].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[32].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[32].description %>
+                                </span>
+                            </span>
+                        </span>,
+                        <span class="achievement">
+                            <%= achievements[33].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[33].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[33].description %>
+                                </span>
+                            </span>
+                        </span> and
+                        <span class="achievement">
+                            <%= achievements[34].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[34].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[34].description %>
+                                </span>
+                            </span>
+                        </span>.
+                    </p>
+                    <p class="indent">
+                        There are 17 combat related achievements some require specific abilities and skills to unlock
+                        first.
+                        So make sure to unlock them as soon as possible. Terrormania DLC is a very good place to farm
+                        them.
+                        For weapons there is <span class="achievement">
+                            <%= achievements[0].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[0].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[0].description %>
+                                </span>
+                            </span>
+                        </span>,
+                        <span class="achievement">
+                            <%= achievements[2].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[2].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[2].description %>
+                                </span>
+                            </span>
+                        </span>,
+                        <span class="achievement">
+                            <%= achievements[3].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[3].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[3].description %>
+                                </span>
+                            </span>
+                        </span> and
+                        <span class="achievement">
+                            <%= achievements[4].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[4].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[4].description %>
+                                </span>
+                            </span>
+                        </span>. For abilities there is
+                        <span class="achievement">
+                            <%= achievements[7].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[7].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[7].description %>
+                                </span>
+                            </span>
+                        </span> and
+                        <span class="achievement">
+                            <%= achievements[6].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[6].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[6].description %>
+                                </span>
+                            </span>
+                        </span>. You will need upgrades for
+                        <span class="achievement">
+                            <%= achievements[13].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[13].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[13].description %>
+                                </span>
+                            </span>
+                        </span>,
+                        <span class="achievement">
+                            <%= achievements[8].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[8].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[8].description %>
+                                </span>
+                            </span>
+                        </span>,
+                        <span class="achievement">
+                            <%= achievements[10].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[10].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[10].description %>
+                                </span>
+                            </span>
+                        </span>,
+                        <span class="achievement">
+                            <%= achievements[1].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[1].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[1].description %>
+                                </span>
+                            </span>
+                        </span> and
+                        <span class="achievement">
+                            <%= achievements[5].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[5].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[5].description %>
+                                </span>
+                            </span>
+                        </span>. For the wingstick there is
+                        <span class="achievement">
+                            <%= achievements[9].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[9].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[9].description %>
+                                </span>
+                            </span>
+                        </span> and while riding ziplines
+                        <span class="achievement">
+                            <%= achievements[11].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[11].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[11].description %>
+                                </span>
+                            </span>
+                        </span>. You will unlock naturally
+                        <span class="achievement">
+                            <%= achievements[16].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[16].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[16].description %>
+                                </span>
+                            </span>
+                        </span>,
+                        <span class="achievement">
+                            <%= achievements[15].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[15].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[15].description %>
+                                </span>
+                            </span>
+                        </span>,
+                        <span class="achievement">
+                            <%= achievements[12].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[12].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[12].description %>
+                                </span>
+                            </span>
+                        </span>, although you will propably need a guide for the seventh Crusher, only six are marked.
+                        And
+                        finally
+                        <span class="achievement">
                             <%= achievements[14].displayName %>
                             <span class="tooltip-content"><img src=<%= achievements[14].icon %> alt="" />
                                 <span class="tooltip-text">
                                     <%= achievements[14].description %>
                                 </span>
                             </span>
-                        </span>, <span class="achievement">
+                        </span>.
+                    </p>
+                    <p class="indent">
+                        There are 10 vehicle related achievements. Combat related are:
+                        <span class="achievement">
+                            <%= achievements[18].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[18].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[18].description %>
+                                </span>
+                            </span>
+                        </span>,
+                        <span class="achievement">
+                            <%= achievements[19].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[19].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[19].description %>
+                                </span>
+                            </span>
+                        </span>,
+                        <span class="achievement">
                             <%= achievements[17].displayName %>
                             <span class="tooltip-content"><img src=<%= achievements[17].icon %> alt="" />
                                 <span class="tooltip-text">
                                     <%= achievements[17].description %>
                                 </span>
                             </span>
-                        </span></span>
-                </li>
-            </ul>
-            <div class="aboutGameSection">
-                <h1>Does it worth your time?</h1>
-                <p class="indent">
-                    It seems with this game, you either love it or hate it. I personally found it to be a very fun first
-                    person shooter. It had a bumpy launch, with the in-game microtransactions and the not very few game
-                    breaking bugs, but it came through. The gameplay is different than the prequel. Now an open world
-                    game with a lot of things to do, although the map could be smaller. The combat is improved and it is
-                    the strongest component, although the upgrade system could be less complicated. In conclusion, lots
-                    of guns, lots of skills, lots of vehicles, lots of enemies.
-                </p>
-                <p class="indent">
-                    The achievements are more time-consuming than difficult. You will have to upgrade everything and
-                    clear everything from the map. Fortunately everything can be tracked ingame so 99% of the time you
-                    know where to go and what to do and they will not take away the fun.
-                </p>
-                <h2>First Playthrough</h2>
-                <p class="indent">
-                    For the first playthrough start on Ultra Nightmare difficulty. The beginning will be steep, but if
-                    you first focus on acquiring weapons and abilities from the Arks, as the game recommends then you
-                    will overpower everything soon enough. In my opinion the game feels that was made for this
-                    difficulty. The DLCs are a step harder than the main game, but you have the option to finish the
-                    main mission first, then lower the difficulty and then move on the DLC missions. And always remember
-                    if you are stuck on a mission, you can abandon it from the escape menu.
-                </p>
-                <p class="indent">
-                    A final thing to keep in mind is the Spy Drones. They are hard to find without the specific skill,
-                    and
-                    they fly away as soon as the spot you. You need to destroy 30 of them, but there are actually more.
-                    My advice is when you see one fly away, reload the checkpoint and destroy it. You will save a lot of
-                    time searching for them post-game.
-                </p>
-                <p class="indent">
-                    There are 8 story achievements that are unmissable and will unlock after completing each of the main
-                    missions:
-                    <span class="achievement">
-                        <%= achievements[27].displayName %>
-                        <span class="tooltip-content"><img src=<%= achievements[27].icon %> alt="" />
-                            <span class="tooltip-text">
-                                <%= achievements[27].description %>
-                            </span>
-                        </span>
-                    </span>,
-                    <span class="achievement">
-                        <%= achievements[28].displayName %>
-                        <span class="tooltip-content"><img src=<%= achievements[28].icon %> alt="" />
-                            <span class="tooltip-text">
-                                <%= achievements[28].description %>
-                            </span>
-                        </span>
-                    </span>,
-                    <span class="achievement">
-                        <%= achievements[29].displayName %>
-                        <span class="tooltip-content"><img src=<%= achievements[29].icon %> alt="" />
-                            <span class="tooltip-text">
-                                <%= achievements[29].description %>
-                            </span>
-                        </span>
-                    </span>,
-                    <span class="achievement">
-                        <%= achievements[30].displayName %>
-                        <span class="tooltip-content"><img src=<%= achievements[30].icon %> alt="" />
-                            <span class="tooltip-text">
-                                <%= achievements[30].description %>
-                            </span>
-                        </span>
-                    </span>,
-                    <span class="achievement">
-                        <%= achievements[31].displayName %>
-                        <span class="tooltip-content"><img src=<%= achievements[31].icon %> alt="" />
-                            <span class="tooltip-text">
-                                <%= achievements[31].description %>
-                            </span>
-                        </span>
-                    </span>,
-                    <span class="achievement">
-                        <%= achievements[32].displayName %>
-                        <span class="tooltip-content"><img src=<%= achievements[32].icon %> alt="" />
-                            <span class="tooltip-text">
-                                <%= achievements[32].description %>
-                            </span>
-                        </span>
-                    </span>,
-                    <span class="achievement">
-                        <%= achievements[33].displayName %>
-                        <span class="tooltip-content"><img src=<%= achievements[33].icon %> alt="" />
-                            <span class="tooltip-text">
-                                <%= achievements[33].description %>
-                            </span>
-                        </span>
-                    </span> and
-                    <span class="achievement">
-                        <%= achievements[34].displayName %>
-                        <span class="tooltip-content"><img src=<%= achievements[34].icon %> alt="" />
-                            <span class="tooltip-text">
-                                <%= achievements[34].description %>
-                            </span>
-                        </span>
-                    </span>.
-                </p>
-                <p class="indent">
-                    There are 17 combat related achievements some require specific abilities and skills to unlock first.
-                    So make sure to unlock them as soon as possible. Terrormania DLC is a very good place to farm them.
-                    For weapons there is <span class="achievement">
-                        <%= achievements[0].displayName %>
-                        <span class="tooltip-content"><img src=<%= achievements[0].icon %> alt="" />
-                            <span class="tooltip-text">
-                                <%= achievements[0].description %>
-                            </span>
-                        </span>
-                    </span>,
-                    <span class="achievement">
-                        <%= achievements[2].displayName %>
-                        <span class="tooltip-content"><img src=<%= achievements[2].icon %> alt="" />
-                            <span class="tooltip-text">
-                                <%= achievements[2].description %>
-                            </span>
-                        </span>
-                    </span>,
-                    <span class="achievement">
-                        <%= achievements[3].displayName %>
-                        <span class="tooltip-content"><img src=<%= achievements[3].icon %> alt="" />
-                            <span class="tooltip-text">
-                                <%= achievements[3].description %>
-                            </span>
-                        </span>
-                    </span> and
-                    <span class="achievement">
-                        <%= achievements[4].displayName %>
-                        <span class="tooltip-content"><img src=<%= achievements[4].icon %> alt="" />
-                            <span class="tooltip-text">
-                                <%= achievements[4].description %>
-                            </span>
-                        </span>
-                    </span>. For abilities there is
-                    <span class="achievement">
-                        <%= achievements[7].displayName %>
-                        <span class="tooltip-content"><img src=<%= achievements[7].icon %> alt="" />
-                            <span class="tooltip-text">
-                                <%= achievements[7].description %>
-                            </span>
-                        </span>
-                    </span> and
-                    <span class="achievement">
-                        <%= achievements[6].displayName %>
-                        <span class="tooltip-content"><img src=<%= achievements[6].icon %> alt="" />
-                            <span class="tooltip-text">
-                                <%= achievements[6].description %>
-                            </span>
-                        </span>
-                    </span>. You will need upgrades for
-                    <span class="achievement">
-                        <%= achievements[13].displayName %>
-                        <span class="tooltip-content"><img src=<%= achievements[13].icon %> alt="" />
-                            <span class="tooltip-text">
-                                <%= achievements[13].description %>
-                            </span>
-                        </span>
-                    </span>,
-                    <span class="achievement">
-                        <%= achievements[8].displayName %>
-                        <span class="tooltip-content"><img src=<%= achievements[8].icon %> alt="" />
-                            <span class="tooltip-text">
-                                <%= achievements[8].description %>
-                            </span>
-                        </span>
-                    </span>,
-                    <span class="achievement">
-                        <%= achievements[10].displayName %>
-                        <span class="tooltip-content"><img src=<%= achievements[10].icon %> alt="" />
-                            <span class="tooltip-text">
-                                <%= achievements[10].description %>
-                            </span>
-                        </span>
-                    </span>,
-                    <span class="achievement">
-                        <%= achievements[1].displayName %>
-                        <span class="tooltip-content"><img src=<%= achievements[1].icon %> alt="" />
-                            <span class="tooltip-text">
-                                <%= achievements[1].description %>
-                            </span>
-                        </span>
-                    </span> and
-                    <span class="achievement">
-                        <%= achievements[5].displayName %>
-                        <span class="tooltip-content"><img src=<%= achievements[5].icon %> alt="" />
-                            <span class="tooltip-text">
-                                <%= achievements[5].description %>
-                            </span>
-                        </span>
-                    </span>. For the wingstick there is
-                    <span class="achievement">
-                        <%= achievements[9].displayName %>
-                        <span class="tooltip-content"><img src=<%= achievements[9].icon %> alt="" />
-                            <span class="tooltip-text">
-                                <%= achievements[9].description %>
-                            </span>
-                        </span>
-                    </span> and while riding ziplines
-                    <span class="achievement">
-                        <%= achievements[11].displayName %>
-                        <span class="tooltip-content"><img src=<%= achievements[11].icon %> alt="" />
-                            <span class="tooltip-text">
-                                <%= achievements[11].description %>
-                            </span>
-                        </span>
-                    </span>. You will unlock naturally
-                    <span class="achievement">
-                        <%= achievements[16].displayName %>
-                        <span class="tooltip-content"><img src=<%= achievements[16].icon %> alt="" />
-                            <span class="tooltip-text">
-                                <%= achievements[16].description %>
-                            </span>
-                        </span>
-                    </span>,
-                    <span class="achievement">
-                        <%= achievements[15].displayName %>
-                        <span class="tooltip-content"><img src=<%= achievements[15].icon %> alt="" />
-                            <span class="tooltip-text">
-                                <%= achievements[15].description %>
-                            </span>
-                        </span>
-                    </span>,
-                    <span class="achievement">
-                        <%= achievements[12].displayName %>
-                        <span class="tooltip-content"><img src=<%= achievements[12].icon %> alt="" />
-                            <span class="tooltip-text">
-                                <%= achievements[12].description %>
-                            </span>
-                        </span>
-                    </span>, although you will propably need a guide for the seventh Crusher, only six are marked. And
-                    finally
-                    <span class="achievement">
-                        <%= achievements[14].displayName %>
-                        <span class="tooltip-content"><img src=<%= achievements[14].icon %> alt="" />
-                            <span class="tooltip-text">
-                                <%= achievements[14].description %>
-                            </span>
-                        </span>
-                    </span>.
-                </p>
-                <p class="indent">
-                    There are 10 vehicle related achievements. Combat related are:
-                    <span class="achievement">
-                        <%= achievements[18].displayName %>
-                        <span class="tooltip-content"><img src=<%= achievements[18].icon %> alt="" />
-                            <span class="tooltip-text">
-                                <%= achievements[18].description %>
-                            </span>
-                        </span>
-                    </span>,
-                    <span class="achievement">
-                        <%= achievements[19].displayName %>
-                        <span class="tooltip-content"><img src=<%= achievements[19].icon %> alt="" />
-                            <span class="tooltip-text">
-                                <%= achievements[19].description %>
-                            </span>
-                        </span>
-                    </span>,
-                    <span class="achievement">
-                        <%= achievements[17].displayName %>
-                        <span class="tooltip-content"><img src=<%= achievements[17].icon %> alt="" />
-                            <span class="tooltip-text">
-                                <%= achievements[17].description %>
-                            </span>
-                        </span>
-                    </span>
-                    and need to unlock the ability first for
-                    <span class="achievement">
-                        <%= achievements[24].displayName %>
-                        <span class="tooltip-content"><img src=<%= achievements[24].icon %> alt="" />
-                            <span class="tooltip-text">
-                                <%= achievements[24].description %>
-                            </span>
-                        </span>
-                    </span>. For these you have to find and unlock new vehicles:
-                    <span class="achievement">
-                        <%= achievements[26].displayName %>
-                        <span class="tooltip-content"><img src=<%= achievements[26].icon %> alt="" />
-                            <span class="tooltip-text">
-                                <%= achievements[26].description %>
-                            </span>
-                        </span>
-                    </span>,
-                    <span class="achievement">
-                        <%= achievements[25].displayName %>
-                        <span class="tooltip-content"><img src=<%= achievements[25].icon %> alt="" />
-                            <span class="tooltip-text">
-                                <%= achievements[25].description %>
-                            </span>
-                        </span>
-                    </span> and
-                    <span class="achievement">
-                        <%= achievements[20].displayName %>
-                        <span class="tooltip-content"><img src=<%= achievements[20].icon %> alt="" />
-                            <span class="tooltip-text">
-                                <%= achievements[20].description %>
-                            </span>
-                        </span>
-                    </span>. And some miscellaneous
-                    <span class="achievement">
-                        <%= achievements[21].displayName %>
-                        <span class="tooltip-content"><img src=<%= achievements[21].icon %> alt="" />
-                            <span class="tooltip-text">
-                                <%= achievements[21].description %>
-                            </span>
-                        </span>
-                    </span>,
-                    <span class="achievement">
-                        <%= achievements[22].displayName %>
-                        <span class="tooltip-content"><img src=<%= achievements[22].icon %> alt="" />
-                            <span class="tooltip-text">
-                                <%= achievements[22].description %>
-                            </span>
-                        </span>
-                    </span> and
-                    <span class="achievement">
-                        <%= achievements[23].displayName %>
-                        <span class="tooltip-content"><img src=<%= achievements[23].icon %> alt="" />
-                            <span class="tooltip-text">
-                                <%= achievements[23].description %>
-                            </span>
-                        </span>
-                    </span>.
-                </p>
-                <p class="indent">
-                    Explore the map and find all the EcoPods for the
-                    <span class="achievement">
-                        <%= achievements[38].displayName %>
-                        <span class="tooltip-content"><img src=<%= achievements[38].icon %> alt="" />
-                            <span class="tooltip-text">
-                                <%= achievements[38].description %>
-                            </span>
-                        </span>
-                    </span>,
-                    <span class="achievement">
-                        <%= achievements[39].displayName %>
-                        <span class="tooltip-content"><img src=<%= achievements[39].icon %> alt="" />
-                            <span class="tooltip-text">
-                                <%= achievements[39].description %>
-                            </span>
-                        </span>
-                    </span>,
-                    <span class="achievement">
-                        <%= achievements[40].displayName %>
-                        <span class="tooltip-content"><img src=<%= achievements[40].icon %> alt="" />
-                            <span class="tooltip-text">
-                                <%= achievements[40].description %>
-                            </span>
-                        </span>
-                    </span> and
-                    <span class="achievement">
-                        <%= achievements[41].displayName %>
-                        <span class="tooltip-content"><img src=<%= achievements[41].icon %> alt="" />
-                            <span class="tooltip-text">
-                                <%= achievements[41].description %>
-                            </span>
-                        </span>
-                    </span>. Find all five main settlements for
-                    <span class="achievement">
-                        <%= achievements[42].displayName %>
-                        <span class="tooltip-content"><img src=<%= achievements[42].icon %> alt="" />
-                            <span class="tooltip-text">
-                                <%= achievements[42].description %>
-                            </span>
-                        </span>
-                    </span> and finish five Arks for
-                    <span class="achievement">
-                        <%= achievements[35].displayName %>
-                        <span class="tooltip-content"><img src=<%= achievements[35].icon %> alt="" />
-                            <span class="tooltip-text">
-                                <%= achievements[35].description %>
-                            </span>
-                        </span>
-                    </span>. Balloons will appear flying around as you travel, shoot 17 of them for
-                    <span class="achievement">
-                        <%= achievements[36].displayName %>
-                        <span class="tooltip-content"><img src=<%= achievements[36].icon %> alt="" />
-                            <span class="tooltip-text">
-                                <%= achievements[36].description %>
-                            </span>
-                        </span>
-                    </span> and finally shoot down 30 Spy Drones for
-                    <span class="achievement">
-                        <%= achievements[37].displayName %>
-                        <span class="tooltip-content"><img src=<%= achievements[37].icon %> alt="" />
-                            <span class="tooltip-text">
-                                <%= achievements[37].description %>
-                            </span>
-                        </span>
-                    </span>.
-                </p>
-                <p class="indent">
-                    Finally, for completing the main game in Ultra Nightmare difficulty you will unlock
-                    <span class="achievement">
-                        <%= achievements[43].displayName %>
-                        <span class="tooltip-content"><img src=<%= achievements[43].icon %> alt="" />
-                            <span class="tooltip-text">
-                                <%= achievements[43].description %>
-                            </span>
-                        </span>
-                    </span> and
-                    <span class="achievement">
-                        <%= achievements[44].displayName %>
-                        <span class="tooltip-content"><img src=<%= achievements[44].icon %> alt="" />
-                            <span class="tooltip-text">
-                                <%= achievements[44].description %>
-                            </span>
-                        </span>
-                    </span>.
-                </p>
-                <p class="indent">
-                    Moving on to the Rise of Ghosts DLC there are total of 10 achievements. Four are for completing the
-                    main mission:
-                    <span class="achievement">
-                        <%= achievements[46].displayName %>
-                        <span class="tooltip-content"><img src=<%= achievements[46].icon %> alt="" />
-                            <span class="tooltip-text">
-                                <%= achievements[46].description %>
-                            </span>
-                        </span>
-                    </span>,
-                    <span class="achievement">
-                        <%= achievements[47].displayName %>
-                        <span class="tooltip-content"><img src=<%= achievements[47].icon %> alt="" />
-                            <span class="tooltip-text">
-                                <%= achievements[47].description %>
-                            </span>
-                        </span>
-                    </span>,
-                    <span class="achievement">
-                        <%= achievements[48].displayName %>
-                        <span class="tooltip-content"><img src=<%= achievements[48].icon %> alt="" />
-                            <span class="tooltip-text">
-                                <%= achievements[48].description %>
-                            </span>
-                        </span>
-                    </span> and
-                    <span class="achievement">
-                        <%= achievements[49].displayName %>
-                        <span class="tooltip-content"><img src=<%= achievements[49].icon %> alt="" />
-                            <span class="tooltip-text">
-                                <%= achievements[49].description %>
-                            </span>
-                        </span>
-                    </span>. Find the EcoPod for
-                    <span class="achievement">
-                        <%= achievements[50].displayName %>
-                        <span class="tooltip-content"><img src=<%= achievements[50].icon %> alt="" />
-                            <span class="tooltip-text">
-                                <%= achievements[50].description %>
-                            </span>
-                        </span>
-                    </span>, complete the Arks for
-                    <span class="achievement">
-                        <%= achievements[51].displayName %>
-                        <span class="tooltip-content"><img src=<%= achievements[51].icon %> alt="" />
-                            <span class="tooltip-text">
-                                <%= achievements[51].description %>
-                            </span>
-                        </span>
-                    </span> and
-                    <span class="achievement">
-                        <%= achievements[52].displayName %>
-                        <span class="tooltip-content"><img src=<%= achievements[52].icon %> alt="" />
-                            <span class="tooltip-text">
-                                <%= achievements[52].description %>
-                            </span>
-                        </span>
-                    </span> and complete all 5 Ghost Sanctuaries for
-                    <span class="achievement">
-                        <%= achievements[55].displayName %>
-                        <span class="tooltip-content"><img src=<%= achievements[55].icon %> alt="" />
-                            <span class="tooltip-text">
-                                <%= achievements[55].description %>
-                            </span>
-                        </span>
-                    </span>. While exploring the map Air Drops will appear and activating all 15 of them will unlock
-                    <span class="achievement">
-                        <%= achievements[54].displayName %>
-                        <span class="tooltip-content"><img src=<%= achievements[54].icon %> alt="" />
-                            <span class="tooltip-text">
-                                <%= achievements[54].description %>
-                            </span>
-                        </span>
-                    </span>. Finally, unlock all skills from Reclaim and Rebuild Project for
-                    <span class="achievement">
-                        <%= achievements[53].displayName %>
-                        <span class="tooltip-content"><img src=<%= achievements[53].icon %> alt="" />
-                            <span class="tooltip-text">
-                                <%= achievements[53].description %>
-                            </span>
-                        </span>
-                    </span>.
-                </p>
-                <p class="indent">
-                    For the TerrorMania DLC there are 8 achievements. Six are unmissable and story related
-                    <span class="achievement">
-                        <%= achievements[56].displayName %>
-                        <span class="tooltip-content"><img src=<%= achievements[56].icon %> alt="" />
-                            <span class="tooltip-text">
-                                <%= achievements[56].description %>
-                            </span>
-                        </span>
-                    </span>,
-                    <span class="achievement">
-                        <%= achievements[57].displayName %>
-                        <span class="tooltip-content"><img src=<%= achievements[57].icon %> alt="" />
-                            <span class="tooltip-text">
-                                <%= achievements[57].description %>
-                            </span>
-                        </span>
-                    </span>,
-                    <span class="achievement">
-                        <%= achievements[58].displayName %>
-                        <span class="tooltip-content"><img src=<%= achievements[58].icon %> alt="" />
-                            <span class="tooltip-text">
-                                <%= achievements[58].description %>
-                            </span>
-                        </span>
-                    </span>,
-                    <span class="achievement">
-                        <%= achievements[59].displayName %>
-                        <span class="tooltip-content"><img src=<%= achievements[59].icon %> alt="" />
-                            <span class="tooltip-text">
-                                <%= achievements[59].description %>
-                            </span>
-                        </span>
-                    </span>,
-                    <span class="achievement">
-                        <%= achievements[60].displayName %>
-                        <span class="tooltip-content"><img src=<%= achievements[60].icon %> alt="" />
-                            <span class="tooltip-text">
-                                <%= achievements[60].description %>
-                            </span>
-                        </span>
-                    </span>,
-                    <span class="achievement">
-                        <%= achievements[61].displayName %>
-                        <span class="tooltip-content"><img src=<%= achievements[61].icon %> alt="" />
-                            <span class="tooltip-text">
-                                <%= achievements[61].description %>
-                            </span>
-                        </span>
-                    </span>. Finally kill 100 skeletons with the sword for
-                    <span class="achievement">
-                        <%= achievements[62].displayName %>
-                        <span class="tooltip-content"><img src=<%= achievements[62].icon %> alt="" />
-                            <span class="tooltip-text">
-                                <%= achievements[62].description %>
-                            </span>
-                        </span>
-                    </span> and 25 airborne skeletons with the sword for
-                    <span class="achievement">
-                        <%= achievements[63].displayName %>
-                        <span class="tooltip-content"><img src=<%= achievements[63].icon %> alt="" />
-                            <span class="tooltip-text">
-                                <%= achievements[63].description %>
-                            </span>
-                        </span>
-                    </span>.
-                </p>
-                <h2>Second Playthrough</h2>
-                <p class="indent">
-                    For the second playthrough what is left is finishing the main mission on Ironman mode for
-                    <span class="achievement">
-                        <%= achievements[45].displayName %>
-                        <span class="tooltip-content"><img src=<%= achievements[45].icon %> alt="" />
-                            <span class="tooltip-text">
-                                <%= achievements[45].description %>
-                            </span>
                         </span>
-                    </span>. Note that you can exit to the main menu before the death sequence finishes and you will
-                    still be able to continue from the lastest checkpoint.
-                </p>
-                <h3>Time Saving Resources</h3>
-                <p>
-                    <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1749487650" target="_blank">100%
-                        Achievements Guide - RAGE 2</a> - Stean guide with short explanations and a few images.<br>
-                    <a href="https://www.powerpyx.com/rage-2-spy-drone-locations/" target="_blank">Rage 2 Spy Drone
-                        Locations</a> - Written guide with images.
-                </p>
+                        and need to unlock the ability first for
+                        <span class="achievement">
+                            <%= achievements[24].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[24].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[24].description %>
+                                </span>
+                            </span>
+                        </span>. For these you have to find and unlock new vehicles:
+                        <span class="achievement">
+                            <%= achievements[26].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[26].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[26].description %>
+                                </span>
+                            </span>
+                        </span>,
+                        <span class="achievement">
+                            <%= achievements[25].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[25].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[25].description %>
+                                </span>
+                            </span>
+                        </span> and
+                        <span class="achievement">
+                            <%= achievements[20].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[20].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[20].description %>
+                                </span>
+                            </span>
+                        </span>. And some miscellaneous
+                        <span class="achievement">
+                            <%= achievements[21].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[21].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[21].description %>
+                                </span>
+                            </span>
+                        </span>,
+                        <span class="achievement">
+                            <%= achievements[22].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[22].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[22].description %>
+                                </span>
+                            </span>
+                        </span> and
+                        <span class="achievement">
+                            <%= achievements[23].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[23].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[23].description %>
+                                </span>
+                            </span>
+                        </span>.
+                    </p>
+                    <p class="indent">
+                        Explore the map and find all the EcoPods for the
+                        <span class="achievement">
+                            <%= achievements[38].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[38].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[38].description %>
+                                </span>
+                            </span>
+                        </span>,
+                        <span class="achievement">
+                            <%= achievements[39].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[39].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[39].description %>
+                                </span>
+                            </span>
+                        </span>,
+                        <span class="achievement">
+                            <%= achievements[40].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[40].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[40].description %>
+                                </span>
+                            </span>
+                        </span> and
+                        <span class="achievement">
+                            <%= achievements[41].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[41].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[41].description %>
+                                </span>
+                            </span>
+                        </span>. Find all five main settlements for
+                        <span class="achievement">
+                            <%= achievements[42].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[42].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[42].description %>
+                                </span>
+                            </span>
+                        </span> and finish five Arks for
+                        <span class="achievement">
+                            <%= achievements[35].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[35].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[35].description %>
+                                </span>
+                            </span>
+                        </span>. Balloons will appear flying around as you travel, shoot 17 of them for
+                        <span class="achievement">
+                            <%= achievements[36].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[36].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[36].description %>
+                                </span>
+                            </span>
+                        </span> and finally shoot down 30 Spy Drones for
+                        <span class="achievement">
+                            <%= achievements[37].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[37].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[37].description %>
+                                </span>
+                            </span>
+                        </span>.
+                    </p>
+                    <p class="indent">
+                        Finally, for completing the main game in Ultra Nightmare difficulty you will unlock
+                        <span class="achievement">
+                            <%= achievements[43].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[43].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[43].description %>
+                                </span>
+                            </span>
+                        </span> and
+                        <span class="achievement">
+                            <%= achievements[44].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[44].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[44].description %>
+                                </span>
+                            </span>
+                        </span>.
+                    </p>
+                    <p class="indent">
+                        Moving on to the Rise of Ghosts DLC there are total of 10 achievements. Four are for completing
+                        the
+                        main mission:
+                        <span class="achievement">
+                            <%= achievements[46].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[46].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[46].description %>
+                                </span>
+                            </span>
+                        </span>,
+                        <span class="achievement">
+                            <%= achievements[47].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[47].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[47].description %>
+                                </span>
+                            </span>
+                        </span>,
+                        <span class="achievement">
+                            <%= achievements[48].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[48].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[48].description %>
+                                </span>
+                            </span>
+                        </span> and
+                        <span class="achievement">
+                            <%= achievements[49].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[49].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[49].description %>
+                                </span>
+                            </span>
+                        </span>. Find the EcoPod for
+                        <span class="achievement">
+                            <%= achievements[50].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[50].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[50].description %>
+                                </span>
+                            </span>
+                        </span>, complete the Arks for
+                        <span class="achievement">
+                            <%= achievements[51].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[51].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[51].description %>
+                                </span>
+                            </span>
+                        </span> and
+                        <span class="achievement">
+                            <%= achievements[52].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[52].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[52].description %>
+                                </span>
+                            </span>
+                        </span> and complete all 5 Ghost Sanctuaries for
+                        <span class="achievement">
+                            <%= achievements[55].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[55].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[55].description %>
+                                </span>
+                            </span>
+                        </span>. While exploring the map Air Drops will appear and activating all 15 of them will unlock
+                        <span class="achievement">
+                            <%= achievements[54].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[54].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[54].description %>
+                                </span>
+                            </span>
+                        </span>. Finally, unlock all skills from Reclaim and Rebuild Project for
+                        <span class="achievement">
+                            <%= achievements[53].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[53].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[53].description %>
+                                </span>
+                            </span>
+                        </span>.
+                    </p>
+                    <p class="indent">
+                        For the TerrorMania DLC there are 8 achievements. Six are unmissable and story related
+                        <span class="achievement">
+                            <%= achievements[56].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[56].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[56].description %>
+                                </span>
+                            </span>
+                        </span>,
+                        <span class="achievement">
+                            <%= achievements[57].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[57].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[57].description %>
+                                </span>
+                            </span>
+                        </span>,
+                        <span class="achievement">
+                            <%= achievements[58].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[58].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[58].description %>
+                                </span>
+                            </span>
+                        </span>,
+                        <span class="achievement">
+                            <%= achievements[59].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[59].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[59].description %>
+                                </span>
+                            </span>
+                        </span>,
+                        <span class="achievement">
+                            <%= achievements[60].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[60].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[60].description %>
+                                </span>
+                            </span>
+                        </span>,
+                        <span class="achievement">
+                            <%= achievements[61].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[61].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[61].description %>
+                                </span>
+                            </span>
+                        </span>. Finally kill 100 skeletons with the sword for
+                        <span class="achievement">
+                            <%= achievements[62].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[62].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[62].description %>
+                                </span>
+                            </span>
+                        </span> and 25 airborne skeletons with the sword for
+                        <span class="achievement">
+                            <%= achievements[63].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[63].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[63].description %>
+                                </span>
+                            </span>
+                        </span>.
+                    </p>
+                    <h2>Second Playthrough</h2>
+                    <p class="indent">
+                        For the second playthrough what is left is finishing the main mission on Ironman mode for
+                        <span class="achievement">
+                            <%= achievements[45].displayName %>
+                            <span class="tooltip-content"><img src=<%= achievements[45].icon %> alt="" />
+                                <span class="tooltip-text">
+                                    <%= achievements[45].description %>
+                                </span>
+                            </span>
+                        </span>. Note that you can exit to the main menu before the death sequence finishes and you will
+                        still be able to continue from the lastest checkpoint.
+                    </p>
+                    <h3>Time Saving Resources</h3>
+                    <p>
+                        <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1749487650" target="_blank">100%
+                            Achievements Guide - RAGE 2</a> - Stean guide with short explanations and a few images.<br>
+                        <a href="https://www.powerpyx.com/rage-2-spy-drone-locations/" target="_blank">Rage 2 Spy Drone
+                            Locations</a> - Written guide with images.
+                    </p>
+                </div>
+            </div>
+            <div class="rightColumn">
+                <img src="https://res.cloudinary.com/dmdbza74n/image/upload/v1679343196/achievementroadmaps/Rage2R_lkdisn.webp"
+                    alt="" />
             </div>
         </div>
-        <div class="rightColumn">
-            <img src="https://res.cloudinary.com/dmdbza74n/image/upload/v1679343196/achievementroadmaps/Rage2R_lkdisn.webp"
-                alt="" />
-        </div>
-    </div>
-</section>
+    </section>
+    <section>
+        <%- include('../partials/ach-list') %>
+    </section>
+
+    <footer>
+        <%- include('../partials/footer') %>
+    </footer>
+
+    <script src="/main.js"></script>
+</body>
 
 </html>
